@@ -1,3 +1,8 @@
+# 大体积音频/视频中间产物不入库
 tools/asr_out/*.m4a
+tools/asr_out/*.mp4
+tools/asr_out/*.webm
+tools/asr_out/*.flac
 __pycache__/
 *.pyc
+.DS_Store
