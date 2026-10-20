@@ -1,0 +1,220 @@
+{
+ "nodes": [
+  {
+   "id": "root",
+   "type": "text",
+   "text": "黑格尔《逻辑学》\nWissenschaft der Logik\n三编 · 全部章节",
+   "x": 0,
+   "y": 0,
+   "width": 300,
+   "height": 120,
+   "color": "1"
+  },
+  {
+   "id": "b第一编-·-存在论",
+   "type": "text",
+   "text": "第一编 · 存在论\nDie Lehre vom Sein\n思想的直接性阶段。范畴还是外在的、未经反思的规定：存在、无、变易、定在、量、尺度。存在论的课题是'直…",
+   "x": -160,
+   "y": 260,
+   "width": 320,
+   "height": 110,
+   "color": "2"
+  },
+  {
+   "id": "b第一编-·-存在论A-·-质",
+   "type": "text",
+   "text": "A · 质\nDie Qualität",
+   "x": 260,
+   "y": 260,
+   "width": 260,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "b第一编-·-存在论B-·-量",
+   "type": "text",
+   "text": "B · 量\nDie Quantität",
+   "x": 260,
+   "y": 360,
+   "width": 260,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "b第一编-·-存在论C-·-尺度",
+   "type": "text",
+   "text": "C · 尺度\nDas Maß",
+   "x": 260,
+   "y": 460,
+   "width": 260,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "b第二编-·-本质论",
+   "type": "text",
+   "text": "第二编 · 本质论\nDie Lehre vom Wesen\n反思的阶段。范畴成对出现：本质与现象、内与外、原因与结果。本质不是存在背后的'另一个东西'——本质是…",
+   "x": -160,
+   "y": 620,
+   "width": 320,
+   "height": 110,
+   "color": "2"
+  },
+  {
+   "id": "b第二编-·-本质论A-·-本质的反思规定",
+   "type": "text",
+   "text": "A · 本质的反思规定\nDie Wesenheiten / Die Reflexionsbestimmungen",
+   "x": 260,
+   "y": 620,
+   "width": 260,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "b第二编-·-本质论B-·-现象",
+   "type": "text",
+   "text": "B · 现象\nDie Erscheinung",
+   "x": 260,
+   "y": 720,
+   "width": 260,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "b第二编-·-本质论C-·-现实",
+   "type": "text",
+   "text": "C · 现实\nDie Wirklichkeit",
+   "x": 260,
+   "y": 820,
+   "width": 260,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "b第三编-·-概念论",
+   "type": "text",
+   "text": "第三编 · 概念论\nDie Lehre vom Begriff\n概念返回自身的阶段。普遍性、特殊性、个别性的统一；判断与推论是概念的展开；客体（机械性-化学性-目的…",
+   "x": -160,
+   "y": 980,
+   "width": 320,
+   "height": 110,
+   "color": "2"
+  },
+  {
+   "id": "b第三编-·-概念论A-·-主观概念",
+   "type": "text",
+   "text": "A · 主观概念\nDer subjektive Begriff",
+   "x": 260,
+   "y": 980,
+   "width": 260,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "b第三编-·-概念论B-·-客体",
+   "type": "text",
+   "text": "B · 客体\nDas Objekt",
+   "x": 260,
+   "y": 1080,
+   "width": 260,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "b第三编-·-概念论C-·-理念",
+   "type": "text",
+   "text": "C · 理念\nDie Idee",
+   "x": 260,
+   "y": 1180,
+   "width": 260,
+   "height": 80,
+   "color": "3"
+  }
+ ],
+ "edges": [
+  {
+   "id": "eb第一编-·-存在论",
+   "fromNode": "root",
+   "toNode": "b第一编-·-存在论",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "eb第一编-·-存在论A-·-质",
+   "fromNode": "b第一编-·-存在论",
+   "toNode": "b第一编-·-存在论A-·-质",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "eb第一编-·-存在论B-·-量",
+   "fromNode": "b第一编-·-存在论",
+   "toNode": "b第一编-·-存在论B-·-量",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "eb第一编-·-存在论C-·-尺度",
+   "fromNode": "b第一编-·-存在论",
+   "toNode": "b第一编-·-存在论C-·-尺度",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "eb第二编-·-本质论",
+   "fromNode": "root",
+   "toNode": "b第二编-·-本质论",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "eb第二编-·-本质论A-·-本质的反思规定",
+   "fromNode": "b第二编-·-本质论",
+   "toNode": "b第二编-·-本质论A-·-本质的反思规定",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "eb第二编-·-本质论B-·-现象",
+   "fromNode": "b第二编-·-本质论",
+   "toNode": "b第二编-·-本质论B-·-现象",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "eb第二编-·-本质论C-·-现实",
+   "fromNode": "b第二编-·-本质论",
+   "toNode": "b第二编-·-本质论C-·-现实",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "eb第三编-·-概念论",
+   "fromNode": "root",
+   "toNode": "b第三编-·-概念论",
+   "fromSide": "bottom",
+   "toSide": "top"
+  },
+  {
+   "id": "eb第三编-·-概念论A-·-主观概念",
+   "fromNode": "b第三编-·-概念论",
+   "toNode": "b第三编-·-概念论A-·-主观概念",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "eb第三编-·-概念论B-·-客体",
+   "fromNode": "b第三编-·-概念论",
+   "toNode": "b第三编-·-概念论B-·-客体",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  {
+   "id": "eb第三编-·-概念论C-·-理念",
+   "fromNode": "b第三编-·-概念论",
+   "toNode": "b第三编-·-概念论C-·-理念",
+   "fromSide": "right",
+   "toSide": "left"
+  }
+ ]
+}

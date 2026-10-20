@@ -1,0 +1,3 @@
+tools/asr_out/*.m4a
+__pycache__/
+*.pyc

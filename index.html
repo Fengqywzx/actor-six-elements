@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>行动者六要素 · 生命操作系统 | 以黑格尔逻辑学为底层的个人实践体系</title>
+<meta name="description" content="行动者的六个要素：时间（生命）、健康、钱、人际关系四个附着主题，爱欲与理性两个根本能力。基于黑格尔《逻辑学》的个人行动体系，含思维导图、未明子行动建议视频研究、每晚抖音直播计划、倾诉树洞。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23B4432F'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23F7F2E8' font-family='serif' font-weight='bold'%3E行%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --paper:#F7F2E8; --paper2:#F1EADA; --surface:#FFFEF9; --surface2:#FBF7EE;
+  --ink:#2A2520; --ink2:#5C554A; --muted:#8A8172;
+  --cinnabar:#B4432F; --pine:#2F5D50; --gold:#C08A3E; --teal:#3A6B6B; --rose:#B4506B; --indigo:#4A4E7A;
+  --line:#E3DACA; --shadow:0 2px 6px rgba(42,37,32,.05),0 10px 30px rgba(42,37,32,.07);
+  --radius:16px;
+  --seri:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;
+  --sans:"PingFang SC","HarmonyOS Sans SC","MiSans","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:rgba(180,67,47,.18)}
+a{color:var(--cinnabar);text-decoration:none}
+img{max-width:100%}
+h1,h2,h3,h4{font-family:var(--seri);line-height:1.35;font-weight:700}
+.container{max-width:1120px;margin:0 auto;padding:0 22px}
+
+/* ---------- 顶导航 ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,242,232,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1120px;margin:0 auto;padding:0 22px;height:62px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--seri);font-size:19px;font-weight:700;display:flex;align-items:center;gap:9px;color:var(--ink)}
+.nav-logo .seal{width:32px;height:32px;border-radius:8px;background:var(--cinnabar);color:#F7F2E8;display:grid;place-items:center;font-size:17px;font-weight:700;box-shadow:inset 0 0 0 1.5px rgba(247,242,232,.45)}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{padding:7px 13px;border-radius:9px;font-size:14.5px;color:var(--ink2);transition:.2s;white-space:nowrap}
+.nav-links a:hover{background:var(--paper2);color:var(--cinnabar)}
+.nav-links a.cta{background:var(--cinnabar);color:#FBF7EE}
+.nav-links a.cta:hover{background:#9C3826;color:#fff}
+.nav-burger{display:none;background:none;border:1px solid var(--line);border-radius:9px;width:40px;height:36px;font-size:18px;color:var(--ink);cursor:pointer}
+@media(max-width:900px){
+  .nav-links{position:fixed;top:62px;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:10px 16px 16px;gap:2px;display:none;box-shadow:var(--shadow)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:11px 14px;font-size:15.5px}
+  .nav-burger{display:grid;place-items:center}
+}
+
+/* ---------- Hero ---------- */
+.hero{padding:150px 0 70px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 420px at 85% -10%,rgba(192,138,62,.10),transparent 60%),
+  radial-gradient(700px 380px at -10% 30%,rgba(180,67,47,.07),transparent 60%);pointer-events:none}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;letter-spacing:.18em;color:var(--cinnabar);font-weight:600;border:1px solid rgba(180,67,47,.35);padding:6px 14px;border-radius:99px;background:rgba(255,254,249,.7);margin-bottom:22px}
+.hero h1{font-size:clamp(34px,5.6vw,58px);letter-spacing:.02em;margin-bottom:10px}
+.hero h1 .accent{color:var(--cinnabar)}
+.hero-sub{font-size:clamp(15px,2.2vw,19px);color:var(--ink2);max-width:760px;margin:14px 0 30px}
+.hero-quote{border-left:3px solid var(--cinnabar);padding:4px 0 4px 18px;font-family:var(--seri);font-size:clamp(15px,2vw,18px);color:var(--ink);max-width:680px;margin-bottom:34px;background:linear-gradient(90deg,rgba(180,67,47,.05),transparent)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:12px;font-size:15.5px;font-weight:600;cursor:pointer;border:none;transition:.2s;font-family:var(--sans)}
+.btn-primary{background:var(--cinnabar);color:#FBF7EE;box-shadow:0 6px 18px rgba(180,67,47,.28)}
+.btn-primary:hover{background:#9C3826;transform:translateY(-1px)}
+.btn-ghost{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.btn-ghost:hover{border-color:var(--cinnabar);color:var(--cinnabar)}
+.hero-stats{display:flex;gap:34px;flex-wrap:wrap;margin-top:46px}
+.hero-stat b{font-family:var(--seri);font-size:26px;color:var(--cinnabar);display:block}
+.hero-stat span{font-size:13px;color:var(--muted)}
+.brush-divider{display:block;width:100%;height:26px;margin:6px 0}
+
+/* ---------- 通用 section ---------- */
+section{padding:64px 0}
+.sec-head{margin-bottom:34px}
+.sec-tag{font-size:13px;letter-spacing:.22em;color:var(--gold);font-weight:700;margin-bottom:8px}
+.sec-head h2{font-size:clamp(24px,3.4vw,34px)}
+.sec-desc{color:var(--ink2);max-width:720px;margin-top:10px;font-size:15.5px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* ---------- 宣言 ---------- */
+.manifesto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.manifesto-grid{grid-template-columns:1fr}}
+.manifesto-card{padding:26px;position:relative;overflow:hidden}
+.manifesto-card::after{content:attr(data-num);position:absolute;right:10px;top:-14px;font-family:var(--seri);font-size:84px;font-weight:700;color:rgba(180,67,47,.07);line-height:1}
+.manifesto-card h3{font-size:19px;margin-bottom:10px;color:var(--ink)}
+.manifesto-card p{font-size:14.5px;color:var(--ink2)}
+
+/* ---------- 六要素 ---------- */
+.elements-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.elements-grid{grid-template-columns:1fr}}
+.el-card{padding:24px;cursor:pointer;transition:.25s;position:relative;border-top:4px solid var(--el-color,var(--cinnabar))}
+.el-card:hover{transform:translateY(-3px);box-shadow:0 4px 10px rgba(42,37,32,.06),0 16px 40px rgba(42,37,32,.10)}
+.el-badge{position:absolute;top:14px;right:14px;font-size:11.5px;padding:3px 10px;border-radius:99px;background:var(--paper2);color:var(--ink2);letter-spacing:.08em}
+.el-icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-family:var(--seri);font-size:25px;font-weight:700;color:#FFFEF9;background:var(--el-color,var(--cinnabar));margin-bottom:14px}
+.el-card h3{font-size:21px;margin-bottom:4px}
+.el-motto{font-size:13.5px;color:var(--el-color,var(--cinnabar));font-weight:600;margin-bottom:12px}
+.el-sum{font-size:14px;color:var(--ink2);margin-bottom:14px}
+.el-points{list-style:none;display:none;margin-top:6px}
+.el-card.open .el-points{display:block}
+.el-points li{font-size:13.5px;color:var(--ink2);padding:9px 0 9px 18px;border-top:1px dashed var(--line);position:relative}
+.el-points li::before{content:"◈";position:absolute;left:0;color:var(--el-color,var(--cinnabar));font-size:11px;top:11px}
+.el-points li b{color:var(--ink)}
+.el-links{display:none;margin-top:14px;gap:10px;flex-direction:column}
+.el-card.open .el-links{display:flex}
+.el-link{font-size:12.5px;background:var(--paper2);border-radius:10px;padding:10px 12px;color:var(--ink2);line-height:1.6}
+.el-link b{display:block;font-size:11.5px;letter-spacing:.1em;margin-bottom:3px}
+.el-link.hegel b{color:var(--indigo)}
+.el-link.wmz b{color:var(--pine)}
+.el-toggle{margin-top:12px;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.el-card.open .el-toggle .arrow{transform:rotate(180deg)}
+.el-toggle .arrow{display:inline-block;transition:.25s}
+
+/* ---------- 思维导图 ---------- */
+.mm-toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.mm-btn{padding:8px 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-size:14px;cursor:pointer;color:var(--ink2);transition:.2s;font-family:var(--sans)}
+.mm-btn:hover{border-color:var(--cinnabar);color:var(--cinnabar)}
+.mm-btn.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.mm-search{flex:1;min-width:200px;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-size:14px;font-family:var(--sans);color:var(--ink)}
+.mm-search:focus{outline:none;border-color:var(--cinnabar)}
+.mm-stage{position:relative;height:560px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:
+  radial-gradient(circle at 20% 20%,rgba(192,138,62,.05),transparent 40%),var(--surface2);cursor:grab}
+.mm-stage.dragging{cursor:grabbing}
+.mm-stage svg{width:100%;height:100%;display:block}
+.mm-node{cursor:pointer}
+.mm-node rect{fill:var(--surface);stroke:var(--line);stroke-width:1.2;transition:.15s}
+.mm-node:hover rect{stroke:var(--cinnabar);stroke-width:1.8}
+.mm-node.root rect{fill:var(--ink);stroke:var(--ink)}
+.mm-node.root text{fill:var(--paper)}
+.mm-node.book rect{fill:#FBF3E4;stroke:#E0CDA6}
+.mm-node.part rect{fill:#F6EEE2}
+.mm-node text{font-size:12.5px;fill:var(--ink);font-family:var(--sans)}
+.mm-node .sub{font-size:10.5px;fill:var(--muted)}
+.mm-node .toggle circle{fill:var(--cinnabar)}
+.mm-node .toggle text{fill:#fff;font-size:11px;text-anchor:middle}
+.mm-detail{position:absolute;top:14px;right:14px;width:min(330px,calc(100% - 28px));max-height:calc(100% - 28px);overflow-y:auto;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow);display:none}
+.mm-detail.show{display:block}
+.mm-detail h4{font-size:17px;margin-bottom:2px;padding-right:26px}
+.mm-detail .de{font-size:12px;color:var(--muted);margin-bottom:12px;font-style:italic}
+.mm-detail .lbl{font-size:11px;letter-spacing:.14em;color:var(--gold);font-weight:700;margin:12px 0 4px}
+.mm-detail p{font-size:13.5px;color:var(--ink2);line-height:1.7}
+.mm-detail .key{background:var(--paper2);border-radius:10px;padding:10px 12px;font-family:var(--seri);font-size:13px;color:var(--ink)}
+.mm-detail .act{background:rgba(47,93,80,.08);border-radius:10px;padding:10px 12px;font-size:12.5px;color:var(--pine)}
+.mm-close{position:absolute;top:10px;right:12px;background:none;border:none;font-size:18px;color:var(--muted);cursor:pointer}
+.mm-hint{position:absolute;left:14px;bottom:12px;font-size:12px;color:var(--muted);background:rgba(255,254,249,.85);padding:5px 12px;border-radius:99px;border:1px solid var(--line)}
+.mm-outline{display:none;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:10px 0}
+.mm-outline.show{display:block}
+.ol-node{border-bottom:1px dashed var(--line)}
+.ol-node:last-child{border-bottom:none}
+.ol-row{display:flex;align-items:flex-start;gap:10px;padding:11px 18px;cursor:pointer;transition:.15s}
+.ol-row:hover{background:var(--paper2)}
+.ol-row .dot{width:8px;height:8px;border-radius:50%;background:var(--cinnabar);margin-top:8px;flex:none}
+.ol-row.book .dot{background:var(--ink)}
+.ol-row.part .dot{background:var(--gold)}
+.ol-title{font-family:var(--seri);font-size:15px;font-weight:600}
+.ol-row .de{font-size:11.5px;color:var(--muted);font-style:italic;margin-left:8px}
+.ol-sum{font-size:13px;color:var(--ink2);margin-top:3px;display:none}
+.ol-node.open>.ol-row .ol-sum{display:block}
+.ol-node.open>.ol-children{display:block}
+.ol-children{display:none;padding-left:26px;border-left:2px solid var(--line);margin-left:26px}
+.ol-children .ol-node:last-child{border-bottom:none}
+
+/* ---------- 视频 ---------- */
+.vid-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.vid-filter{padding:7px 15px;border-radius:99px;border:1px solid var(--line);background:var(--surface);font-size:13.5px;cursor:pointer;color:var(--ink2);transition:.2s}
+.vid-filter:hover,.vid-filter.active{background:var(--cinnabar);border-color:var(--cinnabar);color:#FBF7EE}
+.vid-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:900px){.vid-grid{grid-template-columns:1fr}}
+.vid-card{padding:22px;display:flex;flex-direction:column;gap:10px}
+.vid-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.vid-card h3{font-size:16.5px;line-height:1.5;flex:1}
+.vid-cat{font-size:11.5px;padding:3px 10px;border-radius:99px;flex:none;letter-spacing:.06em}
+.vid-cat.action{background:rgba(180,67,47,.1);color:var(--cinnabar)}
+.vid-cat.eros{background:rgba(180,80,107,.1);color:var(--rose)}
+.vid-cat.study{background:rgba(47,93,80,.1);color:var(--pine)}
+.vid-cat.work{background:rgba(192,138,62,.12);color:var(--gold)}
+.vid-cat.psy{background:rgba(74,78,122,.1);color:var(--indigo)}
+.vid-meta{font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+.vid-core{font-size:13.5px;color:var(--ink2)}
+.vid-core b{color:var(--cinnabar)}
+.vid-points{list-style:none;font-size:13px;color:var(--ink2)}
+.vid-points li{padding:4px 0 4px 15px;position:relative}
+.vid-points li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+.vid-action{background:rgba(47,93,80,.07);border-left:3px solid var(--pine);border-radius:0 10px 10px 0;padding:10px 14px;font-size:12.5px;color:var(--ink2);line-height:1.65}
+.vid-action b{color:var(--pine);font-size:11.5px;letter-spacing:.1em;display:block;margin-bottom:2px}
+.vid-src{font-size:11.5px;color:var(--muted);margin-top:auto;padding-top:8px;border-top:1px dashed var(--line)}
+.vid-more{align-self:flex-start;background:none;border:none;color:var(--cinnabar);font-size:13px;cursor:pointer;padding:0;font-family:var(--sans)}
+.vid-extra{display:none;flex-direction:column;gap:8px}
+.vid-card.open .vid-extra{display:flex}
+
+/* ---------- 直播 ---------- */
+.live-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:900px){.live-grid{grid-template-columns:1fr}}
+.live-table{width:100%;border-collapse:collapse;font-size:14px}
+.live-table th{font-family:var(--seri);text-align:left;padding:10px 12px;border-bottom:2px solid var(--ink);font-size:13.5px;color:var(--ink)}
+.live-table td{padding:11px 12px;border-bottom:1px dashed var(--line);color:var(--ink2);vertical-align:top}
+.live-table tr:hover td{background:var(--paper2)}
+.live-table td:first-child{font-family:var(--seri);font-weight:700;color:var(--cinnabar);white-space:nowrap}
+.gen-form{display:flex;flex-direction:column;gap:12px;padding:22px}
+.gen-form label{font-size:13px;color:var(--ink2);font-weight:600}
+.gen-form input,.gen-form select,.gen-form textarea{padding:10px 13px;border-radius:10px;border:1px solid var(--line);background:var(--surface2);font-size:14px;font-family:var(--sans);color:var(--ink);width:100%}
+.gen-form input:focus,.gen-form select:focus,.gen-form textarea:focus{outline:none;border-color:var(--cinnabar)}
+.gen-out{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:none;font-size:14px;line-height:1.8}
+.gen-out.show{display:block}
+.gen-out h4{font-size:16px;margin:14px 0 6px;color:var(--cinnabar)}
+.gen-out h4:first-child{margin-top:0}
+.gen-out .seg{background:var(--paper2);border-radius:10px;padding:10px 14px;margin:8px 0;font-size:13.5px;color:var(--ink2)}
+
+/* ---------- 限时解决 ---------- */
+.solver{padding:26px}
+.solver-steps{display:flex;flex-direction:column;gap:0}
+.solver-step{display:flex;gap:16px;padding:18px 0;border-bottom:1px dashed var(--line)}
+.solver-step:last-child{border-bottom:none}
+.solver-num{width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-family:var(--serif);font-weight:700;flex:none}
+.solver-step h4{font-size:16px;margin-bottom:4px}
+.solver-step p{font-size:13.5px;color:var(--ink2)}
+.solver-step .tool{font-size:12px;color:var(--pine);margin-top:5px;background:rgba(47,93,80,.07);display:inline-block;padding:3px 10px;border-radius:99px}
+
+/* ---------- 树洞 ---------- */
+.th-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+@media(max-width:900px){.th-grid{grid-template-columns:1fr}}
+.th-form{padding:26px;display:flex;flex-direction:column;gap:14px}
+.th-form h3{font-size:19px}
+.th-promise{background:rgba(180,67,47,.06);border:1px dashed rgba(180,67,47,.4);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--ink2);line-height:1.7}
+.th-promise b{color:var(--cinnabar)}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:600px){.f-row{grid-template-columns:1fr}}
+.f-group{display:flex;flex-direction:column;gap:5px}
+.f-group label{font-size:13px;color:var(--ink2);font-weight:600}
+.f-group label .req{color:var(--cinnabar)}
+.f-group input,.f-group select,.f-group textarea{padding:11px 13px;border-radius:10px;border:1px solid var(--line);background:var(--surface2);font-size:14px;font-family:var(--sans);color:var(--ink);width:100%;resize:vertical}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--cinnabar);background:#fff}
+.th-ok{display:none;background:rgba(47,93,80,.08);border:1px solid rgba(47,93,80,.35);border-radius:12px;padding:16px;font-size:14px;color:var(--pine);line-height:1.7}
+.th-ok.show{display:block}
+.warm-wall{padding:24px;display:flex;flex-direction:column;gap:14px}
+.warm-card{background:linear-gradient(135deg,#FBF3E4,#F6EEE2);border-radius:14px;padding:22px;font-family:var(--seri);font-size:15.5px;line-height:1.9;color:var(--ink);position:relative;min-height:150px}
+.warm-card::before{content:"「";font-size:44px;color:rgba(180,67,47,.25);position:absolute;top:6px;left:12px;font-family:var(--seri)}
+.warm-card p{padding-left:26px}
+.warm-from{font-size:12.5px;color:var(--muted);text-align:right;margin-top:8px;font-family:var(--sans)}
+.warm-btns{display:flex;gap:10px}
+.warm-btn{flex:1;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-size:13.5px;cursor:pointer;color:var(--ink2);transition:.2s}
+.warm-btn:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ---------- 打卡 ---------- */
+.check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:900px){.check-grid{grid-template-columns:1fr}}
+.check-card{padding:18px}
+.check-card h4{font-size:15px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}
+.check-card h4 .streak{font-size:12px;color:var(--gold);font-family:var(--sans);font-weight:600}
+.check-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px;cursor:pointer;color:var(--ink2)}
+.check-item:last-child{border-bottom:none}
+.check-item input{display:none}
+.check-box{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--line);display:grid;place-items:center;font-size:12px;color:transparent;transition:.2s;flex:none}
+.check-item.done .check-box{background:var(--pine);border-color:var(--pine);color:#fff}
+.check-item.done{color:var(--muted);text-decoration:line-through}
+.check-date{font-size:13px;color:var(--muted);margin-bottom:14px}
+
+/* ---------- 后台 ---------- */
+.admin-modal{position:fixed;inset:0;background:rgba(42,37,32,.55);z-index:200;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px)}
+.admin-modal.show{display:flex}
+.admin-box{background:var(--paper);border-radius:18px;width:min(760px,100%);max-height:88vh;overflow-y:auto;padding:26px;position:relative}
+.admin-box h3{font-size:20px;margin-bottom:14px}
+.admin-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:20px;color:var(--muted);cursor:pointer}
+.admin-tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+.admin-tab{padding:7px 14px;border-radius:9px;border:1px solid var(--line);background:var(--surface);font-size:13.5px;cursor:pointer;color:var(--ink2)}
+.admin-tab.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.sub-item{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:12px;font-size:13.5px}
+.sub-item .sub-head{display:flex;justify-content:space-between;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.sub-item .sub-meta{font-size:12px;color:var(--muted)}
+.sub-item .sub-body{color:var(--ink2);line-height:1.7;white-space:pre-wrap}
+.sub-item .sub-body b{color:var(--ink)}
+.sub-reply{margin-top:10px;background:rgba(47,93,80,.06);border-radius:10px;padding:10px 12px;font-size:12.5px;color:var(--pine)}
+.sub-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.mini-btn{padding:5px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);font-size:12.5px;cursor:pointer;color:var(--ink2)}
+.mini-btn:hover{border-color:var(--cinnabar);color:var(--cinnabar)}
+.admin-empty{text-align:center;color:var(--muted);padding:40px 0;font-size:14px}
+.admin-note{font-size:12.5px;color:var(--muted);line-height:1.7;background:var(--paper2);border-radius:10px;padding:12px 14px;margin-top:10px}
+
+/* ---------- 页脚 ---------- */
+footer{background:var(--ink);color:#D8D2C4;padding:52px 0 34px;margin-top:30px}
+footer .container{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+@media(max-width:900px){footer .container{grid-template-columns:1fr}}
+footer h4{font-size:16px;color:#F1EADA;margin-bottom:12px}
+footer p,footer li{font-size:13.5px;line-height:1.8;color:#B7B0A0}
+footer ul{list-style:none}
+footer li{padding:3px 0}
+footer a{color:#D8C9A8}
+footer a:hover{color:#fff}
+.footer-promise{margin-top:26px;border-top:1px solid #4A443A;padding-top:20px;font-size:12.5px;color:#8F8878;line-height:1.8}
+.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);padding:12px 22px;border-radius:12px;font-size:14px;opacity:0;transition:.3s;z-index:300;pointer-events:none;box-shadow:var(--shadow);max-width:86vw}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.scroll-top{position:fixed;right:20px;bottom:20px;width:44px;height:44px;border-radius:50%;background:var(--surface);border:1px solid var(--line);color:var(--ink2);font-size:18px;cursor:pointer;display:none;place-items:center;z-index:90;box-shadow:var(--shadow)}
+.scroll-top.show{display:grid}
+@media print{.nav,.scroll-top,.toast{display:none}}
+</style>
+</head>
+<body>
+
+<!-- ============ 导航 ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#top"><span class="seal">行</span>行动者六要素 · 生命操作系统</a>
+    <button class="nav-burger" id="burger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#framework">六要素</a>
+      <a href="#mindmap">逻辑学导图</a>
+      <a href="#videos">未明子研究</a>
+      <a href="#livestream">直播计划</a>
+      <a href="#solver">限时解决</a>
+      <a href="#checkin">每日打卡</a>
+      <a href="#treehole" class="cta">倾诉树洞</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ Hero ============ -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-kicker">✶ 马克思 · 黑格尔逻辑学的个人落地</div>
+    <h1>行动者的<span class="accent">六个要素</span><br>建构人的主体</h1>
+    <p class="hero-sub">四个附着的主题——时间（生命）· 健康 · 钱 · 人际关系；两个需要灵活运用的最根本能力——爱欲 · 理性。这不是一份待办清单，而是一套以《逻辑学》为底层、每晚在抖音直播讲解、可落地可复盘的生命操作系统。</p>
+    <div class="hero-quote">“把人生还原成体系。用自己的时间描绘出清晰可见的行动蓝图，尽自己的全部。”</div>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#framework">进入体系 →</a>
+      <a class="btn btn-ghost" href="#treehole">向我倾诉 ♡</a>
+      <a class="btn btn-ghost" href="#mindmap">黑格尔逻辑学导图</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>6</b><span>核心要素</span></div>
+      <div class="hero-stat"><b>3编75节</b><span>逻辑学章节誊写</span></div>
+      <div class="hero-stat"><b>16篇</b><span>未明子视频调研</span></div>
+      <div class="hero-stat"><b>每晚</b><span>抖音直播讲解</span></div>
+      <div class="hero-stat"><b>100%</b><span>本地隐私存储</span></div>
+    </div>
+  </div>
+  <svg class="brush-divider" viewBox="0 0 1200 26" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,14 C180,4 320,22 520,12 C720,2 860,20 1060,10 C1120,7 1170,12 1200,13" stroke="#B4432F" stroke-width="3.2" fill="none" stroke-linecap="round" opacity=".55"/>
+    <path d="M0,18 C240,10 420,24 640,15 C840,7 1000,21 1200,16" stroke="#C08A3E" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".4"/>
+  </svg>
+</header>
+
+<!-- ============ 宣言 ============ -->
+<section id="manifesto">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">MANIFESTO · 我的主张</div>
+      <h2>三个基本命题</h2>
+      <p class="sec-desc">从两张手写笔记的照片出发，落到马克思-黑格尔逻辑学的行动体系。以下三句话是整个系统的公理。</p>
+    </div>
+    <div class="manifesto-grid">
+      <div class="card manifesto-card" data-num="壹">
+        <h3>六要素建构人的主体</h3>
+        <p>时间（生命）、健康、钱、人际关系是四个附着的主题；爱欲与理性是两个最根本的能力，必须灵活运用、互相配合。六个要素不是并列的清单，而是互相规定、互相调节的<b>总体</b>——这就是“总体系”：一个彻底的反思体系。</p>
+      </div>
+      <div class="card manifesto-card" data-num="贰">
+        <h3>逻辑学是行动的方法</h3>
+        <p>黑格尔《逻辑学》不是书斋知识：存在论的“尺度”给你纪律，本质论的“矛盾”给你生命力，概念论的“目的性”给你行动蓝图。每天把一条逻辑范畴落到一个具体决策上，逻辑学就完成了它的使命。</p>
+      </div>
+      <div class="card manifesto-card" data-num="叁">
+        <h3>输出是存在的证明</h3>
+        <p>“内的真理性就是外。”每晚在抖音直播讲解全部行动路径、人生方向、学习内容与限时解题技巧——不是为了当网红，而是让体系外化为可检验的现实。你的欲望必须表现为行动，否则等于没有。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 六要素 ============ -->
+<section id="framework">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">SIX ELEMENTS · 行动框架</div>
+      <h2>行动者的六个要素</h2>
+      <p class="sec-desc">由两张手写笔记照片完整转录。<b>四个附着的主题</b>（时间/健康/钱/人际关系）+ <b>两个根本能力</b>（爱欲/理性）。点击卡片展开细节、逻辑学根据与未明子行动建议。</p>
+    </div>
+    <div class="elements-grid" id="elementsGrid"></div>
+    <div class="card" style="margin-top:20px;padding:22px;background:var(--surface2)">
+      <h3 style="font-size:17px;margin-bottom:10px">📜 照片原始誊写（存档）</h3>
+      <div id="transcription" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:13px;color:var(--ink2);line-height:1.8">
+        <div><b style="color:var(--cinnabar)">照片一</b><ul id="trPhoto1" style="list-style:none;padding-left:0"></ul></div>
+        <div><b style="color:var(--cinnabar)">照片二</b><ul id="trPhoto2" style="list-style:none;padding-left:0"></ul></div>
+      </div>
+      <style>@media(max-width:700px){#transcription{grid-template-columns:1fr!important}}</style>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 黑格尔思维导图 ============ -->
+<section id="mindmap" style="background:var(--paper2)">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">HEGEL · 逻辑学思维导图</div>
+      <h2>黑格尔《逻辑学》全章节思维导图</h2>
+      <p class="sec-desc">依据《逻辑学》（大逻辑）原始文本逐章誊写：存在论 · 本质论 · 概念论，三编七十五节。每个节点含核心命题、辩证运动、关键句，以及<b>与六要素的落地关联</b>。支持拖拽平移、滚轮缩放、点击节点看详情；配套 Obsidian 双链知识库（见交付包 obsidian-vault 文件夹）。</p>
+    </div>
+    <div class="mm-toolbar">
+      <button class="mm-btn active" id="btnMapView">🌳 思维导图</button>
+      <button class="mm-btn" id="btnOutlineView">📑 大纲视图</button>
+      <input class="mm-search" id="mmSearch" type="search" placeholder="搜索章节 / 德文 / 关键词，如：矛盾、尺度、目的性…">
+      <button class="mm-btn" id="btnExpandAll">全部展开</button>
+      <button class="mm-btn" id="btnCollapseAll">收起分支</button>
+      <button class="mm-btn" id="btnZoomIn">＋</button>
+      <button class="mm-btn" id="btnZoomOut">－</button>
+      <button class="mm-btn" id="btnZoomReset">复位</button>
+    </div>
+    <div class="mm-stage" id="mmStage">
+      <svg id="mmSvg"></svg>
+      <div class="mm-detail" id="mmDetail">
+        <button class="mm-close" id="mmClose">✕</button>
+        <h4 id="mmDTitle"></h4>
+        <div class="de" id="mmDDe"></div>
+        <div class="lbl">核心命题</div>
+        <p id="mmDSum"></p>
+        <div class="lbl">关键句</div>
+        <div class="key" id="mmDKey"></div>
+        <div class="lbl" id="mmDLblAct" style="display:none">与行动者系统的关联</div>
+        <div class="act" id="mmDAct"></div>
+      </div>
+      <div class="mm-hint">拖拽平移 · 滚轮缩放 · 点击节点详情 · 点击 +/− 圆点折叠分支</div>
+    </div>
+    <div class="mm-outline" id="mmOutline"></div>
+  </div>
+</section>
+
+<!-- ============ 未明子视频研究 ============ -->
+<section id="videos">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">RESEARCH · 视频调研笔记</div>
+      <h2>未明子 · 行动建议视频全景研究</h2>
+      <p class="sec-desc">UP主未明子（刘司墨，UID 23191782，B站61.9万粉，1500+作品）关于行动建议的全部重点视频：核心观点 → 行动建议 → 现实落地报告。调研方法：B站开放API元数据 + CC字幕链路 + faster-whisper 本地 ASR 转录 + 机核万字笔记 + 官方文字实录交叉验证。</p>
+    </div>
+    <div class="vid-filters" id="vidFilters"></div>
+    <div class="vid-grid" id="vidGrid"></div>
+    <div class="card" style="margin-top:20px;padding:20px;background:var(--surface2);font-size:13px;color:var(--ink2);line-height:1.8">
+      <b style="color:var(--cinnabar)">📌 调研说明：</b>未明子视频多数无 CC 字幕（B站字幕需登录态），本项目已建成稳定的识别流水线：<b>①</b> B站开放API获取标题/时长/播放/字幕列表 → <b>②</b> 已登录浏览器Cookie抓CC字幕（本人电脑可开启）→ <b>③</b> yt-dlp 下载音频 → <b>④</b> faster-whisper 本地 ASR 转录（中文，无需联网）→ <b>⑤</b> 生成带时间戳文字稿与结构化笔记。核心视频《何为成熟，何为行动者》47分53秒已完成完整 ASR 转录，文字稿见交付包。所有笔记版权归未明子及整理者所有，本站仅作个人学习研究。
+    </div>
+  </div>
+</section>
+
+<!-- ============ 直播计划 ============ -->
+<section id="livestream" style="background:var(--paper2)">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">LIVE · 行者夜话</div>
+      <h2>每晚抖音直播 · 讲解我的全部行动路径</h2>
+      <p class="sec-desc">每天晚上给大家直播讲解：所有行动路径、人生方向、学习内容、限时解决问题小技巧。方法论：开直播、敞开心扉，用最朴素的方式解他人的不幸；具体落地，从“如何帮他的女朋友”这类真实处境入手。</p>
+    </div>
+    <div class="live-grid">
+      <div class="card" style="padding:22px;overflow-x:auto">
+        <h3 style="font-size:17px;margin-bottom:12px">📅 每周直播日历</h3>
+        <table class="live-table">
+          <thead><tr><th>星期</th><th>主题</th><th>内容</th></tr></thead>
+          <tbody id="liveTbody"></tbody>
+        </table>
+        <div class="admin-note" style="margin-top:14px">直播时间默认 每晚 21:00–22:30（以抖音直播间为准）。连麦答疑安排在周日“限时解决”场。</div>
+      </div>
+      <div class="card gen-form">
+        <h3 style="font-size:17px">🎬 直播脚本生成器</h3>
+        <p style="font-size:12.5px;color:var(--muted)">输入今晚主题，自动生成结构化直播脚本（模板化，无需联网）。</p>
+        <div class="f-group"><label>今晚主题</label><input id="genTopic" type="text" placeholder="例如：如何驾驭想躺平的欲望"></div>
+        <div class="f-row">
+          <div class="f-group"><label>关联要素</label><select id="genElement">
+            <option value="time">时间（生命）</option><option value="health">健康</option><option value="money">钱</option>
+            <option value="relationships">人际关系</option><option value="eros">爱欲</option><option value="reason">理性</option>
+          </select></div>
+          <div class="f-group"><label>风格</label><select id="genStyle">
+            <option>朴素直白（解他人的不幸）</option><option>结构分析（资本主义批判）</option><option>连麦答疑（限时解决）</option>
+          </select></div>
+        </div>
+        <div class="f-group"><label>本周学习内容（可选）</label><input id="genStudy" type="text" placeholder="例如：逻辑学·本质论·矛盾"></div>
+        <button class="btn btn-primary" id="genBtn" style="justify-content:center">生成直播脚本</button>
+        <div class="gen-out" id="genOut"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 限时解决 ============ -->
+<section id="solver">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">15-MIN SOLVER · 限时解决问题</div>
+      <h2>限时解决问题小技巧 · 辩证法五步协议</h2>
+      <p class="sec-desc">直播连麦与树洞回应的标准工具。基于黑格尔辩证法的结构化提问协议——把任何倾诉降解为可执行的行动。</p>
+    </div>
+    <div class="card solver">
+      <div class="solver-steps">
+        <div class="solver-step"><div class="solver-num">1</div><div>
+          <h4>界定：把情绪还原为命题</h4>
+          <p>“我很难受”不是问题。用一句话写下：<b>“我在____情境下，因为____，感到____。”</b>说不出来就计时写三行，不许修改。</p>
+          <span class="tool">⏱ 3分钟 · 工具：三行定位法</span>
+        </div></div>
+        <div class="solver-step"><div class="solver-num">2</div><div>
+          <h4>找矛盾：对立面在哪里</h4>
+          <p>每个困境至少有一对矛盾：欲望 vs 纪律、他人的期待 vs 我的目的、结构压迫 vs 个人出路。写下双方各自“对的地方”——矛盾不是要消灭一方，是驾驭。</p>
+          <span class="tool">⏱ 3分钟 · 逻辑学根据：矛盾是生命的根源</span>
+        </div></div>
+        <div class="solver-step"><div class="solver-num">3</div><div>
+          <h4>定尺度：关节点与代价</h4>
+          <p>问三个度：我最多能付出什么代价？最少需要多少时间？到什么程度就必须停（交替线）？把“我要努力”改写为带数字的条件句。</p>
+          <span class="tool">⏱ 3分钟 · 逻辑学根据：尺度交替线</span>
+        </div></div>
+        <div class="solver-step"><div class="solver-num">4</div><div>
+          <h4>造手段：最小可行动作</h4>
+          <p>目的必须变成工具：今晚就能做的第一个机械动作（数数、记录、一次转账、一次私信、一段路）。动作要小到不可能失败，大到能启动循环。</p>
+          <span class="tool">⏱ 3分钟 · 逻辑学根据：目的性三环节</span>
+        </div></div>
+        <div class="solver-step"><div class="solver-num">5</div><div>
+          <h4>闭环：宣布负责，收取点数</h4>
+          <p>把方案说出来（直播/发给朋友/写进打卡），设定复盘时间。行动→收获→壮大→再行动，形成良性循环；隐忍不宣布，等于没做。</p>
+          <span class="tool">⏱ 3分钟 · 未明子：秘密活动要收政治点数</span>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 倾诉树洞 ============ -->
+<section id="treehole" style="background:var(--paper2)">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">TREE HOLE · 倾诉树洞</div>
+      <h2>把你的委屈说给我听</h2>
+      <p class="sec-desc">写给全年龄段的朋友：你对生活的真实需求、资本主义对你结构性的压迫、你受的委屈——都可以在这里向我倾诉。我承诺：<b>严肃对待、同情、真实宽慰</b>。所有内容仅存储于你自己的设备与站长的本地后台，绝不上传、绝不外传。</p>
+    </div>
+    <div class="th-grid">
+      <form class="card th-form" id="thForm">
+        <h3>✉️ 投稿倾诉</h3>
+        <div class="th-promise">
+          <b>🛡 隐私承诺（站长亲笔）：</b>① 你写下的每一个字只保存在<b>这台设备的本地存储</b>里，不经过任何服务器；② 站长后台有密码保护，每一条倾诉我都会亲自阅读；③ 绝不截图、绝不外传、绝不在直播中公开（除非你明确勾选同意）；④ 你可以随时要求删除——数据在你手里，也在我手里，两头都作数。
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label>怎么称呼你（可匿名）</label><input id="thName" type="text" placeholder="例如：一个毕业生 / 老李 / 匿名"></div>
+          <div class="f-group"><label>年龄段</label><select id="thAge">
+            <option>12岁以下</option><option>12–18岁（中学）</option><option selected>18–25岁（大学）</option>
+            <option>25–35岁（职场）</option><option>35–50岁</option><option>50岁以上</option>
+          </select></div>
+        </div>
+        <div class="f-group"><label>你现在的真实需求 <span class="req">*</span></label><input id="thNeed" type="text" placeholder="例如：想找到一份不被压榨的工作 / 想有人听我说说话" required></div>
+        <div class="f-group"><label>资本主义对你的结构性压迫（选填）</label><textarea id="thOppress" rows="2" placeholder="例如：996占用了全部时间、房租吃掉一半工资、家里等着寄钱…"></textarea></div>
+        <div class="f-group"><label>你想倾诉的委屈 / 心事 <span class="req">*</span></label><textarea id="thGrievance" rows="4" placeholder="把这里当作树洞，写什么都行。没有人会嘲笑你。" required></textarea></div>
+        <div class="f-group"><label>联系方式（选填，仅用于站长回信）</label><input id="thContact" type="text" placeholder="微信 / 邮箱 / 手机号，或留空"></div>
+        <label style="display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--ink2);cursor:pointer">
+          <input type="checkbox" id="thAllowPublic" style="margin-top:5px;width:16px;height:16px;flex:none">
+          <span>我同意站长在直播/暖心墙中匿名引用我的倾诉（不勾选则完全保密）</span>
+        </label>
+        <button class="btn btn-primary" type="submit" style="justify-content:center">投入树洞 ♡</button>
+        <div class="th-ok" id="thOk"></div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.7">💡 提交后内容仅存入本设备。如需直接送达站长，可点击下方“发送邮件倾诉”（自动打开邮件客户端）；站长每晚 21:00 直播后统一阅读回复。</div>
+      </form>
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <div class="card warm-wall">
+          <h3 style="font-size:17px">🕯 暖心驿站</h3>
+          <p style="font-size:12.5px;color:var(--muted)">来自全网收集与站长手写的宽慰。撑不住的时候，来这里站一会儿。</p>
+          <div class="warm-card"><p id="warmText"></p><div class="warm-from" id="warmFrom"></div></div>
+          <div class="warm-btns">
+            <button class="warm-btn" id="warmNext">换一句 ♡</button>
+            <a class="warm-btn" id="mailtoBtn" href="#">📧 发送邮件倾诉</a>
+            <button class="warm-btn" id="adminBtn">🔐 站长后台</button>
+          </div>
+        </div>
+        <div class="card" style="padding:20px">
+          <h3 style="font-size:16px;margin-bottom:8px">📮 倾诉之后会发生什么</h3>
+          <ol style="font-size:13.5px;color:var(--ink2);line-height:1.9;padding-left:20px">
+            <li>你的倾诉进入站长本地后台（密码保护）</li>
+            <li>站长每晚阅读，标记“待安慰 / 已回信”</li>
+            <li>如留了联系方式，会收到一封手写式回复</li>
+            <li>直播“限时解决”环节可能匿名讨论（需你同意）</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 每日打卡 ============ -->
+<section id="checkin">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">DAILY · 每日打卡</div>
+      <h2>六要素日课打卡</h2>
+      <p class="sec-desc">把蓝图落到今天。打卡数据仅存本设备；连续打卡会累计“行动力火焰”。</p>
+    </div>
+    <div class="check-date" id="checkDate"></div>
+    <div class="check-grid" id="checkGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="container">
+    <div>
+      <h4>行动者六要素 · 生命操作系统</h4>
+      <p>以马克思-黑格尔逻辑学为底层的个人行动体系。四个附着主题：时间（生命）· 健康 · 钱 · 人际关系；两个根本能力：爱欲 · 理性。每晚抖音直播“行者夜话”，讲解行动路径、人生方向、学习内容与限时解题技巧。</p>
+    </div>
+    <div>
+      <h4>体系入口</h4>
+      <ul>
+        <li><a href="#framework">六要素总览</a></li>
+        <li><a href="#mindmap">黑格尔逻辑学导图</a></li>
+        <li><a href="#videos">未明子视频研究</a></li>
+        <li><a href="#livestream">直播计划</a></li>
+        <li><a href="#treehole">倾诉树洞</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>资料来源</h4>
+      <ul>
+        <li>黑格尔《逻辑学》（大逻辑）</li>
+        <li>未明子B站空间 23191782</li>
+        <li>机核「未明子整理」专栏</li>
+        <li>faster-whisper 本地ASR转录</li>
+        <li>GitHub 开源项目生态</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-promise">
+      🛡 <b>隐私承诺：</b>本站为独立单文件网站，不依赖任何服务器；树洞投稿、打卡记录、后台数据全部使用浏览器本地存储（localStorage），仅保存在你当前使用的设备上。导出备份由你亲手掌握。未明子视频笔记版权归原作者及整理者所有，仅供个人学习研究。<br>
+      Made with ♡ · 行者夜话 · 每晚 21:00 抖音直播
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="回到顶部">↑</button>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+   行动者六要素 · 生命操作系统 — 应用脚本
+   数据注入点：build.py 将 const DATA = {"framework":{"meta":{"title":"行动者的六个要素 —— 我的规划","subtitle":"马克思-黑格尔逻辑学落地的个人行动系统","note":"本框架由两张手写笔记照片完整转录：四个附着主题 + 两个根本能力。字迹不清处以（？）标注，待本人补充。","structure":"六要素 = 人的主体建构：四个附着的主题（时间/健康/钱/人际关系）+ 两个需要灵活运用的最根本能力（爱欲/理性）"},"elements":[{"id":"time","type":"attached","title":"时间（生命）","motto":"时间是生命本身","color":"cinnabar","summary":"时间是六要素的第一要素，因为时间是生命的直接形式。把人生还原成体系，就是用自己的时间描绘出清晰可见的行动蓝图，尽自己的全部。","points":[{"title":"把人生还原成体系","detail":"把自己的人生还原成一个体系——成长、行动、学习都在体系中有其位置。体系是彻底的反思体系：不是清单，而是互相规定的整体。"},{"title":"描绘行动蓝图","detail":"用自己的时间描绘出清晰可见的行动路局（蓝图），尽自己的全部。每一天都应当在蓝图上留下可看见的痕迹。"},{"title":"安定训练（作息纪律）","detail":"跑步（困？）起床，（七？）点半左右；中午饭最多休息半个小时；中午吃蔬菜餐；一天最多三次喝饮料。固定训练：每天跑步/运动、学习、人际、兴趣，各有时间级（时段）。"},{"title":"每日四时段","detail":"安定训练，坚定跑运动；学习；人际；兴趣——四个时间级（时段）固定下来，形成不可谈判的日课。"}],"hegelLink":"存在论的'尺度'：作息表是你生命的尺度交替线；'恶无限'的教训——明天再努力是有限的永恒重复，今天闭合才是真无限。","weimingziLink":"未明子：每个瞬间都要像在玩脑筋急转弯，排除干扰项重新思考抉择——时间管理首先是注意力的管理。"},{"id":"health","type":"attached","title":"健康","motto":"身体是理念的直接形态","color":"pine","summary":"健康是全部要素的物理底座。饮食、运动、用脑卫生的纪律化，是行动者与空谈者的分水岭。","points":[{"title":"饮食纪律","detail":"合理地（跳过/精简）晚餐，蛋白质（优先），多（吃）海（带/蔬菜？），糖（控制），不超期（不超量？）。（中午吃蔬菜餐）"},{"title":"练运动","detail":"规律训练，坚定跑运动。运动不是爱好，是每日纪律。"},{"title":"用脑卫生","detail":"（重视）电脑书籍，理性，结合，课程（进）度发（展）——长时间用眼用脑后必须安排恢复。"}],"hegelLink":"概念论的'生命'：生命是直接的理念——健康不是维护硬件，是生命这个直接理念的自我保存活动。","weimingziLink":"未明子连麦建议：不要只做'无脑'运动（跑步、拳击），要转向'有脑'的竞技性运动（乒乓球、羽毛球），在专注与目标攻击性中完成心理症结的行动闭环。"},{"id":"money","type":"attached","title":"钱","motto":"遵循钱的本身逻辑，不排斥任何目的","color":"gold","summary":"钱的维度：智力真正（决定）……遵循本身逻辑，不排斥（一切）目的，而不是（只盯着钱本身）。钱是结构意识的核心战场。","points":[{"title":"钱的本身逻辑","detail":"钱的纬度：智力真正（决定能走多远）……遵循本（身的）逻辑，不排斥（一切正当）目的，而不是（为钱牺牲其余五要素）。"},{"title":"结构意识","detail":"现代兼职、赚钱的问题，真实的生存——要经历（两）件事：看清资本主义的运行结构，在结构中找到自己的位置与缝隙。"}],"hegelLink":"本质论的'交互作用'：996的分析范式——'加班'反过来塑造'打工人'；结构生产主体，主体再生产结构。看清必然性不是为了逃逸，是为了在交互作用中获得行动的自由空间。","weimingziLink":"未明子《996的实质：不是剥削》：996的目的不是效率，而是占用你的无用时间——使你奴役于人，没时间社交、获取信息、联系同行，无形中削弱竞争力。"},{"id":"relationships","type":"attached","title":"人际关系","motto":"对人大方，她也会点缀你","color":"teal","summary":"人际是主体在他物中确证自身的场域。带徒弟训练中：记住每个人的态度、思路；对拉低我思路的人忽略；把汲取的欲望转化为交流与提供价值。","points":[{"title":"对人大方","detail":"对人大方，她也会点缀你（的生活）。大方不是挥霍，是主体性的外溢。"},{"title":"带徒弟训练中","detail":"所有人际（往来）中，（记住每个人的）态度、思路，以及对（每个人）的影响（？）。"},{"title":"人际筛选三原则","detail":"对拉低我思路、影响（我）的人，我就忽略；对同学，从他们的人际（经验）上汲取；把（心中的）欲望改为交流，为他提供价值。"},{"title":"防（备？）与引导","detail":"防北令（防备别人的指令/裹挟？），引导他，振作斗志。"}],"hegelLink":"存在论的'某物与他物'：主体在他物中确证自身，但选择哪些他物进入你的反思循环，是主体的权力。概念论的'化学性'：不同形状的人互相化合产生新组织。","weimingziLink":"未明子《塑造塑造者》：从'夺取者'（Seizer）到'塑造者'（Shaper）——识别、修剪病理化部分，再揉捏、打磨、嵌入分工体系。"},{"id":"eros","type":"engine","title":"爱欲（欲望能力）","motto":"非常珍贵 —— 一切行动包括欲望，都是整体目的的环节","color":"rose","summary":"爱欲是人的两个最根本能力之一，需要灵活运用。欲望能力非常珍贵：它是一切行动的燃料。情绪是爱欲的导航——指导、灵活作用。","points":[{"title":"欲望能力非常珍贵","detail":"欲望（欲望能力）是驱动力本身：没有欲望能力的人无法行动。珍贵之处在于它是一切改变的源头。"},{"title":"情绪的指导作用","detail":"情绪（爱欲的感性形态）起指导、灵活作用：情绪不是要被消灭的噪音，是爱欲在具体情境中的导航信号。"},{"title":"从人际中汲取欲望","detail":"从他们的人际上汲取（经验与动力），把欲望转化为交流，为他人提供价值——欲望的社会化。"},{"title":"欲望为整体目的服务","detail":"一切行动（包括欲望）都是行动者的环节和手段，为你的整体目的服务。"}],"hegelLink":"存在论的'变易'与'纯粹存在'：爱欲的初始状态是一股空洞的冲动（纯有即纯无）——珍贵但危险，必须落入具体规定。本质论的'力与力的外化'：力只在其外化中真实存在——不表现出来的热情等于没有热情。","weimingziLink":"未明子：不要把性认同、性享乐当成生活的主旋律——性关系无法调和阶级矛盾；先审视、战胜自己的病态欲望，把审美符号与恋爱对象区分开。"},{"id":"reason","type":"engine","title":"理性（理智）","motto":"总体系 —— 彻底的反思体系","color":"indigo","summary":"理性是人的两个最根本能力之一。理智通向总体系（彻底的反思体系）：把全部经验纳入反思循环，在成对范畴中把握事物，遵循事物本身的逻辑。","points":[{"title":"总体系（彻底的反思体系）","detail":"理智的目标是建立总体系：彻底的反思体系——六要素不是并列清单，而是互相规定、互相调节的整体。"},{"title":"遵循本身逻辑","detail":"钱的本身逻辑、人际的本身逻辑、健康的本身逻辑——理性拒绝用单一逻辑（如赚钱逻辑）粗暴套用一切领域。"},{"title":"情绪与理性的配合","detail":"情绪（爱欲的导航）与理智（体系的结构）配合：情绪提供方向感，体系提供稳定器。"}],"hegelLink":"本质论：理性是把直接经验投入反思循环、在成对范畴（内与外、原因与结果）中把握事物的能力。概念论：理性是自由的原则——普遍性、特殊性、个别性的统一。","weimingziLink":"未明子：哲学是原浆，不能直接指导现实——要一层层铺展：政治哲学→政治学→行政学→法学；还要锻炼思维能力，善于算计，知道事情发展到什么程度就变质、变性、变味（度）。"}],"transcription":{"title":"照片原始誊写（存档）","photo1":["行动者的六个要素与我的规划","时间（生命）","健康：合理地跳过晚餐，蛋白质，多海期（海带？），糖，不超期，练运动；（重视）电脑书籍，理性，结合，课程进度（发展？）","钱：钱的纬度——智力真正（决定）……遵循本（身）逻辑，不排斥（一切）目的，而不是（只追求钱）","人际关系：对人大方，她也会点缀你（的生活）；带徒弟训练中——所有人际（往来），（记住每个人的）态度、思路，以及对（他）的影响；对拉低我思路、影响（我）的人，我就忽略；对同学，从他们的人际上汲取；欲望改为交流，为他提供价值；防北令（防备？），引导他，振作斗志","欲望（欲望能力）——非常珍贵","理智 → 总体系（彻底的反思体系）","情绪 → 指导、灵活作用"],"photo2":["对人大方，她也会点缀你","自我检出（？）……开直播，摊开店，用本（真？）……的方式，解（他人）的不幸","（具体）落地地拍段（子），他的（诉求）内容太多，门槛太高，并解释，具体到（如何）帮他的女朋友","像李沧东、未明子、奥菲欧斯……（公开）表（达？）……现代的兼职、赚钱的问题，真实的生存——要经历两件事","用自己的时间描绘出（清晰可见）的行动路局（蓝图），尽自己的全部","把自己人生还原成体系……成长，行动，（学习）","时间（生命）","安定训练，坚定跑运动；学习；人际；兴趣——时间级","（跑）困起床……（七）点半左右；4.（？）中午饭最多多休息半个小时；（中午）吃蔬菜餐；5.（？）一天最多三次喝饮料"]},"livestream":{"title":"每晚抖音直播 · 行者夜话","purpose":"每天晚上在抖音给大家爱直播讲解：所有行动路径、人生方向、学习内容、限时解决问题小技巧","method":["开直播、敞开心扉（摊开店），用最朴素的方式解他人的不幸","具体落地地拍段子——内容门槛不要太高","从具体问题入手：具体到如何帮他的女朋友这类真实处境","以李沧东、未明子、奥菲欧斯为参照：直面现代的兼职、赚钱问题与真实生存"],"schedule":[{"day":"周一","theme":"行动路径复盘","detail":"上周六要素执行复盘 + 本周蓝图"},{"day":"周二","theme":"时间（生命）与健康","detail":"作息纪律、饮食、运动方法论"},{"day":"周三","theme":"钱与结构意识","detail":"兼职、赚钱、资本主义结构分析"},{"day":"周四","theme":"人际关系","detail":"筛选、大方、带徒弟、提供价值"},{"day":"周五","theme":"爱欲与理性","detail":"欲望的驾驭、情绪导航、反思体系"},{"day":"周六","theme":"黑格尔逻辑学精讲","detail":"一章一节，落到行动"},{"day":"周日","theme":"连麦答疑 · 限时解决","detail":"观众连麦，限时给出可落地方案"}]}},"hegel":{"meta":{"title":"黑格尔《逻辑学》全章节思维导图","subtitle":"Wissenschaft der Logik（大逻辑）· 存在论 / 本质论 / 概念论","source":"依据黑格尔《逻辑学》（1812/1813 年初版，1832 年第二版）原始文本逐章誊写整理","note":"每个节点含：核心命题 · 辩证运动 · 关键句 · 与行动者六要素的落地关联","count":69},"root":{"id":"logic","title":"黑格尔《逻辑学》","de":"Wissenschaft der Logik","summary":"黑格尔哲学体系的基石，研究纯粹思想规定的自我展开：从最贫瘠的'存在'出发，经过本质的反思，最终到达'绝对理念'。全书是一条思想的朝圣路——思想在自己展开自己的过程中获得全部内容。对行动者而言：逻辑学不是书斋知识，而是把'混乱的经验'整理成'可行动的体系'的元方法。","key":"逻辑学是研究理念的科学——理念是自在自为的真，是概念的总体。","children":[{"id":"being","title":"第一编 · 存在论","de":"Die Lehre vom Sein","summary":"思想的直接性阶段。范畴还是外在的、未经反思的规定：存在、无、变易、定在、量、尺度。存在论的课题是'直接呈现的东西如何通过自身的矛盾发展出规定性'。整部存在论是一部'从空无到规定性'的辩证法。","key":"存在是思想的第一个直接规定——而直接的存在因其纯粹性而消融为无。","action":"对应行动者系统的'时间（生命）'要素：一切行动从'想做一件事'这个最空洞的直接性开始，必须经过规定化（何时、何地、做什么、做到什么度）才成为定在。","children":[{"id":"quality","title":"A · 质","de":"Die Qualität","summary":"存在的直接规定性。质是与存在直接同一的规定性：一事物首先是它所是的，其次才是它所不是的。从纯粹存在到有限性的整个推演，展示了直接性如何自我否定地获得规定。","key":"质是范畴的第一个规定性形态。","children":[{"id":"pure-being","title":"a · 纯粹存在","de":"Das reine Sein","summary":"存在是无规定性的直接性：没有内容、没有差别、不可表象、不可言说。'有，这个无规定的直接的东西，实际上就是无'。纯粹存在因其完全的空洞而融化为无。","key":"纯有即是纯无——两者都是对直接性的抽象。","action":"对应'爱欲'的初始状态：一股想行动、想改变的空洞冲动。它珍贵但危险——不落入具体规定就消散。"},{"id":"nothing","title":"b · 无","de":"Das Nichts","summary":"无不是'什么都没有'，而是存在自身中产生的否定性。无与存在是同一个直接性的两个名称。试图思考无，无就消逝为存在。","key":"我们思想'无'，我们就在思想'存在'。"},{"id":"becoming","title":"c · 变易","de":"Das Werden","summary":"存在与无的统一。变易是第一个具体的思想规定，是全部辩证法的原型。变易有两个环节：消逝（存在化为无）与发生（无化为存在）。变易的沉淀物即是'定在'——规定了的存在。","key":"变易是存在与无的统一——它是第一个具体的思想规定。","action":"行动者的'当下'：你不是'想做的人'也不是'做不到的人'，你是正在做的人。改变只发生在想做与做不到的交界处。"},{"id":"dasein","title":"d · 定在（限有）","de":"Dasein","summary":"规定了的存在。定在是变易沉淀后的结果：有质的存在。定在的整个推演展示了一个'某物'如何在他物中、通过界限发现自己是有限的。","key":"定在是质的存在——规定了的存在。","action":"对应'人际关系'要素：每个人都是'某物'——在他人目光中确立自身，又靠与他人的区别保持自身。"},{"id":"quality-proper","title":"质本身：实在性与否定","de":"Qualität als Realität und Negation","summary":"定在的质有两个成分：实在性（某物所是的）与否定性（某物所不是的）。肯定与否定的统一构成质的整体。某物之所以是某物，正因为它不是他物。","key":"肯定与否定的统一构成质。"},{"id":"something-other","title":"某物与他物","de":"Etwas und Anderes","summary":"为他存在（Sein-für-Anderes）与自在存在（Sein-an-sich）的辩证：某物一方面在他物中反映，另一方面又在其自身中反映。某物通过他物成为自身。","key":"某物在其自身中反映，同时又在他物中反映。","action":"对'忽略拉低我思路的人'的逻辑学根据：主体在他物中确证自身，但选择哪些他物进入你的反思循环，是主体的权力。"},{"id":"determination-limit","title":"规定 · 状况 · 界限","de":"Bestimmtheit · Beschaffenheit · Grenze","summary":"规定性是质的核心：某物被它的规定性所构成。状况是规定性在外部关系中的展开。界限既是某物的终点，也是某物与他物的分界——界限构成有限者的真理。","key":"界限构成有限者的真理。","action":"作息表、deadline、训练计划：界限不是限制，是'你之所以为你'的规定性来源。"},{"id":"finitude","title":"有限性","de":"Endlichkeit","summary":"有限者包含自身毁灭的种子：它要超越自身（这是它的'应当'Sollen），但每一次超越都遇到新的界限，陷入'恶无限'的永恒交替。有限者的真理在于：它沉浸于自身而消逝。","key":"有限者在其自身中包含着超越自身的要求——这就是它的'应当'。"},{"id":"bad-infinity","title":"恶无限","de":"Die schlechte Unendlichkeit","summary":"恶无限是有限与无限永恒交替的无限进展：一尺之棰，日取其半，万世不竭。它只是有限的重复，不是真正的无限。真正的无限是对有限的扬弃（Aufhebung）。","key":"恶无限是有限的永恒重复——真正的无限是有限自身的扬弃。","action":"'明天再努力'式的自我安慰就是恶无限。真无限 = 今天就把任务闭合。"},{"id":"transition-quantity","title":"向量的过渡","de":"Übergang zur Quantität","summary":"有限者沉浸于自身、对一切规定性漠不相关时，它就变成了量。质与量的区别：质是'是什么'，量是'有多少'。从有限性向量的过渡，是存在论内部第一次大尺度跃迁。","key":"对规定性漠不相关的存在即是量。"}]},{"id":"quantity","title":"B · 量","de":"Die Quantität","summary":"存在的漠不相关规定性。量不改变事物的本性：一打鸡蛋和十个鸡蛋是同质的。但量的增减在关节点上引起质的飞跃——这是量辩证法的核心遗产（为后来的尺度做准备）。","key":"量是对规定性的漠不相关——它不改变质。","action":"对应'时间管理'的量的一面：番茄钟、时长统计、任务计数——量是基础但不够。","children":[{"id":"pure-quantity","title":"a · 纯粹的量","de":"Die reine Quantität","summary":"外延的量：可以增加或减少而不改变事物本性的规定性。纯粹的量是存在的最空洞的展开——它已经是离开质的直接性的第一步。","key":"纯粹的量是外延的量。"},{"id":"quantum","title":"b · 定量（数）","de":"Das Quantum","summary":"定量是有了界限的量：单位与数目的统一。外延的大小（多少、集合）与内涵的大小（程度、强度）是定量的两种形态。","key":"数是有界限的量——单位与数目的统一。"},{"id":"degree","title":"c · 程度","de":"Der Grad","summary":"内涵的量：程度是一事物'有多强'的规定。一切事物都有其程度——从温度到智力到意志力。程度的增减在某个关节点上引起质的飞跃（水在100度沸腾）。","key":"程度是内涵的大小——它在关节点上转化为质。","action":"训练强度、社交密度、学习时长都有'度'：低于关节点是量变，跨过关节点是质变（崩溃或顿悟）。"},{"id":"quantity-for-itself","title":"d · 自为的量","de":"Das Quantum für sich","summary":"外延与内涵的统一：量不再仅仅是外在的计量，而是事物自身的规定。自为的量为尺度做准备。","key":"自为的量是外延与内涵的统一。"},{"id":"quantitative-infinity","title":"e · 量的无限","de":"Die quantitative Unendlichkeit","summary":"量的无限进展（恶无限在量中的表现）。量的无限是空洞的无限——它引向尺度：只有尺度才是量与质的真实统一。","key":"量的无限进展是恶无限的典型形态。"}]},{"id":"measure","title":"C · 尺度","de":"Das Maß","summary":"质与量的统一。尺度是事物存在的'度'：在度之内，量变不改变事物本性；超出尺度，立刻发生质的飞跃。尺度是存在论的终点，也是向本质论过渡的桥梁——尺度自身的不稳定逼迫思想进入反思。","key":"尺度是质与量的统一——事物存在的度。","action":"对应行动者系统的全部纪律：7:30起床、午休≤30分钟、饮料≤3次/天、糖的控制——这些就是你生命的尺度交替线。","children":[{"id":"measure-proper","title":"a · 尺度本身","de":"Das Maß als solches","summary":"特殊的量：尺度是事物的内在规定与外在计量的统一。每个真实的事物都有其尺度——比例、配比、节律。尺度是'有灵魂的量'。","key":"尺度是有质的量——特殊的量。"},{"id":"nodal-line","title":"b · 尺度交替线","de":"Die Knotenlinie der Maßverhältnisse","summary":"一系列质的关节点构成的线：在渐进的过程（量变）中，到关节点突然飞跃（质变）。交替线是'渐进过程的中断'的图式。","key":"尺度交替线是渐进过程的中断——量变在关节点上飞跃为质变。","action":"学习的顿悟时刻、身体的崩溃线、关系的破裂临界点——提前标出你的交替线，才能主动跨越而非被动崩塌。"},{"id":"measure-leap","title":"c · 质的飞跃","de":"Der qualitative Sprung","summary":"超出尺度即飞跃：渐进性本身是虚假的连续，真实的过程是连续中的中断。飞跃不是外在的偶然，而是尺度自身矛盾的结果。","key":"一切真实的变化都是飞跃——渐进性只是飞跃的准备。"},{"id":"transition-essence","title":"d · 向本质的过渡","de":"Übergang zum Wesen","summary":"尺度陷入矛盾：量与质的统一是不稳定的——尺度自身分裂为'独立的尺度比率'（如音律、比重）。这种分裂逼迫思想离开'直接的存在'进入'反思'——本质论。","key":"尺度的矛盾是存在通向本质的桥梁——存在的真理是本质。","action":"当你把作息、学习、社交整理成互相调节的'体系'时，你已从经验管理进入反思管理——这就是'把人生还原成体系'的第一步。"}]}]},{"id":"essence","title":"第二编 · 本质论","de":"Die Lehre vom Wesen","summary":"反思的阶段。范畴成对出现：本质与现象、内与外、原因与结果。本质不是存在背后的'另一个东西'——本质是存在的真理：存在消融于反思之中。本质论的核心发现：矛盾是一切运动和生命力的根源。","key":"本质是存在的真理——存在消融于反思。","action":"对应'理性'要素：理性不是冷冰冰的计算，而是把直接经验投入反思循环、在成对范畴中把握事物的能力。","children":[{"id":"reflection-determinations","title":"A · 本质的反思规定","de":"Die Wesenheiten / Die Reflexionsbestimmungen","summary":"同一、区别、对立、矛盾、根据——这些成对的规定是本质的基本形态。本质论的第一个大发现：同一不是排除差异的同一，而是包含差异并回归自身的同一。","key":"本质的诸规定是成对的反思规定。","children":[{"id":"identity","title":"a · 同一","de":"Identität","summary":"本质自身中的反思。抽象的同一律（A=A）是形式的、空洞的；具体的同一是'在自身中并经过自身'与差异统一的同一。真正的同一是差异的自身回归。","key":"具体的同一是包含差异并在差异中回归自身的同一。","action":"自我认同不是'我=昨天的我'，而是把全部经历（包括失败的）扬弃在自身之内的同一。"},{"id":"difference","title":"b · 区别","de":"Der Unterschied","summary":"绝对的区别是本质自身中的区别，不是与他物的区别。区别展开为：差异（相等/不相等）与对立（肯定/否定）。对立是差异的极端化：对立面互相依存、互相规定。","key":"对立面互相依存——没有这一方就没有另一方。"},{"id":"contradiction","title":"c · 矛盾","de":"Der Widerspruch","summary":"矛盾不是思维的谬误，而是一切运动和生命力的原则：某物只因为在自身中包含矛盾才运动、才活着。矛盾是'对立面的统一'——它既撕裂事物又推动事物。","key":"矛盾是一切运动和生命力的根源——某物在自身中矛盾才运动。","action":"爱欲与理性的冲突、欲望与纪律的冲突：不要企图消灭任何一方——驾驭矛盾就是生命力本身。这正是'一切行动包括欲望都是整体目的的环节'的逻辑学根基。"},{"id":"ground","title":"d · 根据","de":"Der Grund","summary":"矛盾设定自身为根据。根据的推演：绝对的根据→被规定的根据→形式根据与实在根据的二律背反→实存（Existenz）。根据的教训：追问'为什么'最终发现事物是自己的根据——自因（causa sui）是本质的核心范畴。","key":"实存是从根据产生的存在——事物是自己的根据。","action":"'我为什么是我'的答案不在童年、不在环境、不在基因——在你自己当下的选择。人是自因：你把自己设定为自己的根据。"}]},{"id":"appearance","title":"B · 现象","de":"Die Erscheinung","summary":"本质必须表现出来。现象不是'假象'（Schein），而是本质的必然显现：实有界、内容与形式、关系。现象论的核心：内与外的统一——内的真理就是外。","key":"现象是本质的显现——本质必然表现出来。","action":"对应行动者的'输出'原则：你的欲望、你的理想必须外化为可观察的行动（直播、文字、服务他人）才成为现实。","children":[{"id":"world-of-existence","title":"a · 实有界","de":"Die Welt der Existenz","summary":"物与物性构成的现象世界。物是持久的基质（一），物性是它的规定（多）。物性之间既互相独立又互相联系——现象世界是'复多的一'。","key":"物是现象世界的持久的基质。"},{"id":"content-form","title":"b · 内容与形式","de":"Inhalt und Form","summary":"内容与形式互相依存又互相转化：内容要求形式，形式塑造内容。重要的不是内容或形式本身，而是内容与形式的统一——'有形式的内容'才是真实的东西。","key":"内容翻转自身为形式——两者互为彼此。","action":"你的知识（内容）必须获得你的表达形式（直播、笔记、教学）才是活的——教是最好的学。"},{"id":"relation","title":"c · 关系","de":"Das Verhältnis","summary":"反思的关系三形态：全体与部分（整体不是部分的机械总和）；力与力的外化（力只在其表现中证明自己）；内与外（内的真理性就是外）。关系的总体完成即是'现实'。","key":"内与外的统一即是现实。","children":[{"id":"whole-parts","title":"全体与部分","de":"Ganze und Teile","summary":"整体不是部分的堆砌：部分只有在整体中才是其部分，整体也只有在部分中才是整体。有机的整体先于并构成部分。","key":"整体是有机的——它先于并构成它的部分。","action":"六要素是一个整体：单点优化（只抓学习）会破坏系统，系统优化才是真优化。"},{"id":"force-extern","title":"力与力的外化","de":"Kraft und Äußerung","summary":"力不是藏在背后的神秘原因，力只在其外化（表现）中存在。说一物'有潜力'是无意义的——力就是它的表现的总和。","key":"力只在其外化中真实存在。","action":"爱欲（力）必须外化：不表现出来的热情等于没有热情。'我很想做某事'若永不行动，就是没有这个力。"},{"id":"inner-outer","title":"内与外","de":"Inneres und Äußeres","summary":"内与外的对立在自身中瓦解：内的真理性就是外，外的真理性就是内。'内在世界'若永不外化，就什么都不是。内外统一即是现实（Wirklichkeit）。","key":"内的真理性就是外——内外统一即是现实。","action":"'我心里是想好的，只是没做到'——黑格尔会说：没做到就等于不想。现实性只看外化。"}]}]},{"id":"actuality","title":"C · 现实","de":"Die Wirklichkeit","summary":"本质论的完成。绝对物、现实性（可能性-偶然性-必然性）、实体关系（实体-因果-交互作用）。本质论的终点发现：必然性的真理是自由——交互作用意味着一切结果都反过来成为原因。","key":"必然性的真理是自由——实体关系本身是自由的。","action":"对应'钱'要素与结构意识：看清资本主义结构性必然（实体、因果），同时知道交互作用中你的每一次回应都在改变结构——这是既清醒又不绝望的位置。","children":[{"id":"absolute","title":"a · 绝对物","de":"Das Absolute","summary":"存在与本质的统一。绝对物不是遥不可及的终点，而是展开着的、自己扬弃自己的全体。绝对物的第一个形态是'绝对的同一性'——但它立即展开为属性与样式的复多。","key":"绝对物是存在与本质的统一——自己展开自己的全体。"},{"id":"actuality-proper","title":"b · 现实性","de":"Wirklichkeit","summary":"可能性（形式的与实在的）、偶然性、条件。现实性不是'现成的东西'，而是可能性在条件成熟时的实现。形式可能性是空洞的（一切不自相矛盾的都是可能的），实在可能性才导向必然性。","key":"现实性是可能性和必然性的统一。","action":"'我有可能成功'是形式可能性；'在条件X、Y、Z满足时我必然成功'才是实在可能性——把可能性转化为条件清单。"},{"id":"necessity","title":"c · 必然性","de":"Notwendigkeit","summary":"三种关系：实体性关系（实体与偶性——实体通过偶性表现自己）；因果关系（原因与作用——原因只有在作用中才是原因）；交互作用（互为因果的圆圈——因果性真理的完成）。","key":"交互作用是因果性的真理——原因与结果在圆圈中互相转化。","children":[{"id":"substantiality","title":"实体性关系","de":"Substantialitätsverhältnis","summary":"实体是原始的必然性：实体通过偶性（表现）展示自己的力量。实体不是僵死的基底，而是'建立一切又消解一切'的活动。斯宾诺莎的实体在黑格尔这里获得了辩证的生命。","key":"实体通过它的偶性建立自身。"},{"id":"causality","title":"因果关系","de":"Kausalitätsverhältnis","summary":"原因与作用：原因设定作用，作用也反过来确证原因。因果关系是必然性的第二种形态——但因果链条是无限的（恶无限），需要交互作用来完成。","key":"原因只有在其作用中才是原因。","action":"996的分析范式：'加班'（作用）反过来塑造'打工人'（原因）——结构生产主体，主体再生产结构。"},{"id":"reciprocity","title":"交互作用","de":"Wechselwirkung","summary":"互为因果的圆圈：每个结果都成为下一个结果的原因。交互作用是因果性的完成形态，也是向自由过渡的环节——必然性在交互作用中显示自身即自由。","key":"交互作用中必然性显示为自由。","action":"结构性压迫与个体行动的交互：你每一次直播、每一次倾诉、每一次组织，都在改写压迫的因果链——这就是'行动改变结构'的哲学根据。"},{"id":"freedom","title":"自由","de":"Freiheit","summary":"必然性的真理是自由：自由不是任性（想做什么就做什么），而是对必然的认识与掌握——'必然性只有在它没有被理解时才是盲目的'。实体关系本身就是自由的关系。","key":"自由是对必然的认识——必然性只有在未被理解时才是盲目的。","action":"你研究资本主义的运行逻辑（本质论的自由），不是为了逃逸，而是为了在其中获得行动的自由空间。"}]}]}]},{"id":"concept","title":"第三编 · 概念论","de":"Die Lehre vom Begriff","summary":"概念返回自身的阶段。普遍性、特殊性、个别性的统一；判断与推论是概念的展开；客体（机械性-化学性-目的性）是概念的外化；理念（生命-认识-绝对理念）是概念与客体的最终统一。概念论的全部主题：自由的原则如何实现自身。","key":"概念是自由的原则——普遍性、特殊性、个别性的统一。","action":"对应'理性'与'爱欲'的合题：当你的欲望（爱欲）被理性组织成概念体系，你就从'被生活驱使'变成'自己生活的主人'。","children":[{"id":"subjective-concept","title":"A · 主观概念","de":"Der subjektive Begriff","summary":"概念本身、判断、推论。主观概念是概念的自身展开：从概念（普遍-特殊-个别的统一）到判断（概念的规定性展开）到推论（判断的统一）。主观概念的终点是'个别性'——概念要求实现为个别存在。","key":"概念本身是普遍性、特殊性、个别性的统一。","action":"对应'总体系（彻底的反思体系）'：把你的六要素建成一个概念体系——普遍原则、特殊情境、个别行动的推演网络。","children":[{"id":"concept-itself","title":"a · 概念本身","de":"Der Begriff als solcher","summary":"概念的三个环节：普遍性（自身相关的统一）、特殊性（概念的区分与规定）、个别性（普遍与特殊的统一体）。概念不是抽象的共相，而是具体的普遍——它在自身中包含着特殊与个别。","key":"概念是具体的普遍——它在自身中包含特殊与个别。","action":"'行动者'是普遍概念，'男大学生恋爱实操'是特殊化，'你今晚的直播脚本'是个别化——概念必须下沉到个别才真实。"},{"id":"judgment","title":"b · 判断","de":"Das Urteil","summary":"概念的规定性展开即是判断。四种判断类型构成从低级到高级的阶梯：质的判断→反思的判断→必然的判断→概念的判断。判断的真理在于：判断是概念自身的内在区分。","key":"判断是概念的展开——是概念自身的内在区分。","action":"你对自己下的判断决定你是什么人：'我是废物'（质的否定判断）→'我有时失败'（反思的特称判断）→'我正在成为行动者'（概念的判断）。升级你的判断类型，就升级你的人生。","children":[{"id":"judgment-quality","title":"质的判断","de":"Das Urteil des Daseins","summary":"肯定的（'这是有用的'）、否定的（'这是无用的'）、无限的（'这是有限的/暂时的'）。质的判断把主词当作现成的存在来规定——最低级的判断形式。","key":"质的判断：肯定-否定-无限。"},{"id":"judgment-reflection","title":"反思的判断","de":"Das Urteil der Reflexion","summary":"单称的（'这个某人如此'）、特称的（'有些如此'）、全称的（'一切皆如此'）。反思的判断超出当下，进入普遍与特殊的量的关系。","key":"反思的判断：单称-特称-全称。"},{"id":"judgment-necessity","title":"必然的判断","de":"Das Urteil der Notwendigkeit","summary":"定言的（'A必然是B'——本质与实存的关系）、假言的（'如果A则B'——条件关系）、选言的（'A要么是B要么是C'——全体与部分的区分）。必然的判断揭示主词与谓词的本质关联。","key":"必然的判断：定言-假言-选言。","action":"把'我要努力'升级为定言判断（'努力是行动者的本质属性'）、假言判断（'如果我每天直播讲解，就必然形成体系'）。"},{"id":"judgment-concept","title":"概念的判断","de":"Das Urteil des Begriffs","summary":"实然的（'这个行为是善的'——主词应当符合概念）、或然的（'这个行为可能是善的'）、确然的（'这个行为确实是善的'——主词现实地符合概念）。概念的判断是判断的最高形式：它评判事物是否符合其概念。","key":"概念的判断：实然-或然-确然——事物是否符合其概念。","action":"最高级的自我评估：不问'我成功了吗'，问'我配得上行动者这个概念吗'——按概念的要求塑造现实。"}]},{"id":"syllogism","title":"c · 推论","de":"Der Schluss","summary":"判断的统一即是推论：三个判断项（个别-特殊-普遍）的统一。推论的三种形态：实有的推论（第一式及其变形）、反思的推论（全称、归纳、类比）、必然的推论。推论是概念的自我中介——一切推理都是概念的自身运动。","key":"推论是概念的自身中介——个别经由特殊上升到普遍。","children":[{"id":"syllogism-existence","title":"实有的推论","de":"Der Schluss des Daseins","summary":"第一式：个别-特殊-普遍（'这个人是学生，学生是知识分子，所以这个人是知识分子'）。其余三式（特殊-个别-普遍等）是第一式的变形——实有的推论暴露了形式推理的僵硬。","key":"实有的推论第一式：个别-特殊-普遍。"},{"id":"syllogism-reflection","title":"反思的推论","de":"Der Schluss der Reflexion","summary":"全称的推论（一切A是B，C是A，所以C是B）、归纳的推论（从个别到全体的或然性）、类比的推论（从特殊到特殊的推演）。反思的推论已经触及经验与或然性的问题。","key":"反思的推论：全称-归纳-类比。"},{"id":"syllogism-necessity","title":"必然的推论","de":"Der Schluss der Notwendigkeit","summary":"定言的、假言的、选言的推论——必然性在推论中的完成。必然的推论的终点：推论各项获得客观性，推论过渡为客体。","key":"必然的推论是主观概念的终点——它过渡到客体。"}]}]},{"id":"object","title":"B · 客体","de":"Das Objekt","summary":"概念的外在实存阶段。机械性（客体的直接同一）、化学性（客体的差别与亲和）、目的性（客体向概念的复归）。客体论的全部意义：概念如何在异己的客观性中认出自己。","key":"客体是概念的外在实存——概念在客观性中认出自己。","action":"对应'现实落地'：你的体系（概念）必须经得起机械性（日程表）、化学性（人与人化合）、目的性（为谁为何）的三重客体化检验。","children":[{"id":"mechanism","title":"a · 机械性","de":"Der Mechanismus","summary":"客体的第一阶段：客体是无个性的、彼此外在的。机械关系是形式的、强制的——一个物体推动另一个物体，但两者本质上互不相关。机械性暴露了外在联系的空洞。","key":"机械性是客体无个性的、外在的联系。","action":"纯打卡式自律就是机械性：把任务当球踢来踢去，没有内在关联。需要进入化学性。"},{"id":"chemism","title":"b · 化学性","de":"Der Chemismus","summary":"客体的第二阶段：客体获得差别性——亲和性与中和。化学过程中，差别着的客体互相渴望、化合、产生第三者。化学性比机械性深刻：客体之间是本质的关系而非外在的关系。","key":"化学性是差别客体的亲和与中和。","action":"对应'人际关系'与'带徒弟'：不同形状的人互相化合（揉捏、打磨、嵌入）产生新组织——这是塑造塑造者的客体化。"},{"id":"teleology","title":"c · 目的性","de":"Die Teleologie","summary":"客体的第三阶段：主观目的（目的在主体之内）→手段/工具（目的是通过工具与客体发生关系的中介）→实现了的目的（目的在客体中完成并返回主体）。目的性完成了客体向概念的复归。","key":"目的是通过手段在客体中实现自身的。","action":"你的'人生目标'只有变成工具（每天的时间表、直播、笔记）才是真目的——这就是'用自己的时间描绘出清晰可见的行动蓝图'的逻辑学根据。","children":[{"id":"subjective-purpose","title":"主观目的","de":"Der subjektive Zweck","summary":"目的首先是主体之内的规定：主体把一个尚未现实的目的设定为'应当'。主观目的还是抽象的——它要求客观化。","key":"主观目的是主体设定的'应当'。"},{"id":"means","title":"手段（工具）","de":"Das Mittel","summary":"手段是目的与客体之间的中介：工具一方面服从目的（被目的规定），另一方面是服务于目的的现实力量。手段高于（外在的）客体——手段是'理性的狡计'的所在。","key":"手段是目的与客体之间的理性中介。"},{"id":"realized-purpose","title":"实现了的目的","de":"Der ausgeführte Zweck","summary":"目的在手段的活动中于客体里实现自身，并作为结果返回主体。实现了的目的揭示：主体与客体在活动中同一——这就是'理念'的直接形态（生命）。","key":"实现了的目的是主体与客体在活动中的同一。","action":"每晚直播结束后的复盘：目的（体系）经由手段（直播）在客体（观众、时间）中实现，回到你自身成为新起点——这就是行动闭环。"}]}]},{"id":"idea","title":"C · 理念","de":"Die Idee","summary":"概念与客体的统一。生命（直接的理念）、认识（真与善的理念）、绝对理念（全部范畴的总和）。理念是逻辑学的终点：概念在完全实现了的形态中就是绝对理念——逻辑学的终点即自然哲学与精神哲学的起点。","key":"理念是概念与客体的统一——真的全体。","action":"对应你的'生命操作系统'整体：六要素的合题就是你的个人理念——它不是口号，是你每天正在活出来的体系。","children":[{"id":"life","title":"a · 生命","de":"Das Leben","summary":"直接的理念：生命是概念在自然中的第一个形态。生命过程三环节：感受刺激性（对外部刺激的反应）、感受自身（在自身中保存）、再生产（个体与族类的延续）。生命是'自己产生自己'的过程。","key":"生命是理念的直接形态——自己产生自己的过程。","action":"你的作息、饮食、运动、睡眠不是维护'硬件'，而是生命这个'直接理念'的自我保存活动——健康本身就是哲学范畴。"},{"id":"cognition","title":"b · 认识","de":"Das Erkennen","summary":"理念自身分裂为认识活动：理论活动（真之理念——把客观世界提升为概念）与实践活动（善之理念——把概念实现为客观世界）。认识论的辩证：理论与实践的互相预设、互相推动，最终在'绝对理念'中统一。","key":"认识是真之理念与善之理念的对立统一。","action":"你研究黑格尔与未明子（理论活动）和你每晚直播、服务观众（实践活动）是同一个认识过程的两个半场——只学不做是半个人，只做不学是盲动者。","children":[{"id":"true-idea","title":"真之理念","de":"Die Idee des Wahren","summary":"理论活动：分析客体、剥离偶然性、把握规律，把'这个世界是怎样的'提升为概念。理论活动的终点发现：真理不是现成摆着的结论，而是概念自身展开的过程。","key":"真理不是现成的结论，而是概念自身展开的过程。"},{"id":"good-idea","title":"善之理念","de":"Die Idee des Guten","summary":"实践活动：意志要把'世界应当是怎样的'（善）实现出来。善之理念的辩证：它一方面有'改造世界'的高贵，另一方面有'把主观任性强加给世界'的危险。","key":"善之理念是世界应当被改造的规定。","action":"树洞、直播、工益：善不是心里想想，是把'应当'刻进世界的行为——这正是你搭建倾诉入口的哲学定位。"}]},{"id":"absolute-idea","title":"c · 绝对理念","de":"Die absolute Idee","summary":"全部逻辑范畴的总和与完成。绝对理念是'方法的绝对运动'：全部范畴不是陈列品，而是一个活生生的、自己推动自己的过程。逻辑学的终点：理念外化为自然——自然哲学与精神哲学从这里开始。","key":"绝对理念是方法的绝对运动——逻辑学的终点是自然的起点。","action":"辩证法的最终教益：不要记住范畴，要活出方法——把'存在-本质-概念'的推演能力用于你每一天的决策，逻辑学就完成了它的使命。"}]}]}]}},"videos":{"meta":{"title":"未明子行动建议视频 · 全景调研笔记","up":"未明子（刘司墨）","uid":23191782,"space":"https://space.bilibili.com/23191782","live":"https://live.bilibili.com/7531557（一三五晚直播）","contact":"weimingzi@hotmail.com","method":"调研方法：B站开放API获取元数据（标题/时长/播放/字幕）→ CC字幕抓取（未登录不可得，已记录在案）→ faster-whisper本地ASR转录（已完成核心视频）→ 机核「未明子整理」专栏/官方文字实录交叉验证 → 逐篇撰写核心观点、行动建议、现实落地报告","stats":"已收录 16 个视频/专栏；其中 3 篇万字级详细笔记、1 篇完整ASR转录、12 篇结构化摘要"},"videos":[{"id":"BV1tU4y1e7qH","title":"【行动建议】何为成熟，何为行动者：具有基本的禁欲主义底色","date":"2022-08-11","duration":"47:53","views":"9.3万","category":"行动建议","core":"行动者的成熟 = 具有基本的禁欲主义底色。成熟不是年龄而是结构：能为了整体目的节制局部欲望。一切行动（包括欲望）都是行动者的环节和手段，为整体目的服务。","keyPoints":["行动者的成熟 = 基本禁欲主义底色 + 去私人爱关系的底色：涉及行动就不能有纪律之外的秘密性；私人情谊（无论性化与否）的秘密性绝对低于纪律本身所主张的秘密和公开原则","禁欲主义的来源是行动的焦虑（钱、命运、权、物资、人员、过程）——焦虑围绕这些要素，过程是趣性化的：'无暇发情'，没有燃料去烧那个东西","性本身被完全工具化：如存在，则完全手段化——在这个意义上，行动本身是最彻底的爱欲（拉康意义上的第二种趋利，竭尽的）","禁欲主义底色归根到底是一种非常精细的理性主义：过程开不了玩笑，是极致细致审慎、紧张不安交杂的冒险，过度算计——彻底性提升透支性","两方面功课：一方面始终不停地避免失败；另一方面不停地发现失败与失控，从失败中学习调整","超性化（oversexualized）状态：极端亢奋又极端压抑——亢奋是理性的亢奋（理性敏感、意志力强大）；压抑意味着凡人欲望（好吃的、占有漂亮的、优越感、低层趣味）全部被收走","行动本身是最高级的游戏：星辰代谢的机器不断吞吐现实——最高级的享乐、信爱、智力活动、感官享受","禁欲主义是结果不是原因：不是先宣扬禁欲主义才有行动力；而是有了行动力，自然而然在行动中有此底色——它是把全部爱欲投射到行动每个环节的副产品（负产品）","总体化的人（over-totalized）：个人过度总体化——需要一个方案、计划、理想、共同体；身上所有环节（情绪、意志、精神脾性、各式欲望）全部纳入方案体系，高度协调、多种模式快速切换，经过严格训练","比喻：不是前线圣人，而是007式的人物、战场指挥官——你就是棋盘中的一部分，一步做错生死阻灭","去性化的具体操作：看到极有诱惑力的性响乐符号（女体罗鹿），第一时间应当没有任何反应——爱欲不够用（全部投注于行动焦虑）；但如有必要可主动投入（'军阀的太太我也搞定他'）——欲望是可操控的，因为驱使你的是巨大的求生/面对死亡的欲望","性反应的使用：性反应冒出来→立刻被反思抓到→转化为情报判断（暴露的衣着→安保注意力被转移→敌人下手更容易→推进推演）。'泡泡不会张开变成梦境'——你知道泡泡里的一切，还能看出别人脑子里的泡泡已经爆开（保安的失守）","对成年人的要求：这应当是十九世纪成年人的本能。21世纪的平民是长不大的孩子（生存不暴露于不可预测的危险，有家长式权威解释一切）——进阶路径：21世纪平民→18/19世纪平民→行动者","彻底享乐（齐泽克）：完全投身实践才能彻底享乐。吃大餐不是为了吃大餐，是为了幸存下来所以要身心愉悦——巨大的愉悦圆圈：吃大餐→身心愉悦→幸存→团队保持艰苦朴素。甚至故意表演低级趣味让敌人识别不出自己","泡泡不破，享乐才彻底、没有剩余；泡泡破了变成自成一体的梦境，就永远意犹未尽","行动者非常自由：底色是禁欲主义，但可以走享乐主义路径，可以表演成任何样子（嗑嗑绊绊、小享乐、小消费主义）——服从安排、服从自己对方案的领会；以冷酷绝决的眼神看一个个小泡泡并辟避它们","平民/孩子/行动者三分：孩子没有能力和低阶享乐拉开距离还会虚假拉开（自恋、优越感）；平民有能力拉开但一般不拉开；行动者不仅始终拉开距离，还反过来利用距离的远近控制来实现效果、扮演出某种效果（放任欲望以表现逼真的平民性、孩童性、无害性，作为工具和筹码）","乌托邦的工具化：爱情乌托邦、家庭亲情乌托邦、商业乌托邦、江湖豪杰乌托邦——各种绝对性都可以拿来当工具用；我们有自己的乌托邦，凌驾于一切未反思的平民性乌托邦；高阶乌托邦之间的争斗是理论家与统帅的工作","对身体行为的严格控制：所有外化的表情、行为、言语都严格控制；戏剧效果是刻意制造的，不确定性是刻意生产的","活动家（activist）= 被激活的平民 = 人类中的英雄单位"],"actionReport":"落地到'爱欲'要素——这是整个六要素系统中爱欲模块的完整操作手册：①欲望审计：每次欲望冲动先问'这是平民性的欲望，还是我总体化方案里的环节？'②泡泡训练：看到诱惑→性反应冒出→立刻被反思抓住→转成情报判断（直播选题：现场拆解一次自己的泡泡）③表演自由：底色禁欲但可自由走享乐路径——刻意表演无害性/幼稚性作为筹码（直播人设设计的哲学根据）④彻底享乐圆圈：把每个享乐挂到'幸存→方案可靠'的大圆圈上，吃完大餐要说'我迷惑了敌人/我让方案可靠性提升了'⑤对观众的提问设计：'你现在是21世纪平民、19世纪平民，还是行动者？'——三期进阶直播可直接用。完整48分钟ASR文字稿已归档（见交付包 文字稿 文件夹）。","sources":"完整ASR转录（faster-whisper本地识别，48分钟音频逐字稿）","hasFullNotes":true},{"id":"BV1q4nszeEru","title":"【行动建议】塑造塑造者——以生活情态和人生目标为导向","date":"2025-09-25","duration":"42:50","views":"3.3万","category":"行动建议","core":"从'夺取者'（Seizer）到'塑造者'（Shaper）：组织与个体成长的两阶段论。夺取者用剪刀做减法——剪除病理化对行动的妨害；塑造者用双手做加法——揉捏（软性部分的思想与组织工作）与打磨（硬性部分的培养性培训，长出角质层），然后嵌入分工体系。","keyPoints":["第一阶段·夺取：识别两类人——需要摒除小资产阶级意识的落魄小有产者后代、需要获得彻底阶级意识的跃升中的无产阶级","关键动作·修剪：剪掉不利症状、毛边、过渡性——保留原始形状，只剪毛边","第二阶段·塑造：不再剪了（血肉一体，再剪骨肉分离），只能揉捏与打磨","打磨是增量：不是越磨越少，是长出角质层（耐心、大局观、抗压性）","嵌入要斜着放：用打磨出的优势侧顶住压力，卡进分工关系","层级为王：不追求同级严丝合缝，追求'上下平整'——层级间权责板块绝对清晰","终极目标：塑造生活形态（Surface，靠产业与社群）与人生目标（Structure，靠体系化路径），共同构成社会形态","重大陷阱：停留在'夺取'阶段争权夺利——'争权而废事'，集体丧失锋芒"],"actionReport":"落地到六要素：这是'人际关系'要素的完整方法论。①对拉低我思路的人=修剪（剪刀）；②带徒弟=打磨（揉捏出耐性、磨出角质层）；③每天的时间表=分工嵌入（斜向切入，用优势侧顶住）；④六要素体系=上下平整的权责板块。明晚直播可直接讲：'你是自己的第一个Shaper'。","sources":"机核「未明子整理」万字笔记（含原文内容）","hasFullNotes":true},{"id":"BV1pVnVzCE13","title":"【随便聊聊】有所作为，提高职业度","date":"2025-09-27","duration":"12:04","views":"2.7万","category":"行动建议","core":"批判'做马克思主义者要隐忍'的论调：隐忍不等于秘密。隐忍是消极避世的Cosplay，秘密是积极进攻的工作方法。马列主义实践的三大支柱——职业化、经费体系、政治空间——每一项都要求行动，都'藏不住'。","keyPoints":["身份识别：只讲马克思主义不举列宁的人，与被开除的社民无异；马克思列宁二圣并举才是职业玩家标配","支柱一·职业化：隐忍如何获得行动经验？如何验证策略有效性？隐忍=以秘密为名的角色扮演","支柱二·经费：经费从哪来是照妖镜——来自阶级基础（工人群众）就必须切实行动去动员；来自敌对阶级的'地下经费'必然导致变质","支柱三·政治空间：秘密活动要收'政治点数'——行动→收获→壮大→再行动的良性循环；隐忍=只存不取，活动空间越来越小","隐忍是心理状态（放弃），秘密是工作方法（进攻）","列宁主义讲纪律：不讲纪律，有的是方法叫你讲纪律"],"actionReport":"落地到六要素：①对'理性'要素——'隐忍'式自我安慰（等我准备好了再开始）是行动的最大敌人；②对'时间'要素——职业化意味着把人生当职业经营，入伙就是一辈子职业选手；③对直播——每晚公开讲解行动路径，正是'收政治点数'：把你的行动转化为可见的影响力，形成良性循环。","sources":"机核「未明子整理」万字笔记（含原文内容）","hasFullNotes":true},{"id":"BV1AA4Wz9EFM","title":"【随便聊聊】成为职业选手的基本的认知习惯","date":"2025-10-11","duration":"57:28","views":"3.9万","category":"行动建议","core":"过度象征化（Over-symbolization）：把一切细节视为符号并做政治化、权力化解读的认知技术。高手看细节，普通人看热闹。符号系统不相信你的主观意图——你的行为在既定符号规则中可以被如何解读，才作数。","keyPoints":["过度象征化第一层：细节→象征坐标系（尊卑贵贱/是非对错/善恶敌我）","过度象征化第二层：符号的摆放即权力的宣示——抢夺'现实定义权'","符号学原则：符号系统不相信你的主观意图；不主动定义和引导解读，解读权就归别人","三条修炼路径：观察（积累符号库存）、推演（预判他人解读）、介入（主动布置符号）","应用场景：商业谈判、内部会议、组织管理、人际博弈"],"actionReport":"落地到六要素：①对'人际关系'要素——记住每个人的态度、思路，就是积累符号库存；带徒弟时的'修剪'，就是识别对方的病理化符号；②对直播——封面、标题、口头禅、背景都是你布置的符号，主动设计观众对你的解读；③对'理性'要素——过度象征化是彻底的反思体系在日常观察中的训练场。","sources":"机核「未明子整理」万字笔记","hasFullNotes":true},{"id":"BV19g411i7pN","title":"未明子：我希望你们能在婚姻中获得想要的东西，否则那种生活是不值得过的","date":"2022-11-13","duration":"21:46","views":"9.2万","category":"婚恋爱欲","core":"许多人追求的'漂亮/有性吸引力'的伴侣，是资本主义审美符号和等级制的产物，而非真实的个体。真正的爱情应建立在共同价值观、对劳动和人民利益的认同、对社会现实的清醒认知之上。","keyPoints":["你现在追求的'漂亮'，是流水线生产出来激发你爱欲的审美符号——你在享受符号，不是享受人","婚恋、性享乐是意识形态的遮罩：把你钳制在痛苦和扭曲的状态里","真正的伴侣：没有资产阶级幻想、能理解并共同面对社会压迫的人","强烈建议'不要玩这个游戏'——不要沉溺于资本主义构建的虚假婚恋市场","追求'速通人生'（像超级玛丽排行榜）是无脑循环——用高级文艺哲学艺术填充，本质仍是死的","男性首先应当把自己从女体的幻想中解放出来"],"actionReport":"落地到'爱欲'要素：这是整个爱欲模块的理论基础。①欲望审计：我喜欢的究竟是这个人，还是加载在她身上的符号（丝袜、口红、美甲、身份标签）？②择偶标准重写：价值观相似（人民利益至上/劳动者利益至上）优先于审美符号；③警惕'审美鄙视链'——被它驱动的关系是交易不是爱情。","sources":"BibiGPT AI总结 + 微博观点整理","hasFullNotes":false},{"id":"BV1U5411T7tV","title":"【社会观察】996的实质：不！是！剥！削！","date":"2021-06-25","duration":"30:56","views":"384万","category":"劳动者","core":"996的目的不是效率，而是控制——占用你本可用于社交、获取信息、联系同行的黄金时间，使你奴役于人，无形中削弱你的竞争力。选择996而不是666，恰恰说明重点不在产出在占有。","keyPoints":["为什么不用666（早6晚6）而用996？——效率不是目的，占有你的无用时间才是目的","晚上6-9点是公关饭局、商务成交时间：让你加班，减少你的社交，削弱你的竞争力","周六加班的原因：甲方周五下班后到周六放松交流促成成交；周日留给家人——你的周末被结构征用","996的本质是使人奴役人的时间控制，而非劳动剥削的表面计算","打工者即使能自由支配晚上6-9点，也难联系同行合伙单干——时间被锁死，上升空间被锁死"],"actionReport":"落地到'钱'要素与结构意识：①把'时间'与'钱'连起来看——卖时间换钱时，先算隐形成本（社交时间、信息获取、能力成长被占用）；②对观众倾诉'资本主义结构性压迫'的回应模板：先讲清结构如何运作（996逻辑），再给出个人策略（保住下班后的三小时、发展可迁移能力、联合而非单干）；③直播选题储备：《你的晚上6-9点被谁占了》。","sources":"搜索实录 + 第三方评论整理（播放量384万，其成名作）","hasFullNotes":false},{"id":"BV1TDcbexES1","title":"未明子连线青年，严肃且虾头的一晚（多正念冥想、单线程、给家庭打五百）","date":"2025-01-14","duration":"2:10:01","views":"1.1万","category":"心理连麦","core":"给四位连麦青年的具体建议：联结比单飞好；注意力专注在此刻，每时每刻权衡，多正念冥想；压力太大就单线程，清空大脑内存；给前现代家庭每月打五百块钱，把家庭烈度降下来。","keyPoints":["玩摇滚治愈工人、厂班和司机很压抑——但联结比单飞更好，组织起来","注意力专注在此刻：活在当下的每个瞬间，更好地在当下，而非焦虑地等待未来变成所焦虑的","压力太大就单线程：其他别想，清空大脑内存，专注一件事","训练筛选机制：把干扰项贴标签关键词放一边（记笔记关键词）","生存的每个瞬间都要像在玩脑筋急转弯：排除干扰项重新思考抉择，回溯性借助或拯救过去并指向未来","人别总把外界的欲望和赛道当成自己的欲望","给前现代家庭每月打五百块钱，不用上千——把家庭烈度降低（家庭对个人和政治面貌影响大，随时可能做回小资）"],"actionReport":"落地到'时间'与'人际关系'要素：①单线程工作法=时间要素的核心技术（一次只开一个进程，干扰项贴标签存档）；②家庭定额转账=人际要素的'防北令'操作——用确定的小额支付置换不确定的情感消耗；③直播可直接示范：现场带观众做一次'大脑内存清理'。","sources":"搜索实录（含连麦详情）","hasFullNotes":false},{"id":"BV11nrnY5EWj","title":"未明子劝青年别Mygo一辈子了？每个瞬间都要像在做脑筋急转弯一样","date":"2025-01-04","duration":"2:10:31","views":"2.6万","category":"心理连麦","core":"每个时每刻权衡，训练筛选机制，擅长的时候直接扣帽子——把干扰项贴好标签放一边。生存的每个瞬间都像玩脑筋急转弯：排除干扰项、重新思考抉择、回溯性借助或拯救过去并指向未来。最后：别把外界的欲望和赛道当成自己的欲望。","keyPoints":["每时每刻权衡：注意力是最高货币，时刻审计注意力的流向","训练筛选机制：擅长的时候直接扣帽子（给干扰项贴标签关键词，放一边）","回溯性拯救过去：过去不是包袱，是可以被重新阐释的资源","别把外界的欲望和赛道当成自己的欲望——区分'我的欲望'与'被植入的欲望'"],"actionReport":"落地到'爱欲'要素：这是'欲望审计'的日常操作版。①工具化：手机备忘录设'欲望分类账'——这条欲望是我的，还是外界植入的？②直播连麦环节可直接用这套话术给观众贴标签（扣帽子）——粗暴但有效。","sources":"搜索实录","hasFullNotes":false},{"id":"BV1aJZTYxEUP","title":"【实事求是】说给穷苦家庭高中生的一大番话","date":"2021","duration":"约30分钟","views":"—","category":"学生劝学","core":"当前教育制度的弊端远不止'卷'，而是命题思路的根本性失误——试卷从考察知识点转向繁琐的技巧性和题库积累量，家庭资源多寡变成决定胜负的隐形标尺。命题越来越卷的背后，是知识精英与权势阶层联手筑起的壁垒。","keyPoints":["他们无意让穷人翻身，只想守住自己的饭碗","抱怨无用，幻想更无用","真正的出路：不是为奴才式的卷题拼搏，而是为自身、家庭和与你一样的穷苦人而战","多看看父母吃的苦，多看看和你一样的无产阶级面临的僵局","反思出题者的恶意，警惕任何让你松懈的说辞"],"actionReport":"落地到'时间'要素（学生版）：①把'为穷苦人而学'作为学习的意义锚点——对抗虚无；②识别'卷'的结构本质，不把结构问题个人化（考不好≠我没用）；③直播对高中观众的沟通基调：先承认痛苦真实，再给结构分析，最后给行动路径。","sources":"搜索实录","hasFullNotes":false},{"id":"BV1B9LhzrEiC","title":"【未明子劝学】应试教育玩6年等于让掉30年自我发展权？","date":"2021","duration":"约15分钟","views":"—","category":"学生劝学","core":"应试教育将12年学习压缩为对试卷符号的机械征服，其中有效自我成长的时光不足6年。若成年后再耗费10年弥补教育短板，赡养压力与阶层铁幕将形成双重绞杀。","keyPoints":["破解困局的关键在于转化规则：透彻掌握学科逻辑","以资质认证（律师证、教师证等）撬动社会资源","联合家庭力量构建持续行动力","教育不该是押注未来的赌局，要为个体留出喘息与探索的缝隙","唯有平衡试卷竞争与自我生长，才能在时间荒漠中辟出真正的绿洲"],"actionReport":"落地到'时间'要素：①'12年只换6年有效成长'的算法要讲给观众听——时间账是最震撼的直播素材；②策略：应试最小化占用（达标即可），剩余时间投入资质认证与真实能力；③'喘息与探索的缝隙'= 兴趣时段在时间表中的合法性依据。","sources":"搜索实录","hasFullNotes":false},{"id":"BV1DifgYNEtM","title":"【未明子劝学】为了和你一样的穷苦人而学习","date":"2021","duration":"约10分钟","views":"—","category":"学生劝学","core":"BV1aJZTYxEUP 的切片版：为自身、家庭和与你一样的穷苦人而学习。警惕任何让你松懈的说辞，反思出题者的恶意。","keyPoints":["同源视频：说给穷苦家庭高中生的一大番话","学习动机的重构：从'出人头地'到'为穷苦人而战'"],"actionReport":"同 BV1aJZTYxEUP。","sources":"搜索实录","hasFullNotes":false},{"id":"cv40901785","title":"【哲学与现实】如何克服自恋和自卑","date":"2022","duration":"约20分钟","views":"23.5万","category":"心理哲学","core":"自恋与自卑是被生产出来的意识结构：外面秩序混乱到无法整合，只能拉一个草台班子充当自我形象（主人能指）。两者都是逃避现实和责任的托词。出路是'弃绝'——把个人形象甩出去，以不要脸作为脸面。","keyPoints":["自恋：强大意味着有能力支付代价、改变现实——请按自己的能力支付代价，不开空头支票","自卑：觉得自己微不足道意味着可以承受损失——走多了会有被害妄想","两者都是借口和托词：以牺牲局部代价换取其他方面功能完整","第三种错误：把一切当筹码去赌（赌狗逻辑）——赢了是我本事，输了是老天爷","未明子的方向：宁可损失一切，自己的账不要上天算——尽一切可能避免某些画面发生","弃绝：我在自恋自卑维度经营出来的个人形象，我宁愿不要了，撕破脸","不可接受：以不要脸来维持其脸面的场景，我不想参与了"],"actionReport":"落地到'爱欲'与'理性'要素：①这是'情绪导航'的故障排除手册——自恋/自卑/赌博是三种情绪噪音模式；②弃绝操作：直播时被喷子骂——'这个面子我不要了'，继续讲；③每晚复盘一问：今天我哪个决策出于自恋（开空头支票）？哪个出于自卑（逃避支付代价）？","sources":"B站官方文字实录（cv40901785）","hasFullNotes":true},{"id":"cv42675275","title":"【未明子连麦】8月6日第十二位：曾遭校园霸凌，复学后假期感觉很疲惫","date":"2025-08-06","duration":"连麦实录","views":"—","category":"心理连麦","core":"把病态梦境重构为'畅快的痛苦'的创伤完成仪式：梦境中的'杀戮'是心灵自我疗愈的工作。行动方案：从'无脑'运动（跑步拳击）转向'有脑'竞技（乒乓球羽毛球）——扣杀时大声喊'杀'字，把被压抑的攻击欲转化为社会可接受的仪式。","keyPoints":["'杀人'耗费心力——痛苦正是心灵努力完成自我疗愈的真实写照（畅快的痛苦）","批判'无脑'运动：缺乏认知参与和目标指向性，无法作用于特定心理症结","转向'有脑'竞技：乒乓球/羽毛球要求高度专注、手眼协调、对具体目标的攻击性","仪式设计：扣杀时大声喊'杀'——既是身体爆发也是意识确认","修辞：通过有意识的仪式化身体动作，引导无意识层面的疗愈过程","关系重塑：拒绝'指导者/恩人'角色——多一个关注就是更高的统战价值，互相成就的唯物主义连结"],"actionReport":"落地到'健康'与'爱欲'要素：①'有脑运动'升级你的运动纪律——每天运动不只是跑步，加入羽毛球/乒乓球并配仪式化动作；②对树洞倾诉'受委屈'的用户：这套'梦境重构+行动仪式'是标准回应工具；③直播连麦环节：现场教观众设计自己的'攻击性宣泄仪式'。","sources":"B站官方文字实录（cv42675275）","hasFullNotes":true},{"id":"cv42509914","title":"【未明子连麦】0731第五位：受过去和原生家庭影响严重，该如何走出去","date":"2025-07-31","duration":"连麦实录","views":"—","category":"心理连麦","core":"行动优先于阐释。方法：引入价值中立的'游戏'（数数），勾引内心深处拒绝合作的'孩子'（幕后老板）出来一起玩；何时见父亲由随机外部事件频率触发，而非充满矛盾的情感决定——从艰难抉择的主体变为忠实执行记录任务的执行者。","keyPoints":["数数游戏：重建与时间的连接——行动优先于阐释","记录父亲的名字：把关系交由外部必然性驱动，卸下心理压力","斩断受害者叙事：最有效的路径不是无休止共情、回溯创伤","实践性的唯物主义：主体改变不源于观念转变，而源于具体实践的塑造","只有当个体开始行动（哪怕最微小、机械），沉睡的内在'老板'才可能被重新激活"],"actionReport":"落地到'时间'要素与树洞回应：①'数数'=时间要素的原子操作——把宏大的人生课题降解为可计数的机械动作；②树洞标准回应模板：不灌鸡汤、不深挖创伤，给一个机械的小行动（数数/记录/定时转账）；③直播'限时解决问题'环节的方法论来源。","sources":"B站官方文字实录（cv42509914）","hasFullNotes":true},{"id":"BV11i7FzzEmK","title":"【未明子】随便聊聊 2025.05.31（想过的很多东西还在压着，还没改变它）","date":"2025-05-31","duration":"录播","views":"—","category":"行动建议","core":"你们根本不知道想过的很多东西都还在压着、还没改变它，却只等着自己跳出来，或总结一贯的经验才表达出来。能做到这些——特别是保持学习能力和学习兴趣——好像怎么过生活都很适合。","keyPoints":["没有被处理的经验不会消失，它们压在底层持续起作用","等待'自己想明白'是被动姿态——要主动跳出来","保持学习能力和学习兴趣，是生活适配性的根本"],"actionReport":"落地到'理性'要素：①'彻底的反思体系'=把压着的经验打捞上来处理（写下来、直播讲出来）；②直播复盘环节：今晚我处理了哪件'压着的事'？","sources":"搜索实录","hasFullNotes":false}],"series":[{"name":"行动建议系列","desc":"聚焦行动者实践：何为成熟、塑造塑造者、有所作为提高职业度、职业选手认知习惯","count":4},{"name":"劝学系列","desc":"穷苦家庭高中生、应试教育批判、为了穷苦人而学习","count":3},{"name":"连麦/心理系列","desc":"连线青年、别Mygo一辈子、原生家庭、校园霸凌、如何克服自恋和自卑","count":5},{"name":"劳动者/结构系列","desc":"996的实质、灵活就业与正式会员、职业度","count":2},{"name":"婚恋/爱欲系列","desc":"婚姻中获得想要的东西、性认同与性享乐批判、现代女性日常状态","count":2}],"sources_list":["B站开放API（视频元数据）","机核网「维涛常容·未明子整理」专栏（3篇万字笔记）","B站官方文字实录专栏（cv40901785 / cv42675275 / cv42509914）","BibiGPT AI视频总结","faster-whisper 本地ASR转录（BV1tU4y1e7qH 完整）","未明子学习指南 readlist（rl952756，4篇）","微博/第三方观点整理"]}}; 替换为 const DATA = {...}
+   ============================================================ */
+const DATA = {"framework":{"meta":{"title":"行动者的六个要素 —— 我的规划","subtitle":"马克思-黑格尔逻辑学落地的个人行动系统","note":"本框架由两张手写笔记照片完整转录：四个附着主题 + 两个根本能力。字迹不清处以（？）标注，待本人补充。","structure":"六要素 = 人的主体建构：四个附着的主题（时间/健康/钱/人际关系）+ 两个需要灵活运用的最根本能力（爱欲/理性）"},"elements":[{"id":"time","type":"attached","title":"时间（生命）","motto":"时间是生命本身","color":"cinnabar","summary":"时间是六要素的第一要素，因为时间是生命的直接形式。把人生还原成体系，就是用自己的时间描绘出清晰可见的行动蓝图，尽自己的全部。","points":[{"title":"把人生还原成体系","detail":"把自己的人生还原成一个体系——成长、行动、学习都在体系中有其位置。体系是彻底的反思体系：不是清单，而是互相规定的整体。"},{"title":"描绘行动蓝图","detail":"用自己的时间描绘出清晰可见的行动路局（蓝图），尽自己的全部。每一天都应当在蓝图上留下可看见的痕迹。"},{"title":"安定训练（作息纪律）","detail":"跑步（困？）起床，（七？）点半左右；中午饭最多休息半个小时；中午吃蔬菜餐；一天最多三次喝饮料。固定训练：每天跑步/运动、学习、人际、兴趣，各有时间级（时段）。"},{"title":"每日四时段","detail":"安定训练，坚定跑运动；学习；人际；兴趣——四个时间级（时段）固定下来，形成不可谈判的日课。"}],"hegelLink":"存在论的'尺度'：作息表是你生命的尺度交替线；'恶无限'的教训——明天再努力是有限的永恒重复，今天闭合才是真无限。","weimingziLink":"未明子：每个瞬间都要像在玩脑筋急转弯，排除干扰项重新思考抉择——时间管理首先是注意力的管理。"},{"id":"health","type":"attached","title":"健康","motto":"身体是理念的直接形态","color":"pine","summary":"健康是全部要素的物理底座。饮食、运动、用脑卫生的纪律化，是行动者与空谈者的分水岭。","points":[{"title":"饮食纪律","detail":"合理地（跳过/精简）晚餐，蛋白质（优先），多（吃）海（带/蔬菜？），糖（控制），不超期（不超量？）。（中午吃蔬菜餐）"},{"title":"练运动","detail":"规律训练，坚定跑运动。运动不是爱好，是每日纪律。"},{"title":"用脑卫生","detail":"（重视）电脑书籍，理性，结合，课程（进）度发（展）——长时间用眼用脑后必须安排恢复。"}],"hegelLink":"概念论的'生命'：生命是直接的理念——健康不是维护硬件，是生命这个直接理念的自我保存活动。","weimingziLink":"未明子连麦建议：不要只做'无脑'运动（跑步、拳击），要转向'有脑'的竞技性运动（乒乓球、羽毛球），在专注与目标攻击性中完成心理症结的行动闭环。"},{"id":"money","type":"attached","title":"钱","motto":"遵循钱的本身逻辑，不排斥任何目的","color":"gold","summary":"钱的维度：智力真正（决定）……遵循本身逻辑，不排斥（一切）目的，而不是（只盯着钱本身）。钱是结构意识的核心战场。","points":[{"title":"钱的本身逻辑","detail":"钱的纬度：智力真正（决定能走多远）……遵循本（身的）逻辑，不排斥（一切正当）目的，而不是（为钱牺牲其余五要素）。"},{"title":"结构意识","detail":"现代兼职、赚钱的问题，真实的生存——要经历（两）件事：看清资本主义的运行结构，在结构中找到自己的位置与缝隙。"}],"hegelLink":"本质论的'交互作用'：996的分析范式——'加班'反过来塑造'打工人'；结构生产主体，主体再生产结构。看清必然性不是为了逃逸，是为了在交互作用中获得行动的自由空间。","weimingziLink":"未明子《996的实质：不是剥削》：996的目的不是效率，而是占用你的无用时间——使你奴役于人，没时间社交、获取信息、联系同行，无形中削弱竞争力。"},{"id":"relationships","type":"attached","title":"人际关系","motto":"对人大方，她也会点缀你","color":"teal","summary":"人际是主体在他物中确证自身的场域。带徒弟训练中：记住每个人的态度、思路；对拉低我思路的人忽略；把汲取的欲望转化为交流与提供价值。","points":[{"title":"对人大方","detail":"对人大方，她也会点缀你（的生活）。大方不是挥霍，是主体性的外溢。"},{"title":"带徒弟训练中","detail":"所有人际（往来）中，（记住每个人的）态度、思路，以及对（每个人）的影响（？）。"},{"title":"人际筛选三原则","detail":"对拉低我思路、影响（我）的人，我就忽略；对同学，从他们的人际（经验）上汲取；把（心中的）欲望改为交流，为他提供价值。"},{"title":"防（备？）与引导","detail":"防北令（防备别人的指令/裹挟？），引导他，振作斗志。"}],"hegelLink":"存在论的'某物与他物'：主体在他物中确证自身，但选择哪些他物进入你的反思循环，是主体的权力。概念论的'化学性'：不同形状的人互相化合产生新组织。","weimingziLink":"未明子《塑造塑造者》：从'夺取者'（Seizer）到'塑造者'（Shaper）——识别、修剪病理化部分，再揉捏、打磨、嵌入分工体系。"},{"id":"eros","type":"engine","title":"爱欲（欲望能力）","motto":"非常珍贵 —— 一切行动包括欲望，都是整体目的的环节","color":"rose","summary":"爱欲是人的两个最根本能力之一，需要灵活运用。欲望能力非常珍贵：它是一切行动的燃料。情绪是爱欲的导航——指导、灵活作用。","points":[{"title":"欲望能力非常珍贵","detail":"欲望（欲望能力）是驱动力本身：没有欲望能力的人无法行动。珍贵之处在于它是一切改变的源头。"},{"title":"情绪的指导作用","detail":"情绪（爱欲的感性形态）起指导、灵活作用：情绪不是要被消灭的噪音，是爱欲在具体情境中的导航信号。"},{"title":"从人际中汲取欲望","detail":"从他们的人际上汲取（经验与动力），把欲望转化为交流，为他人提供价值——欲望的社会化。"},{"title":"欲望为整体目的服务","detail":"一切行动（包括欲望）都是行动者的环节和手段，为你的整体目的服务。"}],"hegelLink":"存在论的'变易'与'纯粹存在'：爱欲的初始状态是一股空洞的冲动（纯有即纯无）——珍贵但危险，必须落入具体规定。本质论的'力与力的外化'：力只在其外化中真实存在——不表现出来的热情等于没有热情。","weimingziLink":"未明子：不要把性认同、性享乐当成生活的主旋律——性关系无法调和阶级矛盾；先审视、战胜自己的病态欲望，把审美符号与恋爱对象区分开。"},{"id":"reason","type":"engine","title":"理性（理智）","motto":"总体系 —— 彻底的反思体系","color":"indigo","summary":"理性是人的两个最根本能力之一。理智通向总体系（彻底的反思体系）：把全部经验纳入反思循环，在成对范畴中把握事物，遵循事物本身的逻辑。","points":[{"title":"总体系（彻底的反思体系）","detail":"理智的目标是建立总体系：彻底的反思体系——六要素不是并列清单，而是互相规定、互相调节的整体。"},{"title":"遵循本身逻辑","detail":"钱的本身逻辑、人际的本身逻辑、健康的本身逻辑——理性拒绝用单一逻辑（如赚钱逻辑）粗暴套用一切领域。"},{"title":"情绪与理性的配合","detail":"情绪（爱欲的导航）与理智（体系的结构）配合：情绪提供方向感，体系提供稳定器。"}],"hegelLink":"本质论：理性是把直接经验投入反思循环、在成对范畴（内与外、原因与结果）中把握事物的能力。概念论：理性是自由的原则——普遍性、特殊性、个别性的统一。","weimingziLink":"未明子：哲学是原浆，不能直接指导现实——要一层层铺展：政治哲学→政治学→行政学→法学；还要锻炼思维能力，善于算计，知道事情发展到什么程度就变质、变性、变味（度）。"}],"transcription":{"title":"照片原始誊写（存档）","photo1":["行动者的六个要素与我的规划","时间（生命）","健康：合理地跳过晚餐，蛋白质，多海期（海带？），糖，不超期，练运动；（重视）电脑书籍，理性，结合，课程进度（发展？）","钱：钱的纬度——智力真正（决定）……遵循本（身）逻辑，不排斥（一切）目的，而不是（只追求钱）","人际关系：对人大方，她也会点缀你（的生活）；带徒弟训练中——所有人际（往来），（记住每个人的）态度、思路，以及对（他）的影响；对拉低我思路、影响（我）的人，我就忽略；对同学，从他们的人际上汲取；欲望改为交流，为他提供价值；防北令（防备？），引导他，振作斗志","欲望（欲望能力）——非常珍贵","理智 → 总体系（彻底的反思体系）","情绪 → 指导、灵活作用"],"photo2":["对人大方，她也会点缀你","自我检出（？）……开直播，摊开店，用本（真？）……的方式，解（他人）的不幸","（具体）落地地拍段（子），他的（诉求）内容太多，门槛太高，并解释，具体到（如何）帮他的女朋友","像李沧东、未明子、奥菲欧斯……（公开）表（达？）……现代的兼职、赚钱的问题，真实的生存——要经历两件事","用自己的时间描绘出（清晰可见）的行动路局（蓝图），尽自己的全部","把自己人生还原成体系……成长，行动，（学习）","时间（生命）","安定训练，坚定跑运动；学习；人际；兴趣——时间级","（跑）困起床……（七）点半左右；4.（？）中午饭最多多休息半个小时；（中午）吃蔬菜餐；5.（？）一天最多三次喝饮料"]},"livestream":{"title":"每晚抖音直播 · 行者夜话","purpose":"每天晚上在抖音给大家爱直播讲解：所有行动路径、人生方向、学习内容、限时解决问题小技巧","method":["开直播、敞开心扉（摊开店），用最朴素的方式解他人的不幸","具体落地地拍段子——内容门槛不要太高","从具体问题入手：具体到如何帮他的女朋友这类真实处境","以李沧东、未明子、奥菲欧斯为参照：直面现代的兼职、赚钱问题与真实生存"],"schedule":[{"day":"周一","theme":"行动路径复盘","detail":"上周六要素执行复盘 + 本周蓝图"},{"day":"周二","theme":"时间（生命）与健康","detail":"作息纪律、饮食、运动方法论"},{"day":"周三","theme":"钱与结构意识","detail":"兼职、赚钱、资本主义结构分析"},{"day":"周四","theme":"人际关系","detail":"筛选、大方、带徒弟、提供价值"},{"day":"周五","theme":"爱欲与理性","detail":"欲望的驾驭、情绪导航、反思体系"},{"day":"周六","theme":"黑格尔逻辑学精讲","detail":"一章一节，落到行动"},{"day":"周日","theme":"连麦答疑 · 限时解决","detail":"观众连麦，限时给出可落地方案"}]}},"hegel":{"meta":{"title":"黑格尔《逻辑学》全章节思维导图","subtitle":"Wissenschaft der Logik（大逻辑）· 存在论 / 本质论 / 概念论","source":"依据黑格尔《逻辑学》（1812/1813 年初版，1832 年第二版）原始文本逐章誊写整理","note":"每个节点含：核心命题 · 辩证运动 · 关键句 · 与行动者六要素的落地关联","count":69},"root":{"id":"logic","title":"黑格尔《逻辑学》","de":"Wissenschaft der Logik","summary":"黑格尔哲学体系的基石，研究纯粹思想规定的自我展开：从最贫瘠的'存在'出发，经过本质的反思，最终到达'绝对理念'。全书是一条思想的朝圣路——思想在自己展开自己的过程中获得全部内容。对行动者而言：逻辑学不是书斋知识，而是把'混乱的经验'整理成'可行动的体系'的元方法。","key":"逻辑学是研究理念的科学——理念是自在自为的真，是概念的总体。","children":[{"id":"being","title":"第一编 · 存在论","de":"Die Lehre vom Sein","summary":"思想的直接性阶段。范畴还是外在的、未经反思的规定：存在、无、变易、定在、量、尺度。存在论的课题是'直接呈现的东西如何通过自身的矛盾发展出规定性'。整部存在论是一部'从空无到规定性'的辩证法。","key":"存在是思想的第一个直接规定——而直接的存在因其纯粹性而消融为无。","action":"对应行动者系统的'时间（生命）'要素：一切行动从'想做一件事'这个最空洞的直接性开始，必须经过规定化（何时、何地、做什么、做到什么度）才成为定在。","children":[{"id":"quality","title":"A · 质","de":"Die Qualität","summary":"存在的直接规定性。质是与存在直接同一的规定性：一事物首先是它所是的，其次才是它所不是的。从纯粹存在到有限性的整个推演，展示了直接性如何自我否定地获得规定。","key":"质是范畴的第一个规定性形态。","children":[{"id":"pure-being","title":"a · 纯粹存在","de":"Das reine Sein","summary":"存在是无规定性的直接性：没有内容、没有差别、不可表象、不可言说。'有，这个无规定的直接的东西，实际上就是无'。纯粹存在因其完全的空洞而融化为无。","key":"纯有即是纯无——两者都是对直接性的抽象。","action":"对应'爱欲'的初始状态：一股想行动、想改变的空洞冲动。它珍贵但危险——不落入具体规定就消散。"},{"id":"nothing","title":"b · 无","de":"Das Nichts","summary":"无不是'什么都没有'，而是存在自身中产生的否定性。无与存在是同一个直接性的两个名称。试图思考无，无就消逝为存在。","key":"我们思想'无'，我们就在思想'存在'。"},{"id":"becoming","title":"c · 变易","de":"Das Werden","summary":"存在与无的统一。变易是第一个具体的思想规定，是全部辩证法的原型。变易有两个环节：消逝（存在化为无）与发生（无化为存在）。变易的沉淀物即是'定在'——规定了的存在。","key":"变易是存在与无的统一——它是第一个具体的思想规定。","action":"行动者的'当下'：你不是'想做的人'也不是'做不到的人'，你是正在做的人。改变只发生在想做与做不到的交界处。"},{"id":"dasein","title":"d · 定在（限有）","de":"Dasein","summary":"规定了的存在。定在是变易沉淀后的结果：有质的存在。定在的整个推演展示了一个'某物'如何在他物中、通过界限发现自己是有限的。","key":"定在是质的存在——规定了的存在。","action":"对应'人际关系'要素：每个人都是'某物'——在他人目光中确立自身，又靠与他人的区别保持自身。"},{"id":"quality-proper","title":"质本身：实在性与否定","de":"Qualität als Realität und Negation","summary":"定在的质有两个成分：实在性（某物所是的）与否定性（某物所不是的）。肯定与否定的统一构成质的整体。某物之所以是某物，正因为它不是他物。","key":"肯定与否定的统一构成质。"},{"id":"something-other","title":"某物与他物","de":"Etwas und Anderes","summary":"为他存在（Sein-für-Anderes）与自在存在（Sein-an-sich）的辩证：某物一方面在他物中反映，另一方面又在其自身中反映。某物通过他物成为自身。","key":"某物在其自身中反映，同时又在他物中反映。","action":"对'忽略拉低我思路的人'的逻辑学根据：主体在他物中确证自身，但选择哪些他物进入你的反思循环，是主体的权力。"},{"id":"determination-limit","title":"规定 · 状况 · 界限","de":"Bestimmtheit · Beschaffenheit · Grenze","summary":"规定性是质的核心：某物被它的规定性所构成。状况是规定性在外部关系中的展开。界限既是某物的终点，也是某物与他物的分界——界限构成有限者的真理。","key":"界限构成有限者的真理。","action":"作息表、deadline、训练计划：界限不是限制，是'你之所以为你'的规定性来源。"},{"id":"finitude","title":"有限性","de":"Endlichkeit","summary":"有限者包含自身毁灭的种子：它要超越自身（这是它的'应当'Sollen），但每一次超越都遇到新的界限，陷入'恶无限'的永恒交替。有限者的真理在于：它沉浸于自身而消逝。","key":"有限者在其自身中包含着超越自身的要求——这就是它的'应当'。"},{"id":"bad-infinity","title":"恶无限","de":"Die schlechte Unendlichkeit","summary":"恶无限是有限与无限永恒交替的无限进展：一尺之棰，日取其半，万世不竭。它只是有限的重复，不是真正的无限。真正的无限是对有限的扬弃（Aufhebung）。","key":"恶无限是有限的永恒重复——真正的无限是有限自身的扬弃。","action":"'明天再努力'式的自我安慰就是恶无限。真无限 = 今天就把任务闭合。"},{"id":"transition-quantity","title":"向量的过渡","de":"Übergang zur Quantität","summary":"有限者沉浸于自身、对一切规定性漠不相关时，它就变成了量。质与量的区别：质是'是什么'，量是'有多少'。从有限性向量的过渡，是存在论内部第一次大尺度跃迁。","key":"对规定性漠不相关的存在即是量。"}]},{"id":"quantity","title":"B · 量","de":"Die Quantität","summary":"存在的漠不相关规定性。量不改变事物的本性：一打鸡蛋和十个鸡蛋是同质的。但量的增减在关节点上引起质的飞跃——这是量辩证法的核心遗产（为后来的尺度做准备）。","key":"量是对规定性的漠不相关——它不改变质。","action":"对应'时间管理'的量的一面：番茄钟、时长统计、任务计数——量是基础但不够。","children":[{"id":"pure-quantity","title":"a · 纯粹的量","de":"Die reine Quantität","summary":"外延的量：可以增加或减少而不改变事物本性的规定性。纯粹的量是存在的最空洞的展开——它已经是离开质的直接性的第一步。","key":"纯粹的量是外延的量。"},{"id":"quantum","title":"b · 定量（数）","de":"Das Quantum","summary":"定量是有了界限的量：单位与数目的统一。外延的大小（多少、集合）与内涵的大小（程度、强度）是定量的两种形态。","key":"数是有界限的量——单位与数目的统一。"},{"id":"degree","title":"c · 程度","de":"Der Grad","summary":"内涵的量：程度是一事物'有多强'的规定。一切事物都有其程度——从温度到智力到意志力。程度的增减在某个关节点上引起质的飞跃（水在100度沸腾）。","key":"程度是内涵的大小——它在关节点上转化为质。","action":"训练强度、社交密度、学习时长都有'度'：低于关节点是量变，跨过关节点是质变（崩溃或顿悟）。"},{"id":"quantity-for-itself","title":"d · 自为的量","de":"Das Quantum für sich","summary":"外延与内涵的统一：量不再仅仅是外在的计量，而是事物自身的规定。自为的量为尺度做准备。","key":"自为的量是外延与内涵的统一。"},{"id":"quantitative-infinity","title":"e · 量的无限","de":"Die quantitative Unendlichkeit","summary":"量的无限进展（恶无限在量中的表现）。量的无限是空洞的无限——它引向尺度：只有尺度才是量与质的真实统一。","key":"量的无限进展是恶无限的典型形态。"}]},{"id":"measure","title":"C · 尺度","de":"Das Maß","summary":"质与量的统一。尺度是事物存在的'度'：在度之内，量变不改变事物本性；超出尺度，立刻发生质的飞跃。尺度是存在论的终点，也是向本质论过渡的桥梁——尺度自身的不稳定逼迫思想进入反思。","key":"尺度是质与量的统一——事物存在的度。","action":"对应行动者系统的全部纪律：7:30起床、午休≤30分钟、饮料≤3次/天、糖的控制——这些就是你生命的尺度交替线。","children":[{"id":"measure-proper","title":"a · 尺度本身","de":"Das Maß als solches","summary":"特殊的量：尺度是事物的内在规定与外在计量的统一。每个真实的事物都有其尺度——比例、配比、节律。尺度是'有灵魂的量'。","key":"尺度是有质的量——特殊的量。"},{"id":"nodal-line","title":"b · 尺度交替线","de":"Die Knotenlinie der Maßverhältnisse","summary":"一系列质的关节点构成的线：在渐进的过程（量变）中，到关节点突然飞跃（质变）。交替线是'渐进过程的中断'的图式。","key":"尺度交替线是渐进过程的中断——量变在关节点上飞跃为质变。","action":"学习的顿悟时刻、身体的崩溃线、关系的破裂临界点——提前标出你的交替线，才能主动跨越而非被动崩塌。"},{"id":"measure-leap","title":"c · 质的飞跃","de":"Der qualitative Sprung","summary":"超出尺度即飞跃：渐进性本身是虚假的连续，真实的过程是连续中的中断。飞跃不是外在的偶然，而是尺度自身矛盾的结果。","key":"一切真实的变化都是飞跃——渐进性只是飞跃的准备。"},{"id":"transition-essence","title":"d · 向本质的过渡","de":"Übergang zum Wesen","summary":"尺度陷入矛盾：量与质的统一是不稳定的——尺度自身分裂为'独立的尺度比率'（如音律、比重）。这种分裂逼迫思想离开'直接的存在'进入'反思'——本质论。","key":"尺度的矛盾是存在通向本质的桥梁——存在的真理是本质。","action":"当你把作息、学习、社交整理成互相调节的'体系'时，你已从经验管理进入反思管理——这就是'把人生还原成体系'的第一步。"}]}]},{"id":"essence","title":"第二编 · 本质论","de":"Die Lehre vom Wesen","summary":"反思的阶段。范畴成对出现：本质与现象、内与外、原因与结果。本质不是存在背后的'另一个东西'——本质是存在的真理：存在消融于反思之中。本质论的核心发现：矛盾是一切运动和生命力的根源。","key":"本质是存在的真理——存在消融于反思。","action":"对应'理性'要素：理性不是冷冰冰的计算，而是把直接经验投入反思循环、在成对范畴中把握事物的能力。","children":[{"id":"reflection-determinations","title":"A · 本质的反思规定","de":"Die Wesenheiten / Die Reflexionsbestimmungen","summary":"同一、区别、对立、矛盾、根据——这些成对的规定是本质的基本形态。本质论的第一个大发现：同一不是排除差异的同一，而是包含差异并回归自身的同一。","key":"本质的诸规定是成对的反思规定。","children":[{"id":"identity","title":"a · 同一","de":"Identität","summary":"本质自身中的反思。抽象的同一律（A=A）是形式的、空洞的；具体的同一是'在自身中并经过自身'与差异统一的同一。真正的同一是差异的自身回归。","key":"具体的同一是包含差异并在差异中回归自身的同一。","action":"自我认同不是'我=昨天的我'，而是把全部经历（包括失败的）扬弃在自身之内的同一。"},{"id":"difference","title":"b · 区别","de":"Der Unterschied","summary":"绝对的区别是本质自身中的区别，不是与他物的区别。区别展开为：差异（相等/不相等）与对立（肯定/否定）。对立是差异的极端化：对立面互相依存、互相规定。","key":"对立面互相依存——没有这一方就没有另一方。"},{"id":"contradiction","title":"c · 矛盾","de":"Der Widerspruch","summary":"矛盾不是思维的谬误，而是一切运动和生命力的原则：某物只因为在自身中包含矛盾才运动、才活着。矛盾是'对立面的统一'——它既撕裂事物又推动事物。","key":"矛盾是一切运动和生命力的根源——某物在自身中矛盾才运动。","action":"爱欲与理性的冲突、欲望与纪律的冲突：不要企图消灭任何一方——驾驭矛盾就是生命力本身。这正是'一切行动包括欲望都是整体目的的环节'的逻辑学根基。"},{"id":"ground","title":"d · 根据","de":"Der Grund","summary":"矛盾设定自身为根据。根据的推演：绝对的根据→被规定的根据→形式根据与实在根据的二律背反→实存（Existenz）。根据的教训：追问'为什么'最终发现事物是自己的根据——自因（causa sui）是本质的核心范畴。","key":"实存是从根据产生的存在——事物是自己的根据。","action":"'我为什么是我'的答案不在童年、不在环境、不在基因——在你自己当下的选择。人是自因：你把自己设定为自己的根据。"}]},{"id":"appearance","title":"B · 现象","de":"Die Erscheinung","summary":"本质必须表现出来。现象不是'假象'（Schein），而是本质的必然显现：实有界、内容与形式、关系。现象论的核心：内与外的统一——内的真理就是外。","key":"现象是本质的显现——本质必然表现出来。","action":"对应行动者的'输出'原则：你的欲望、你的理想必须外化为可观察的行动（直播、文字、服务他人）才成为现实。","children":[{"id":"world-of-existence","title":"a · 实有界","de":"Die Welt der Existenz","summary":"物与物性构成的现象世界。物是持久的基质（一），物性是它的规定（多）。物性之间既互相独立又互相联系——现象世界是'复多的一'。","key":"物是现象世界的持久的基质。"},{"id":"content-form","title":"b · 内容与形式","de":"Inhalt und Form","summary":"内容与形式互相依存又互相转化：内容要求形式，形式塑造内容。重要的不是内容或形式本身，而是内容与形式的统一——'有形式的内容'才是真实的东西。","key":"内容翻转自身为形式——两者互为彼此。","action":"你的知识（内容）必须获得你的表达形式（直播、笔记、教学）才是活的——教是最好的学。"},{"id":"relation","title":"c · 关系","de":"Das Verhältnis","summary":"反思的关系三形态：全体与部分（整体不是部分的机械总和）；力与力的外化（力只在其表现中证明自己）；内与外（内的真理性就是外）。关系的总体完成即是'现实'。","key":"内与外的统一即是现实。","children":[{"id":"whole-parts","title":"全体与部分","de":"Ganze und Teile","summary":"整体不是部分的堆砌：部分只有在整体中才是其部分，整体也只有在部分中才是整体。有机的整体先于并构成部分。","key":"整体是有机的——它先于并构成它的部分。","action":"六要素是一个整体：单点优化（只抓学习）会破坏系统，系统优化才是真优化。"},{"id":"force-extern","title":"力与力的外化","de":"Kraft und Äußerung","summary":"力不是藏在背后的神秘原因，力只在其外化（表现）中存在。说一物'有潜力'是无意义的——力就是它的表现的总和。","key":"力只在其外化中真实存在。","action":"爱欲（力）必须外化：不表现出来的热情等于没有热情。'我很想做某事'若永不行动，就是没有这个力。"},{"id":"inner-outer","title":"内与外","de":"Inneres und Äußeres","summary":"内与外的对立在自身中瓦解：内的真理性就是外，外的真理性就是内。'内在世界'若永不外化，就什么都不是。内外统一即是现实（Wirklichkeit）。","key":"内的真理性就是外——内外统一即是现实。","action":"'我心里是想好的，只是没做到'——黑格尔会说：没做到就等于不想。现实性只看外化。"}]}]},{"id":"actuality","title":"C · 现实","de":"Die Wirklichkeit","summary":"本质论的完成。绝对物、现实性（可能性-偶然性-必然性）、实体关系（实体-因果-交互作用）。本质论的终点发现：必然性的真理是自由——交互作用意味着一切结果都反过来成为原因。","key":"必然性的真理是自由——实体关系本身是自由的。","action":"对应'钱'要素与结构意识：看清资本主义结构性必然（实体、因果），同时知道交互作用中你的每一次回应都在改变结构——这是既清醒又不绝望的位置。","children":[{"id":"absolute","title":"a · 绝对物","de":"Das Absolute","summary":"存在与本质的统一。绝对物不是遥不可及的终点，而是展开着的、自己扬弃自己的全体。绝对物的第一个形态是'绝对的同一性'——但它立即展开为属性与样式的复多。","key":"绝对物是存在与本质的统一——自己展开自己的全体。"},{"id":"actuality-proper","title":"b · 现实性","de":"Wirklichkeit","summary":"可能性（形式的与实在的）、偶然性、条件。现实性不是'现成的东西'，而是可能性在条件成熟时的实现。形式可能性是空洞的（一切不自相矛盾的都是可能的），实在可能性才导向必然性。","key":"现实性是可能性和必然性的统一。","action":"'我有可能成功'是形式可能性；'在条件X、Y、Z满足时我必然成功'才是实在可能性——把可能性转化为条件清单。"},{"id":"necessity","title":"c · 必然性","de":"Notwendigkeit","summary":"三种关系：实体性关系（实体与偶性——实体通过偶性表现自己）；因果关系（原因与作用——原因只有在作用中才是原因）；交互作用（互为因果的圆圈——因果性真理的完成）。","key":"交互作用是因果性的真理——原因与结果在圆圈中互相转化。","children":[{"id":"substantiality","title":"实体性关系","de":"Substantialitätsverhältnis","summary":"实体是原始的必然性：实体通过偶性（表现）展示自己的力量。实体不是僵死的基底，而是'建立一切又消解一切'的活动。斯宾诺莎的实体在黑格尔这里获得了辩证的生命。","key":"实体通过它的偶性建立自身。"},{"id":"causality","title":"因果关系","de":"Kausalitätsverhältnis","summary":"原因与作用：原因设定作用，作用也反过来确证原因。因果关系是必然性的第二种形态——但因果链条是无限的（恶无限），需要交互作用来完成。","key":"原因只有在其作用中才是原因。","action":"996的分析范式：'加班'（作用）反过来塑造'打工人'（原因）——结构生产主体，主体再生产结构。"},{"id":"reciprocity","title":"交互作用","de":"Wechselwirkung","summary":"互为因果的圆圈：每个结果都成为下一个结果的原因。交互作用是因果性的完成形态，也是向自由过渡的环节——必然性在交互作用中显示自身即自由。","key":"交互作用中必然性显示为自由。","action":"结构性压迫与个体行动的交互：你每一次直播、每一次倾诉、每一次组织，都在改写压迫的因果链——这就是'行动改变结构'的哲学根据。"},{"id":"freedom","title":"自由","de":"Freiheit","summary":"必然性的真理是自由：自由不是任性（想做什么就做什么），而是对必然的认识与掌握——'必然性只有在它没有被理解时才是盲目的'。实体关系本身就是自由的关系。","key":"自由是对必然的认识——必然性只有在未被理解时才是盲目的。","action":"你研究资本主义的运行逻辑（本质论的自由），不是为了逃逸，而是为了在其中获得行动的自由空间。"}]}]}]},{"id":"concept","title":"第三编 · 概念论","de":"Die Lehre vom Begriff","summary":"概念返回自身的阶段。普遍性、特殊性、个别性的统一；判断与推论是概念的展开；客体（机械性-化学性-目的性）是概念的外化；理念（生命-认识-绝对理念）是概念与客体的最终统一。概念论的全部主题：自由的原则如何实现自身。","key":"概念是自由的原则——普遍性、特殊性、个别性的统一。","action":"对应'理性'与'爱欲'的合题：当你的欲望（爱欲）被理性组织成概念体系，你就从'被生活驱使'变成'自己生活的主人'。","children":[{"id":"subjective-concept","title":"A · 主观概念","de":"Der subjektive Begriff","summary":"概念本身、判断、推论。主观概念是概念的自身展开：从概念（普遍-特殊-个别的统一）到判断（概念的规定性展开）到推论（判断的统一）。主观概念的终点是'个别性'——概念要求实现为个别存在。","key":"概念本身是普遍性、特殊性、个别性的统一。","action":"对应'总体系（彻底的反思体系）'：把你的六要素建成一个概念体系——普遍原则、特殊情境、个别行动的推演网络。","children":[{"id":"concept-itself","title":"a · 概念本身","de":"Der Begriff als solcher","summary":"概念的三个环节：普遍性（自身相关的统一）、特殊性（概念的区分与规定）、个别性（普遍与特殊的统一体）。概念不是抽象的共相，而是具体的普遍——它在自身中包含着特殊与个别。","key":"概念是具体的普遍——它在自身中包含特殊与个别。","action":"'行动者'是普遍概念，'男大学生恋爱实操'是特殊化，'你今晚的直播脚本'是个别化——概念必须下沉到个别才真实。"},{"id":"judgment","title":"b · 判断","de":"Das Urteil","summary":"概念的规定性展开即是判断。四种判断类型构成从低级到高级的阶梯：质的判断→反思的判断→必然的判断→概念的判断。判断的真理在于：判断是概念自身的内在区分。","key":"判断是概念的展开——是概念自身的内在区分。","action":"你对自己下的判断决定你是什么人：'我是废物'（质的否定判断）→'我有时失败'（反思的特称判断）→'我正在成为行动者'（概念的判断）。升级你的判断类型，就升级你的人生。","children":[{"id":"judgment-quality","title":"质的判断","de":"Das Urteil des Daseins","summary":"肯定的（'这是有用的'）、否定的（'这是无用的'）、无限的（'这是有限的/暂时的'）。质的判断把主词当作现成的存在来规定——最低级的判断形式。","key":"质的判断：肯定-否定-无限。"},{"id":"judgment-reflection","title":"反思的判断","de":"Das Urteil der Reflexion","summary":"单称的（'这个某人如此'）、特称的（'有些如此'）、全称的（'一切皆如此'）。反思的判断超出当下，进入普遍与特殊的量的关系。","key":"反思的判断：单称-特称-全称。"},{"id":"judgment-necessity","title":"必然的判断","de":"Das Urteil der Notwendigkeit","summary":"定言的（'A必然是B'——本质与实存的关系）、假言的（'如果A则B'——条件关系）、选言的（'A要么是B要么是C'——全体与部分的区分）。必然的判断揭示主词与谓词的本质关联。","key":"必然的判断：定言-假言-选言。","action":"把'我要努力'升级为定言判断（'努力是行动者的本质属性'）、假言判断（'如果我每天直播讲解，就必然形成体系'）。"},{"id":"judgment-concept","title":"概念的判断","de":"Das Urteil des Begriffs","summary":"实然的（'这个行为是善的'——主词应当符合概念）、或然的（'这个行为可能是善的'）、确然的（'这个行为确实是善的'——主词现实地符合概念）。概念的判断是判断的最高形式：它评判事物是否符合其概念。","key":"概念的判断：实然-或然-确然——事物是否符合其概念。","action":"最高级的自我评估：不问'我成功了吗'，问'我配得上行动者这个概念吗'——按概念的要求塑造现实。"}]},{"id":"syllogism","title":"c · 推论","de":"Der Schluss","summary":"判断的统一即是推论：三个判断项（个别-特殊-普遍）的统一。推论的三种形态：实有的推论（第一式及其变形）、反思的推论（全称、归纳、类比）、必然的推论。推论是概念的自我中介——一切推理都是概念的自身运动。","key":"推论是概念的自身中介——个别经由特殊上升到普遍。","children":[{"id":"syllogism-existence","title":"实有的推论","de":"Der Schluss des Daseins","summary":"第一式：个别-特殊-普遍（'这个人是学生，学生是知识分子，所以这个人是知识分子'）。其余三式（特殊-个别-普遍等）是第一式的变形——实有的推论暴露了形式推理的僵硬。","key":"实有的推论第一式：个别-特殊-普遍。"},{"id":"syllogism-reflection","title":"反思的推论","de":"Der Schluss der Reflexion","summary":"全称的推论（一切A是B，C是A，所以C是B）、归纳的推论（从个别到全体的或然性）、类比的推论（从特殊到特殊的推演）。反思的推论已经触及经验与或然性的问题。","key":"反思的推论：全称-归纳-类比。"},{"id":"syllogism-necessity","title":"必然的推论","de":"Der Schluss der Notwendigkeit","summary":"定言的、假言的、选言的推论——必然性在推论中的完成。必然的推论的终点：推论各项获得客观性，推论过渡为客体。","key":"必然的推论是主观概念的终点——它过渡到客体。"}]}]},{"id":"object","title":"B · 客体","de":"Das Objekt","summary":"概念的外在实存阶段。机械性（客体的直接同一）、化学性（客体的差别与亲和）、目的性（客体向概念的复归）。客体论的全部意义：概念如何在异己的客观性中认出自己。","key":"客体是概念的外在实存——概念在客观性中认出自己。","action":"对应'现实落地'：你的体系（概念）必须经得起机械性（日程表）、化学性（人与人化合）、目的性（为谁为何）的三重客体化检验。","children":[{"id":"mechanism","title":"a · 机械性","de":"Der Mechanismus","summary":"客体的第一阶段：客体是无个性的、彼此外在的。机械关系是形式的、强制的——一个物体推动另一个物体，但两者本质上互不相关。机械性暴露了外在联系的空洞。","key":"机械性是客体无个性的、外在的联系。","action":"纯打卡式自律就是机械性：把任务当球踢来踢去，没有内在关联。需要进入化学性。"},{"id":"chemism","title":"b · 化学性","de":"Der Chemismus","summary":"客体的第二阶段：客体获得差别性——亲和性与中和。化学过程中，差别着的客体互相渴望、化合、产生第三者。化学性比机械性深刻：客体之间是本质的关系而非外在的关系。","key":"化学性是差别客体的亲和与中和。","action":"对应'人际关系'与'带徒弟'：不同形状的人互相化合（揉捏、打磨、嵌入）产生新组织——这是塑造塑造者的客体化。"},{"id":"teleology","title":"c · 目的性","de":"Die Teleologie","summary":"客体的第三阶段：主观目的（目的在主体之内）→手段/工具（目的是通过工具与客体发生关系的中介）→实现了的目的（目的在客体中完成并返回主体）。目的性完成了客体向概念的复归。","key":"目的是通过手段在客体中实现自身的。","action":"你的'人生目标'只有变成工具（每天的时间表、直播、笔记）才是真目的——这就是'用自己的时间描绘出清晰可见的行动蓝图'的逻辑学根据。","children":[{"id":"subjective-purpose","title":"主观目的","de":"Der subjektive Zweck","summary":"目的首先是主体之内的规定：主体把一个尚未现实的目的设定为'应当'。主观目的还是抽象的——它要求客观化。","key":"主观目的是主体设定的'应当'。"},{"id":"means","title":"手段（工具）","de":"Das Mittel","summary":"手段是目的与客体之间的中介：工具一方面服从目的（被目的规定），另一方面是服务于目的的现实力量。手段高于（外在的）客体——手段是'理性的狡计'的所在。","key":"手段是目的与客体之间的理性中介。"},{"id":"realized-purpose","title":"实现了的目的","de":"Der ausgeführte Zweck","summary":"目的在手段的活动中于客体里实现自身，并作为结果返回主体。实现了的目的揭示：主体与客体在活动中同一——这就是'理念'的直接形态（生命）。","key":"实现了的目的是主体与客体在活动中的同一。","action":"每晚直播结束后的复盘：目的（体系）经由手段（直播）在客体（观众、时间）中实现，回到你自身成为新起点——这就是行动闭环。"}]}]},{"id":"idea","title":"C · 理念","de":"Die Idee","summary":"概念与客体的统一。生命（直接的理念）、认识（真与善的理念）、绝对理念（全部范畴的总和）。理念是逻辑学的终点：概念在完全实现了的形态中就是绝对理念——逻辑学的终点即自然哲学与精神哲学的起点。","key":"理念是概念与客体的统一——真的全体。","action":"对应你的'生命操作系统'整体：六要素的合题就是你的个人理念——它不是口号，是你每天正在活出来的体系。","children":[{"id":"life","title":"a · 生命","de":"Das Leben","summary":"直接的理念：生命是概念在自然中的第一个形态。生命过程三环节：感受刺激性（对外部刺激的反应）、感受自身（在自身中保存）、再生产（个体与族类的延续）。生命是'自己产生自己'的过程。","key":"生命是理念的直接形态——自己产生自己的过程。","action":"你的作息、饮食、运动、睡眠不是维护'硬件'，而是生命这个'直接理念'的自我保存活动——健康本身就是哲学范畴。"},{"id":"cognition","title":"b · 认识","de":"Das Erkennen","summary":"理念自身分裂为认识活动：理论活动（真之理念——把客观世界提升为概念）与实践活动（善之理念——把概念实现为客观世界）。认识论的辩证：理论与实践的互相预设、互相推动，最终在'绝对理念'中统一。","key":"认识是真之理念与善之理念的对立统一。","action":"你研究黑格尔与未明子（理论活动）和你每晚直播、服务观众（实践活动）是同一个认识过程的两个半场——只学不做是半个人，只做不学是盲动者。","children":[{"id":"true-idea","title":"真之理念","de":"Die Idee des Wahren","summary":"理论活动：分析客体、剥离偶然性、把握规律，把'这个世界是怎样的'提升为概念。理论活动的终点发现：真理不是现成摆着的结论，而是概念自身展开的过程。","key":"真理不是现成的结论，而是概念自身展开的过程。"},{"id":"good-idea","title":"善之理念","de":"Die Idee des Guten","summary":"实践活动：意志要把'世界应当是怎样的'（善）实现出来。善之理念的辩证：它一方面有'改造世界'的高贵，另一方面有'把主观任性强加给世界'的危险。","key":"善之理念是世界应当被改造的规定。","action":"树洞、直播、工益：善不是心里想想，是把'应当'刻进世界的行为——这正是你搭建倾诉入口的哲学定位。"}]},{"id":"absolute-idea","title":"c · 绝对理念","de":"Die absolute Idee","summary":"全部逻辑范畴的总和与完成。绝对理念是'方法的绝对运动'：全部范畴不是陈列品，而是一个活生生的、自己推动自己的过程。逻辑学的终点：理念外化为自然——自然哲学与精神哲学从这里开始。","key":"绝对理念是方法的绝对运动——逻辑学的终点是自然的起点。","action":"辩证法的最终教益：不要记住范畴，要活出方法——把'存在-本质-概念'的推演能力用于你每一天的决策，逻辑学就完成了它的使命。"}]}]}]}},"videos":{"meta":{"title":"未明子行动建议视频 · 全景调研笔记","up":"未明子（刘司墨）","uid":23191782,"space":"https://space.bilibili.com/23191782","live":"https://live.bilibili.com/7531557（一三五晚直播）","contact":"weimingzi@hotmail.com","method":"调研方法：B站开放API获取元数据（标题/时长/播放/字幕）→ CC字幕抓取（未登录不可得，已记录在案）→ faster-whisper本地ASR转录（已完成核心视频）→ 机核「未明子整理」专栏/官方文字实录交叉验证 → 逐篇撰写核心观点、行动建议、现实落地报告","stats":"已收录 16 个视频/专栏；其中 3 篇万字级详细笔记、1 篇完整ASR转录、12 篇结构化摘要"},"videos":[{"id":"BV1tU4y1e7qH","title":"【行动建议】何为成熟，何为行动者：具有基本的禁欲主义底色","date":"2022-08-11","duration":"47:53","views":"9.3万","category":"行动建议","core":"行动者的成熟 = 具有基本的禁欲主义底色。成熟不是年龄而是结构：能为了整体目的节制局部欲望。一切行动（包括欲望）都是行动者的环节和手段，为整体目的服务。","keyPoints":["行动者的成熟 = 基本禁欲主义底色 + 去私人爱关系的底色：涉及行动就不能有纪律之外的秘密性；私人情谊（无论性化与否）的秘密性绝对低于纪律本身所主张的秘密和公开原则","禁欲主义的来源是行动的焦虑（钱、命运、权、物资、人员、过程）——焦虑围绕这些要素，过程是趣性化的：'无暇发情'，没有燃料去烧那个东西","性本身被完全工具化：如存在，则完全手段化——在这个意义上，行动本身是最彻底的爱欲（拉康意义上的第二种趋利，竭尽的）","禁欲主义底色归根到底是一种非常精细的理性主义：过程开不了玩笑，是极致细致审慎、紧张不安交杂的冒险，过度算计——彻底性提升透支性","两方面功课：一方面始终不停地避免失败；另一方面不停地发现失败与失控，从失败中学习调整","超性化（oversexualized）状态：极端亢奋又极端压抑——亢奋是理性的亢奋（理性敏感、意志力强大）；压抑意味着凡人欲望（好吃的、占有漂亮的、优越感、低层趣味）全部被收走","行动本身是最高级的游戏：星辰代谢的机器不断吞吐现实——最高级的享乐、信爱、智力活动、感官享受","禁欲主义是结果不是原因：不是先宣扬禁欲主义才有行动力；而是有了行动力，自然而然在行动中有此底色——它是把全部爱欲投射到行动每个环节的副产品（负产品）","总体化的人（over-totalized）：个人过度总体化——需要一个方案、计划、理想、共同体；身上所有环节（情绪、意志、精神脾性、各式欲望）全部纳入方案体系，高度协调、多种模式快速切换，经过严格训练","比喻：不是前线圣人，而是007式的人物、战场指挥官——你就是棋盘中的一部分，一步做错生死阻灭","去性化的具体操作：看到极有诱惑力的性响乐符号（女体罗鹿），第一时间应当没有任何反应——爱欲不够用（全部投注于行动焦虑）；但如有必要可主动投入（'军阀的太太我也搞定他'）——欲望是可操控的，因为驱使你的是巨大的求生/面对死亡的欲望","性反应的使用：性反应冒出来→立刻被反思抓到→转化为情报判断（暴露的衣着→安保注意力被转移→敌人下手更容易→推进推演）。'泡泡不会张开变成梦境'——你知道泡泡里的一切，还能看出别人脑子里的泡泡已经爆开（保安的失守）","对成年人的要求：这应当是十九世纪成年人的本能。21世纪的平民是长不大的孩子（生存不暴露于不可预测的危险，有家长式权威解释一切）——进阶路径：21世纪平民→18/19世纪平民→行动者","彻底享乐（齐泽克）：完全投身实践才能彻底享乐。吃大餐不是为了吃大餐，是为了幸存下来所以要身心愉悦——巨大的愉悦圆圈：吃大餐→身心愉悦→幸存→团队保持艰苦朴素。甚至故意表演低级趣味让敌人识别不出自己","泡泡不破，享乐才彻底、没有剩余；泡泡破了变成自成一体的梦境，就永远意犹未尽","行动者非常自由：底色是禁欲主义，但可以走享乐主义路径，可以表演成任何样子（嗑嗑绊绊、小享乐、小消费主义）——服从安排、服从自己对方案的领会；以冷酷绝决的眼神看一个个小泡泡并辟避它们","平民/孩子/行动者三分：孩子没有能力和低阶享乐拉开距离还会虚假拉开（自恋、优越感）；平民有能力拉开但一般不拉开；行动者不仅始终拉开距离，还反过来利用距离的远近控制来实现效果、扮演出某种效果（放任欲望以表现逼真的平民性、孩童性、无害性，作为工具和筹码）","乌托邦的工具化：爱情乌托邦、家庭亲情乌托邦、商业乌托邦、江湖豪杰乌托邦——各种绝对性都可以拿来当工具用；我们有自己的乌托邦，凌驾于一切未反思的平民性乌托邦；高阶乌托邦之间的争斗是理论家与统帅的工作","对身体行为的严格控制：所有外化的表情、行为、言语都严格控制；戏剧效果是刻意制造的，不确定性是刻意生产的","活动家（activist）= 被激活的平民 = 人类中的英雄单位"],"actionReport":"落地到'爱欲'要素——这是整个六要素系统中爱欲模块的完整操作手册：①欲望审计：每次欲望冲动先问'这是平民性的欲望，还是我总体化方案里的环节？'②泡泡训练：看到诱惑→性反应冒出→立刻被反思抓住→转成情报判断（直播选题：现场拆解一次自己的泡泡）③表演自由：底色禁欲但可自由走享乐路径——刻意表演无害性/幼稚性作为筹码（直播人设设计的哲学根据）④彻底享乐圆圈：把每个享乐挂到'幸存→方案可靠'的大圆圈上，吃完大餐要说'我迷惑了敌人/我让方案可靠性提升了'⑤对观众的提问设计：'你现在是21世纪平民、19世纪平民，还是行动者？'——三期进阶直播可直接用。完整48分钟ASR文字稿已归档（见交付包 文字稿 文件夹）。","sources":"完整ASR转录（faster-whisper本地识别，48分钟音频逐字稿）","hasFullNotes":true},{"id":"BV1q4nszeEru","title":"【行动建议】塑造塑造者——以生活情态和人生目标为导向","date":"2025-09-25","duration":"42:50","views":"3.3万","category":"行动建议","core":"从'夺取者'（Seizer）到'塑造者'（Shaper）：组织与个体成长的两阶段论。夺取者用剪刀做减法——剪除病理化对行动的妨害；塑造者用双手做加法——揉捏（软性部分的思想与组织工作）与打磨（硬性部分的培养性培训，长出角质层），然后嵌入分工体系。","keyPoints":["第一阶段·夺取：识别两类人——需要摒除小资产阶级意识的落魄小有产者后代、需要获得彻底阶级意识的跃升中的无产阶级","关键动作·修剪：剪掉不利症状、毛边、过渡性——保留原始形状，只剪毛边","第二阶段·塑造：不再剪了（血肉一体，再剪骨肉分离），只能揉捏与打磨","打磨是增量：不是越磨越少，是长出角质层（耐心、大局观、抗压性）","嵌入要斜着放：用打磨出的优势侧顶住压力，卡进分工关系","层级为王：不追求同级严丝合缝，追求'上下平整'——层级间权责板块绝对清晰","终极目标：塑造生活形态（Surface，靠产业与社群）与人生目标（Structure，靠体系化路径），共同构成社会形态","重大陷阱：停留在'夺取'阶段争权夺利——'争权而废事'，集体丧失锋芒"],"actionReport":"落地到六要素：这是'人际关系'要素的完整方法论。①对拉低我思路的人=修剪（剪刀）；②带徒弟=打磨（揉捏出耐性、磨出角质层）；③每天的时间表=分工嵌入（斜向切入，用优势侧顶住）；④六要素体系=上下平整的权责板块。明晚直播可直接讲：'你是自己的第一个Shaper'。","sources":"机核「未明子整理」万字笔记（含原文内容）","hasFullNotes":true},{"id":"BV1pVnVzCE13","title":"【随便聊聊】有所作为，提高职业度","date":"2025-09-27","duration":"12:04","views":"2.7万","category":"行动建议","core":"批判'做马克思主义者要隐忍'的论调：隐忍不等于秘密。隐忍是消极避世的Cosplay，秘密是积极进攻的工作方法。马列主义实践的三大支柱——职业化、经费体系、政治空间——每一项都要求行动，都'藏不住'。","keyPoints":["身份识别：只讲马克思主义不举列宁的人，与被开除的社民无异；马克思列宁二圣并举才是职业玩家标配","支柱一·职业化：隐忍如何获得行动经验？如何验证策略有效性？隐忍=以秘密为名的角色扮演","支柱二·经费：经费从哪来是照妖镜——来自阶级基础（工人群众）就必须切实行动去动员；来自敌对阶级的'地下经费'必然导致变质","支柱三·政治空间：秘密活动要收'政治点数'——行动→收获→壮大→再行动的良性循环；隐忍=只存不取，活动空间越来越小","隐忍是心理状态（放弃），秘密是工作方法（进攻）","列宁主义讲纪律：不讲纪律，有的是方法叫你讲纪律"],"actionReport":"落地到六要素：①对'理性'要素——'隐忍'式自我安慰（等我准备好了再开始）是行动的最大敌人；②对'时间'要素——职业化意味着把人生当职业经营，入伙就是一辈子职业选手；③对直播——每晚公开讲解行动路径，正是'收政治点数'：把你的行动转化为可见的影响力，形成良性循环。","sources":"机核「未明子整理」万字笔记（含原文内容）","hasFullNotes":true},{"id":"BV1AA4Wz9EFM","title":"【随便聊聊】成为职业选手的基本的认知习惯","date":"2025-10-11","duration":"57:28","views":"3.9万","category":"行动建议","core":"过度象征化（Over-symbolization）：把一切细节视为符号并做政治化、权力化解读的认知技术。高手看细节，普通人看热闹。符号系统不相信你的主观意图——你的行为在既定符号规则中可以被如何解读，才作数。","keyPoints":["过度象征化第一层：细节→象征坐标系（尊卑贵贱/是非对错/善恶敌我）","过度象征化第二层：符号的摆放即权力的宣示——抢夺'现实定义权'","符号学原则：符号系统不相信你的主观意图；不主动定义和引导解读，解读权就归别人","三条修炼路径：观察（积累符号库存）、推演（预判他人解读）、介入（主动布置符号）","应用场景：商业谈判、内部会议、组织管理、人际博弈"],"actionReport":"落地到六要素：①对'人际关系'要素——记住每个人的态度、思路，就是积累符号库存；带徒弟时的'修剪'，就是识别对方的病理化符号；②对直播——封面、标题、口头禅、背景都是你布置的符号，主动设计观众对你的解读；③对'理性'要素——过度象征化是彻底的反思体系在日常观察中的训练场。","sources":"机核「未明子整理」万字笔记","hasFullNotes":true},{"id":"BV19g411i7pN","title":"未明子：我希望你们能在婚姻中获得想要的东西，否则那种生活是不值得过的","date":"2022-11-13","duration":"21:46","views":"9.2万","category":"婚恋爱欲","core":"许多人追求的'漂亮/有性吸引力'的伴侣，是资本主义审美符号和等级制的产物，而非真实的个体。真正的爱情应建立在共同价值观、对劳动和人民利益的认同、对社会现实的清醒认知之上。","keyPoints":["你现在追求的'漂亮'，是流水线生产出来激发你爱欲的审美符号——你在享受符号，不是享受人","婚恋、性享乐是意识形态的遮罩：把你钳制在痛苦和扭曲的状态里","真正的伴侣：没有资产阶级幻想、能理解并共同面对社会压迫的人","强烈建议'不要玩这个游戏'——不要沉溺于资本主义构建的虚假婚恋市场","追求'速通人生'（像超级玛丽排行榜）是无脑循环——用高级文艺哲学艺术填充，本质仍是死的","男性首先应当把自己从女体的幻想中解放出来"],"actionReport":"落地到'爱欲'要素：这是整个爱欲模块的理论基础。①欲望审计：我喜欢的究竟是这个人，还是加载在她身上的符号（丝袜、口红、美甲、身份标签）？②择偶标准重写：价值观相似（人民利益至上/劳动者利益至上）优先于审美符号；③警惕'审美鄙视链'——被它驱动的关系是交易不是爱情。","sources":"BibiGPT AI总结 + 微博观点整理","hasFullNotes":false},{"id":"BV1U5411T7tV","title":"【社会观察】996的实质：不！是！剥！削！","date":"2021-06-25","duration":"30:56","views":"384万","category":"劳动者","core":"996的目的不是效率，而是控制——占用你本可用于社交、获取信息、联系同行的黄金时间，使你奴役于人，无形中削弱你的竞争力。选择996而不是666，恰恰说明重点不在产出在占有。","keyPoints":["为什么不用666（早6晚6）而用996？——效率不是目的，占有你的无用时间才是目的","晚上6-9点是公关饭局、商务成交时间：让你加班，减少你的社交，削弱你的竞争力","周六加班的原因：甲方周五下班后到周六放松交流促成成交；周日留给家人——你的周末被结构征用","996的本质是使人奴役人的时间控制，而非劳动剥削的表面计算","打工者即使能自由支配晚上6-9点，也难联系同行合伙单干——时间被锁死，上升空间被锁死"],"actionReport":"落地到'钱'要素与结构意识：①把'时间'与'钱'连起来看——卖时间换钱时，先算隐形成本（社交时间、信息获取、能力成长被占用）；②对观众倾诉'资本主义结构性压迫'的回应模板：先讲清结构如何运作（996逻辑），再给出个人策略（保住下班后的三小时、发展可迁移能力、联合而非单干）；③直播选题储备：《你的晚上6-9点被谁占了》。","sources":"搜索实录 + 第三方评论整理（播放量384万，其成名作）","hasFullNotes":false},{"id":"BV1TDcbexES1","title":"未明子连线青年，严肃且虾头的一晚（多正念冥想、单线程、给家庭打五百）","date":"2025-01-14","duration":"2:10:01","views":"1.1万","category":"心理连麦","core":"给四位连麦青年的具体建议：联结比单飞好；注意力专注在此刻，每时每刻权衡，多正念冥想；压力太大就单线程，清空大脑内存；给前现代家庭每月打五百块钱，把家庭烈度降下来。","keyPoints":["玩摇滚治愈工人、厂班和司机很压抑——但联结比单飞更好，组织起来","注意力专注在此刻：活在当下的每个瞬间，更好地在当下，而非焦虑地等待未来变成所焦虑的","压力太大就单线程：其他别想，清空大脑内存，专注一件事","训练筛选机制：把干扰项贴标签关键词放一边（记笔记关键词）","生存的每个瞬间都要像在玩脑筋急转弯：排除干扰项重新思考抉择，回溯性借助或拯救过去并指向未来","人别总把外界的欲望和赛道当成自己的欲望","给前现代家庭每月打五百块钱，不用上千——把家庭烈度降低（家庭对个人和政治面貌影响大，随时可能做回小资）"],"actionReport":"落地到'时间'与'人际关系'要素：①单线程工作法=时间要素的核心技术（一次只开一个进程，干扰项贴标签存档）；②家庭定额转账=人际要素的'防北令'操作——用确定的小额支付置换不确定的情感消耗；③直播可直接示范：现场带观众做一次'大脑内存清理'。","sources":"搜索实录（含连麦详情）","hasFullNotes":false},{"id":"BV11nrnY5EWj","title":"未明子劝青年别Mygo一辈子了？每个瞬间都要像在做脑筋急转弯一样","date":"2025-01-04","duration":"2:10:31","views":"2.6万","category":"心理连麦","core":"每个时每刻权衡，训练筛选机制，擅长的时候直接扣帽子——把干扰项贴好标签放一边。生存的每个瞬间都像玩脑筋急转弯：排除干扰项、重新思考抉择、回溯性借助或拯救过去并指向未来。最后：别把外界的欲望和赛道当成自己的欲望。","keyPoints":["每时每刻权衡：注意力是最高货币，时刻审计注意力的流向","训练筛选机制：擅长的时候直接扣帽子（给干扰项贴标签关键词，放一边）","回溯性拯救过去：过去不是包袱，是可以被重新阐释的资源","别把外界的欲望和赛道当成自己的欲望——区分'我的欲望'与'被植入的欲望'"],"actionReport":"落地到'爱欲'要素：这是'欲望审计'的日常操作版。①工具化：手机备忘录设'欲望分类账'——这条欲望是我的，还是外界植入的？②直播连麦环节可直接用这套话术给观众贴标签（扣帽子）——粗暴但有效。","sources":"搜索实录","hasFullNotes":false},{"id":"BV1aJZTYxEUP","title":"【实事求是】说给穷苦家庭高中生的一大番话","date":"2021","duration":"约30分钟","views":"—","category":"学生劝学","core":"当前教育制度的弊端远不止'卷'，而是命题思路的根本性失误——试卷从考察知识点转向繁琐的技巧性和题库积累量，家庭资源多寡变成决定胜负的隐形标尺。命题越来越卷的背后，是知识精英与权势阶层联手筑起的壁垒。","keyPoints":["他们无意让穷人翻身，只想守住自己的饭碗","抱怨无用，幻想更无用","真正的出路：不是为奴才式的卷题拼搏，而是为自身、家庭和与你一样的穷苦人而战","多看看父母吃的苦，多看看和你一样的无产阶级面临的僵局","反思出题者的恶意，警惕任何让你松懈的说辞"],"actionReport":"落地到'时间'要素（学生版）：①把'为穷苦人而学'作为学习的意义锚点——对抗虚无；②识别'卷'的结构本质，不把结构问题个人化（考不好≠我没用）；③直播对高中观众的沟通基调：先承认痛苦真实，再给结构分析，最后给行动路径。","sources":"搜索实录","hasFullNotes":false},{"id":"BV1B9LhzrEiC","title":"【未明子劝学】应试教育玩6年等于让掉30年自我发展权？","date":"2021","duration":"约15分钟","views":"—","category":"学生劝学","core":"应试教育将12年学习压缩为对试卷符号的机械征服，其中有效自我成长的时光不足6年。若成年后再耗费10年弥补教育短板，赡养压力与阶层铁幕将形成双重绞杀。","keyPoints":["破解困局的关键在于转化规则：透彻掌握学科逻辑","以资质认证（律师证、教师证等）撬动社会资源","联合家庭力量构建持续行动力","教育不该是押注未来的赌局，要为个体留出喘息与探索的缝隙","唯有平衡试卷竞争与自我生长，才能在时间荒漠中辟出真正的绿洲"],"actionReport":"落地到'时间'要素：①'12年只换6年有效成长'的算法要讲给观众听——时间账是最震撼的直播素材；②策略：应试最小化占用（达标即可），剩余时间投入资质认证与真实能力；③'喘息与探索的缝隙'= 兴趣时段在时间表中的合法性依据。","sources":"搜索实录","hasFullNotes":false},{"id":"BV1DifgYNEtM","title":"【未明子劝学】为了和你一样的穷苦人而学习","date":"2021","duration":"约10分钟","views":"—","category":"学生劝学","core":"BV1aJZTYxEUP 的切片版：为自身、家庭和与你一样的穷苦人而学习。警惕任何让你松懈的说辞，反思出题者的恶意。","keyPoints":["同源视频：说给穷苦家庭高中生的一大番话","学习动机的重构：从'出人头地'到'为穷苦人而战'"],"actionReport":"同 BV1aJZTYxEUP。","sources":"搜索实录","hasFullNotes":false},{"id":"cv40901785","title":"【哲学与现实】如何克服自恋和自卑","date":"2022","duration":"约20分钟","views":"23.5万","category":"心理哲学","core":"自恋与自卑是被生产出来的意识结构：外面秩序混乱到无法整合，只能拉一个草台班子充当自我形象（主人能指）。两者都是逃避现实和责任的托词。出路是'弃绝'——把个人形象甩出去，以不要脸作为脸面。","keyPoints":["自恋：强大意味着有能力支付代价、改变现实——请按自己的能力支付代价，不开空头支票","自卑：觉得自己微不足道意味着可以承受损失——走多了会有被害妄想","两者都是借口和托词：以牺牲局部代价换取其他方面功能完整","第三种错误：把一切当筹码去赌（赌狗逻辑）——赢了是我本事，输了是老天爷","未明子的方向：宁可损失一切，自己的账不要上天算——尽一切可能避免某些画面发生","弃绝：我在自恋自卑维度经营出来的个人形象，我宁愿不要了，撕破脸","不可接受：以不要脸来维持其脸面的场景，我不想参与了"],"actionReport":"落地到'爱欲'与'理性'要素：①这是'情绪导航'的故障排除手册——自恋/自卑/赌博是三种情绪噪音模式；②弃绝操作：直播时被喷子骂——'这个面子我不要了'，继续讲；③每晚复盘一问：今天我哪个决策出于自恋（开空头支票）？哪个出于自卑（逃避支付代价）？","sources":"B站官方文字实录（cv40901785）","hasFullNotes":true},{"id":"cv42675275","title":"【未明子连麦】8月6日第十二位：曾遭校园霸凌，复学后假期感觉很疲惫","date":"2025-08-06","duration":"连麦实录","views":"—","category":"心理连麦","core":"把病态梦境重构为'畅快的痛苦'的创伤完成仪式：梦境中的'杀戮'是心灵自我疗愈的工作。行动方案：从'无脑'运动（跑步拳击）转向'有脑'竞技（乒乓球羽毛球）——扣杀时大声喊'杀'字，把被压抑的攻击欲转化为社会可接受的仪式。","keyPoints":["'杀人'耗费心力——痛苦正是心灵努力完成自我疗愈的真实写照（畅快的痛苦）","批判'无脑'运动：缺乏认知参与和目标指向性，无法作用于特定心理症结","转向'有脑'竞技：乒乓球/羽毛球要求高度专注、手眼协调、对具体目标的攻击性","仪式设计：扣杀时大声喊'杀'——既是身体爆发也是意识确认","修辞：通过有意识的仪式化身体动作，引导无意识层面的疗愈过程","关系重塑：拒绝'指导者/恩人'角色——多一个关注就是更高的统战价值，互相成就的唯物主义连结"],"actionReport":"落地到'健康'与'爱欲'要素：①'有脑运动'升级你的运动纪律——每天运动不只是跑步，加入羽毛球/乒乓球并配仪式化动作；②对树洞倾诉'受委屈'的用户：这套'梦境重构+行动仪式'是标准回应工具；③直播连麦环节：现场教观众设计自己的'攻击性宣泄仪式'。","sources":"B站官方文字实录（cv42675275）","hasFullNotes":true},{"id":"cv42509914","title":"【未明子连麦】0731第五位：受过去和原生家庭影响严重，该如何走出去","date":"2025-07-31","duration":"连麦实录","views":"—","category":"心理连麦","core":"行动优先于阐释。方法：引入价值中立的'游戏'（数数），勾引内心深处拒绝合作的'孩子'（幕后老板）出来一起玩；何时见父亲由随机外部事件频率触发，而非充满矛盾的情感决定——从艰难抉择的主体变为忠实执行记录任务的执行者。","keyPoints":["数数游戏：重建与时间的连接——行动优先于阐释","记录父亲的名字：把关系交由外部必然性驱动，卸下心理压力","斩断受害者叙事：最有效的路径不是无休止共情、回溯创伤","实践性的唯物主义：主体改变不源于观念转变，而源于具体实践的塑造","只有当个体开始行动（哪怕最微小、机械），沉睡的内在'老板'才可能被重新激活"],"actionReport":"落地到'时间'要素与树洞回应：①'数数'=时间要素的原子操作——把宏大的人生课题降解为可计数的机械动作；②树洞标准回应模板：不灌鸡汤、不深挖创伤，给一个机械的小行动（数数/记录/定时转账）；③直播'限时解决问题'环节的方法论来源。","sources":"B站官方文字实录（cv42509914）","hasFullNotes":true},{"id":"BV11i7FzzEmK","title":"【未明子】随便聊聊 2025.05.31（想过的很多东西还在压着，还没改变它）","date":"2025-05-31","duration":"录播","views":"—","category":"行动建议","core":"你们根本不知道想过的很多东西都还在压着、还没改变它，却只等着自己跳出来，或总结一贯的经验才表达出来。能做到这些——特别是保持学习能力和学习兴趣——好像怎么过生活都很适合。","keyPoints":["没有被处理的经验不会消失，它们压在底层持续起作用","等待'自己想明白'是被动姿态——要主动跳出来","保持学习能力和学习兴趣，是生活适配性的根本"],"actionReport":"落地到'理性'要素：①'彻底的反思体系'=把压着的经验打捞上来处理（写下来、直播讲出来）；②直播复盘环节：今晚我处理了哪件'压着的事'？","sources":"搜索实录","hasFullNotes":false}],"series":[{"name":"行动建议系列","desc":"聚焦行动者实践：何为成熟、塑造塑造者、有所作为提高职业度、职业选手认知习惯","count":4},{"name":"劝学系列","desc":"穷苦家庭高中生、应试教育批判、为了穷苦人而学习","count":3},{"name":"连麦/心理系列","desc":"连线青年、别Mygo一辈子、原生家庭、校园霸凌、如何克服自恋和自卑","count":5},{"name":"劳动者/结构系列","desc":"996的实质、灵活就业与正式会员、职业度","count":2},{"name":"婚恋/爱欲系列","desc":"婚姻中获得想要的东西、性认同与性享乐批判、现代女性日常状态","count":2}],"sources_list":["B站开放API（视频元数据）","机核网「维涛常容·未明子整理」专栏（3篇万字笔记）","B站官方文字实录专栏（cv40901785 / cv42675275 / cv42509914）","BibiGPT AI视频总结","faster-whisper 本地ASR转录（BV1tU4y1e7qH 完整）","未明子学习指南 readlist（rl952756，4篇）","微博/第三方观点整理"]}};
+
+const $=(s,el)=>(el||document).querySelector(s);
+const $$=(s,el)=>Array.from((el||document).querySelectorAll(s));
+function toast(msg,ms){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._tm);t._tm=setTimeout(()=>t.classList.remove('show'),ms||2600);}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+const LS={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){toast('存储失败：'+e.message)}}};
+
+/* ---------- 导航 ---------- */
+$('#burger').onclick=()=>$('#navLinks').classList.toggle('open');
+$$('#navLinks a').forEach(a=>a.onclick=()=>$('#navLinks').classList.remove('open'));
+const st=$('#scrollTop');
+st.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+addEventListener('scroll',()=>st.classList.toggle('show',scrollY>600));
+
+/* ============================================================
+   1. 六要素
+   ============================================================ */
+const EL_COLORS={time:'#B4432F',health:'#2F5D50',money:'#C08A3E',relationships:'#3A6B6B',eros:'#B4506B',reason:'#4A4E7A'};
+function renderElements(){
+  const g=$('#elementsGrid');
+  g.innerHTML=DATA.framework.elements.map(el=>`
+    <div class="card el-card ${el.type==='engine'?'engine':''}" data-id="${el.id}" style="--el-color:${EL_COLORS[el.id]||'#B4432F'}">
+      <span class="el-badge">${el.type==='engine'?'⚡ 根本能力':'🧩 附着主题'}</span>
+      <div class="el-icon">${{time:'时',health:'康',money:'财',relationships:'缘',eros:'欲',reason:'理'}[el.id]||'行'}</div>
+      <h3>${esc(el.title)}</h3>
+      <div class="el-motto">${esc(el.motto)}</div>
+      <p class="el-sum">${esc(el.summary)}</p>
+      <ul class="el-points">${el.points.map(p=>`<li><b>${esc(p.title)}</b> — ${esc(p.detail)}</li>`).join('')}</ul>
+      <div class="el-links">
+        <div class="el-link hegel"><b>逻辑学根据</b>${esc(el.hegelLink)}</div>
+        <div class="el-link wmz"><b>未明子行动建议</b>${esc(el.weimingziLink)}</div>
+      </div>
+      <div class="el-toggle"><span class="arrow">▾</span> 展开细节</div>
+    </div>`).join('');
+  $$('.el-card',g).forEach(c=>c.onclick=()=>c.classList.toggle('open'));
+  const t1=$('#trPhoto1'),t2=$('#trPhoto2');
+  if(t1)t1.innerHTML=DATA.framework.transcription.photo1.map(x=>`<li style="padding:3px 0">· ${esc(x)}</li>`).join('');
+  if(t2)t2.innerHTML=DATA.framework.transcription.photo2.map(x=>`<li style="padding:3px 0">· ${esc(x)}</li>`).join('');
+}
+
+/* ============================================================
+   2. 黑格尔思维导图（SVG 树 + 大纲视图）
+   ============================================================ */
+const HEGEL=DATA.hegel.root;
+(function initHegel(){HEGEL._collapsed=false;})();
+function walk(n,fn){fn(n);(n.children||[]).forEach(c=>walk(c,fn));}
+const NW=210,NH=60,HGAP=52,VGAP=14;
+let mmNodes=[],mmEdges=[];
+function mmMeasure(n){
+  if(!n.children||!n.children.length||n._collapsed)return NH;
+  let h=0;n.children.forEach((c,i)=>{h+=mmMeasure(c);if(i)h+=VGAP;});
+  return Math.max(NH,h);
+}
+function mmPlace(n,depth,y){
+  const x=30+depth*(NW+HGAP),h=mmMeasure(n),cy=y+h/2;
+  n._x=x;n._y=cy;n._h=h;mmNodes.push(n);
+  if(n.children&&n.children.length&&!n._collapsed){
+    let cy0=cy-h/2;
+    n.children.forEach(c=>{
+      const ch=mmMeasure(c);
+      mmPlace(c,depth+1,cy0);
+      mmEdges.push([x+NW,cy,c._x,c._y,depth]);
+      cy0+=ch+VGAP;
+    });
+  }
+}
+function mmLayout(){mmNodes=[];mmEdges=[];mmPlace(HEGEL,0,0);}
+function mmClass(n){
+  if(n===HEGEL)return'root';
+  if(n.children&&n.children.length&&n.title&&/第.编/.test(n.title))return'book';
+  if(n.children&&n.children.length)return'part';
+  return'';
+}
+let mmView={x:0,y:0,k:1};
+function mmRender(){
+  mmLayout();
+  const svg=$('#mmSvg');
+  const maxX=Math.max(...mmNodes.map(n=>n._x+NW))+40, maxY=Math.max(...mmNodes.map(n=>n._y))+60;
+  svg.setAttribute('viewBox',`0 0 ${maxX} ${maxY}`);
+  let s=`<g id="mmG" transform="translate(${mmView.x},${mmView.y}) scale(${mmView.k})">`;
+  mmEdges.forEach(([x1,y1,x2,y2])=>{
+    const mx=(x1+x2)/2;
+    s+=`<path d="M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}" stroke="#C9BBA0" stroke-width="1.4" fill="none"/>`;
+  });
+  mmNodes.forEach(n=>{
+    const cls=mmClass(n);
+    const hasKids=n.children&&n.children.length;
+    const title=n.title.length>13?n.title.slice(0,12)+'…':n.title;
+    s+=`<g class="mm-node ${cls}" data-id="${n.id}" transform="translate(${n._x},${n._y-NH/2})">
+      <rect width="${NW}" height="${NH}" rx="10"/>
+      <text x="12" y="${cls==='root'?25:22}" font-size="${cls==='root'?15:13}" font-weight="${cls?'700':'500'}">${esc(title)}</text>
+      ${n.de&&cls? `<text class="sub" x="12" y="${cls==='root'?42:39}">${esc(n.de)}</text>`:''}
+      ${hasKids?`<g class="toggle" data-toggle="${n.id}" transform="translate(${NW},${NH/2})"><circle r="9"/>${n._collapsed?'<text y="3.5">+</text>':'<text y="3.5">−</text>'}</g>`:''}
+    </g>`;
+  });
+  s+='</g>';
+  svg.innerHTML=s;
+  // 交互
+  const stage=$('#mmStage');
+  let drag=null;
+  stage.onmousedown=e=>{if(e.target.closest('.mm-node'))return;drag={x:e.clientX,y:e.clientY,ox:mmView.x,oy:mmView.y};stage.classList.add('dragging');};
+  addEventListener('mousemove',e=>{if(!drag)return;mmView.x=drag.ox+(e.clientX-drag.x);mmView.y=drag.oy+(e.clientY-drag.y);mmApply();});
+  addEventListener('mouseup',()=>{drag=null;stage.classList.remove('dragging');});
+  stage.onwheel=e=>{e.preventDefault();const r=stage.getBoundingClientRect();const px=e.clientX-r.left,py=e.clientY-r.top;const k2=mmView.k*(e.deltaY<0?1.12:0.9);const kk=Math.min(2.2,Math.max(0.25,k2));mmView.x=px-(px-mmView.x)*kk/mmView.k;mmView.y=py-(py-mmView.y)*kk/mmView.k;mmView.k=kk;mmApply();};
+  // 触屏
+  let lastTouch=null;
+  stage.addEventListener('touchstart',e=>{if(e.touches.length===1&&!e.target.closest('.mm-node')){lastTouch={x:e.touches[0].clientX,y:e.touches[0].clientY,ox:mmView.x,oy:mmView.y};}},{passive:true});
+  stage.addEventListener('touchmove',e=>{if(lastTouch&&e.touches.length===1){mmView.x=lastTouch.ox+(e.touches[0].clientX-lastTouch.x);mmView.y=lastTouch.oy+(e.touches[0].clientY-lastTouch.y);mmApply();}},{passive:true});
+  stage.addEventListener('touchend',()=>lastTouch=null);
+  $$('.mm-node',svg).forEach(g=>{
+    g.onclick=e=>{
+      const tg=e.target.closest('[data-toggle]');
+      const id=(tg||g).dataset.toggle||g.dataset.id;
+      if(tg){const n=mmNodes.find(x=>x.id===id);if(n){n._collapsed=!n._collapsed;mmRender();}return;}
+      const n=mmNodes.find(x=>x.id===id);if(n)mmDetail(n);
+    };
+  });
+  if(mmFirst){mmFirst=false;setTimeout(mmFit,60);}
+}
+function mmApply(){const g=$('#mmG');if(g)g.setAttribute('transform',`translate(${mmView.x},${mmView.y}) scale(${mmView.k})`);}
+function mmFit(){
+  const stage=$('#mmStage');if(!stage||!stage.clientWidth)return;
+  const w=stage.clientWidth,h=stage.clientHeight;
+  const maxX=Math.max(...mmNodes.map(n=>n._x+NW))+40,maxY=Math.max(...mmNodes.map(n=>n._y))+60;
+  const k=Math.min(w/maxX,h/maxY,1)*0.92;
+  mmView.k=k;mmView.x=(w-maxX*k)/2;mmView.y=(h-maxY*k)/2;mmApply();
+}
+let mmFirst=true;
+function mmDetail(n){
+  $('#mmDTitle').textContent=n.title;
+  $('#mmDDe').textContent=n.de||'';
+  $('#mmDSum').textContent=n.summary||'';
+  $('#mmDKey').textContent=n.key||'';
+  if(n.action){$('#mmDAct').textContent=n.action;$('#mmDLblAct').style.display='block';}else{$('#mmDLblAct').style.display='none';}
+  $('#mmDetail').classList.add('show');
+}
+$('#mmClose').onclick=()=>$('#mmDetail').classList.remove('show');
+$('#btnZoomIn').onclick=()=>{mmView.k=Math.min(2.2,mmView.k*1.2);mmApply();};
+$('#btnZoomOut').onclick=()=>{mmView.k=Math.max(0.25,mmView.k*0.83);mmApply();};
+$('#btnZoomReset').onclick=()=>{mmFit();toast('已重置视图');};
+$('#btnExpandAll').onclick=()=>{walk(HEGEL,n=>n._collapsed=false);mmRender();toast('已展开全部 75 节');};
+$('#btnCollapseAll').onclick=()=>{walk(HEGEL,n=>{if(n.children&&n.children.length&&n!==HEGEL)n._collapsed=true;});HEGEL._collapsed=false;mmRender();toast('已收起分支');};
+$('#mmSearch').addEventListener('input',e=>{
+  const q=e.target.value.trim();
+  if(!q){$$('.mm-node rect').forEach(r=>r.style.stroke='');return;}
+  const hits=[];
+  walk(HEGEL,n=>{
+    const txt=(n.title+' '+(n.de||'')+' '+(n.summary||'')+' '+(n.key||'')+' '+(n.action||'')).toLowerCase();
+    const hit=txt.includes(q.toLowerCase());
+    n._hit=hit;if(hit)hits.push(n);
+    let p=n;while(p){if(hit)p._collapsed=false;p=p._parent;}
+  });
+  // 建立父子引用后重新计算折叠
+  mmRender();
+  $$('.mm-node rect').forEach((r,i)=>{const g=r.closest('.mm-node');r.style.stroke=g.querySelector('text').textContent&&mmNodes[i]&&mmNodes[i]._hit?'#B4432F':'';});
+  toast(hits.length?`命中 ${hits.length} 个节点（红色高亮）`:'未找到相关章节');
+});
+// 父子引用
+(function linkParents(){walk(HEGEL,n=>{(n.children||[]).forEach(c=>c._parent=n);});})();
+
+// 大纲视图
+function renderOutline(){
+  const box=$('#mmOutline');
+  function node(n,d){
+    const has=n.children&&n.children.length&&!n._collapsed;
+    return `<div class="ol-node" data-id="${n.id}">
+      <div class="ol-row ${mmClass(n)}"><span class="dot"></span><div><span class="ol-title">${esc(n.title)}</span>${n.de?`<span class="de">${esc(n.de)}</span>`:''}<div class="ol-sum">${esc(n.summary||'')}</div></div></div>
+      ${has?`<div class="ol-children">${n.children.map(c=>node(c,d+1)).join('')}</div>`:''}
+    </div>`;
+  }
+  box.innerHTML=node(HEGEL,0);
+  $$('.ol-row',box).forEach(r=>{
+    r.onclick=()=>{
+      const nd=$$('.ol-node',box).find(x=>x.dataset.id===r.parentElement.dataset.id);
+      const data=mmNodes.find(x=>x.id===r.parentElement.dataset.id);
+      if(data&&data.children&&data.children.length){data._collapsed=!data._collapsed;renderOutline();mmRender();}
+      if(data)mmDetail(data);
+    };
+  });
+}
+$('#btnMapView').onclick=()=>{$('#btnMapView').classList.add('active');$('#btnOutlineView').classList.remove('active');$('#mmStage').style.display='block';$('#mmOutline').classList.remove('show');};
+$('#btnOutlineView').onclick=()=>{$('#btnOutlineView').classList.add('active');$('#btnMapView').classList.remove('active');$('#mmStage').style.display='none';$('#mmOutline').classList.add('show');};
+
+/* ============================================================
+   3. 未明子视频
+   ============================================================ */
+function renderVideos(){
+  const cats=['全部',...new Set(DATA.videos.videos.map(v=>v.category))];
+  const catKey={'行动建议':'action','婚恋爱欲':'eros','学生劝学':'study','劳动者':'work','心理连麦':'psy','心理哲学':'psy'};
+  $('#vidFilters').innerHTML=cats.map((c,i)=>`<button class="vid-filter ${i===0?'active':''}" data-cat="${esc(c)}">${esc(c)}</button>`).join('');
+  function draw(cat){
+    const list=cat==='全部'?DATA.videos.videos:DATA.videos.videos.filter(v=>v.category===cat);
+    $('#vidGrid').innerHTML=list.map(v=>`
+      <div class="card vid-card" data-id="${v.id}">
+        <div class="vid-head"><h3>${esc(v.title)}</h3><span class="vid-cat ${catKey[v.category]||'action'}">${esc(v.category)}</span></div>
+        <div class="vid-meta"><span>📅 ${esc(v.date)}</span><span>⏱ ${esc(v.duration)}</span>${v.views&&v.views!=='—'?`<span>▶ ${esc(v.views)}</span>`:''}<span>🔗 ${v.id.startsWith('BV')?`<a href="https://www.bilibili.com/video/${v.id}" target="_blank" rel="noopener">${v.id}</a>`:esc(v.id)}</span></div>
+        <p class="vid-core"><b>核心观点：</b>${esc(v.core)}</p>
+        <ul class="vid-points">${v.keyPoints.slice(0,3).map(p=>`<li>${esc(p)}</li>`).join('')}</ul>
+        <div class="vid-extra">
+          <ul class="vid-points">${v.keyPoints.slice(3).map(p=>`<li>${esc(p)}</li>`).join('')}</ul>
+          <div class="vid-action"><b>现实落地报告</b>${esc(v.actionReport)}</div>
+        </div>
+        <button class="vid-more">展开全部要点与落地报告 ▾</button>
+        <div class="vid-src">来源：${esc(v.sources)}${v.hasFullNotes?' · 📚 含详细笔记':''}</div>
+      </div>`).join('');
+    $$('.vid-card').forEach(c=>{
+      $('.vid-more',c).onclick=()=>{c.classList.toggle('open');$('.vid-more',c).textContent=c.classList.contains('open')?'收起 ▴':'展开全部要点与落地报告 ▾';};
+    });
+  }
+  draw('全部');
+  $$('.vid-filter').forEach(b=>b.onclick=()=>{
+    $$('.vid-filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');draw(b.dataset.cat);
+  });
+}
+
+/* ============================================================
+   4. 直播计划 + 脚本生成器
+   ============================================================ */
+function renderLive(){
+  $('#liveTbody').innerHTML=DATA.framework.livestream.schedule.map(r=>`<tr><td>${esc(r.day)}</td><td><b>${esc(r.theme)}</b></td><td>${esc(r.detail)}</td></tr>`).join('');
+}
+$('#genBtn').onclick=()=>{
+  const topic=$('#genTopic').value.trim()||'今晚的行动路径复盘';
+  const el=$('#genElement');const elName=el.options[el.selectedIndex].text;
+  const style=$('#genStyle').value;const study=$('#genStudy').value.trim();
+  const elData=DATA.framework.elements.find(e=>e.id===el.value);
+  let html=`<h4>🎬 《${esc(topic)}》 · ${esc(elName)} · 直播脚本</h4>
+  <div class="seg"><b>00:00–00:05 开场 · 安定训练</b><br>“晚上好，欢迎来到行者夜话。我是行动者系统的建造者。今晚我们讲<b>${esc(topic)}</b>。老规矩：先安定，再出发——深呼吸三次，把今天的累放下来。”</div>
+  <div class="seg"><b>00:05–00:20 行动路径复盘</b><br>复盘本周六要素执行：${esc(elName)}这一要素，我做到了什么、没做到什么、尺度在哪里。不粉饰——没做到就等于没想做（黑格尔：内的真理性就是外）。</div>
+  <div class="seg"><b>00:20–00:40 正题 · ${esc(topic)}</b><br>${style==='结构分析（资本主义批判）'?`从结构入手：这件事背后的资本主义运行逻辑是什么（参考未明子996分析：占用时间使人奴役于人），再落到个人策略。`:style==='连麦答疑（限时解决）'?`现场连麦：用辩证法五步协议（界定→找矛盾→定尺度→造手段→闭环），每人15分钟，给出最小可行动作。`:`用最朴素的方式讲：从“如何帮他的女朋友”这类具体处境入手，不讲大词，只讲明天就能做的一步。`}</div>
+  <div class="seg"><b>00:40–00:50 学习内容</b><br>${esc(study||'本周学习：黑格尔《逻辑学》+ 未明子行动建议视频研究。把一条逻辑范畴落到一个具体决策上。')}${elData?`<br>逻辑学根据：${esc(elData.hegelLink)}<br>未明子：${esc(elData.weimingziLink)}`:''}</div>
+  <div class="seg"><b>00:50–01:00 限时小技巧 + 收尾</b><br>送一个今天就能用的小技巧；提醒观众：树洞随时开放，我严肃对待每一条倾诉。明晚21:00，继续。</div>
+  <h4>📋 直播检查清单</h4>
+  <div class="seg">□ 灯光与封面（符号布置：过度象征化——主动设计观众对我的解读）<br>□ 三行复盘笔记 □ 要素数据（打卡截图）<br>□ 连麦排序 □ 树洞新投稿预览 □ 21:00 准时开播</div>`;
+  const out=$('#genOut');out.innerHTML=html;out.classList.add('show');
+  out.scrollIntoView({behavior:'smooth',block:'nearest'});
+};
+
+/* ============================================================
+   5. 树洞 + 暖心墙 + 后台
+   ============================================================ */
+const WARMS=[
+  {t:"你不是不够努力，你只是还没有遇见一个愿意为你撑腰的世界。但请相信，世界正在悄悄变好，而你比自己以为的更坚韧。",f:"站长手写"},
+  {t:"感到累的时候，允许自己停一停。时间不是敌人，它是你的生命本身——休息不是浪费，是让生命重新流动。",f:"站长手写"},
+  {t:"被结构压得喘不过气时请记住：感到痛不是因为你有缺陷，而是因为你清醒地活着。痛觉是活着的证据。",f:"站长手写"},
+  {t:"你受的委屈是真的。不必逼自己“想开点”——先承认它疼，我们再慢慢想办法。",f:"站长手写"},
+  {t:"没有人规定三十岁之前必须想明白一切。黑格尔三十五岁才写完《精神现象现象学》——慢，是思想者的常态。",f:"站长手写"},
+  {t:"如果今天只做成一件事，那就把它算数。一也是完成，零和一万之间，隔着无数次一。",f:"站长手写"},
+  {t:"你为家人扛的那些重量，有人看见了。也请让自己偶尔当一次被扛的人。",f:"站长手写"},
+  {t:"比较是偷走幸福的小偷。别人的赛道是别人的，你的欲望要由你自己来审计。",f:"站长手写 · 化用未明子"},
+  {t:"失眠的夜里请记得：夜晚不是对你的审判，它是宇宙给你的私人直播间——只讲给自己听的那种。",f:"站长手写"},
+  {t:"被否定一百次也没关系。行动者的定义不是从不失败，是第一百零一次还在结构里找到了缝隙。",f:"站长手写"},
+  {t:"你的愤怒是正当的。愤怒说明你的正义感还活着——我们要做的只是给它一个方向，而不是把它压垮。",f:"站长手写"},
+  {t:"穷不是你的错，笨也不是。错的是那个让你相信这一切都是自己问题的话语。",f:"站长手写"},
+  {t:"想哭就哭。情绪是爱欲的导航，不是系统的故障。哭完我们继续赶路。",f:"站长手写"},
+  {t:"你不需要向任何人证明你值得被爱。存在先于证明——这是黑格尔说的，也是我说的。",f:"站长手写"},
+  {t:"如果全世界只剩一个人还相信你，请让那个人是你自己。实在不行，来树洞，我信你。",f:"站长手写"},
+  {t:"今天的蔬菜餐、三次饮料上限、七点半起床——这些小事就是在把命运一点点拿回自己手里。",f:"站长手写"},
+  {t:"不要用别人的时间表审判自己的人生。尺度的交替线，每个人不一样。",f:"站长手写 · 化用黑格尔"},
+  {t:"你帮过的人、递过的水、听过的诉苦，都算数。世界就是这些看不见的算数在变好。",f:"站长手写"},
+  {t:"如果实在扛不住，把“一辈子”改成“今天”。今天过去，就是胜利。",f:"站长手写"},
+  {t:" alienation（异化）让你觉得累得没道理——不是你没道理，是那个结构没道理。",f:"站长手写"},
+  {t:"深夜刷手机的你，只是在找一点属于自己的时间。这没错，只是别忘了：你值得的不只这一点。",f:"站长手写"},
+  {t:"别把自己当废品。你只是还没被放到合适的位置——嵌入都是斜着进去的，卡住是常态。",f:"站长手写 · 化用未明子"},
+  {t:"人生不是押注未来的赌局。给它留一点喘息与探索的缝隙——那是绿洲的位置。",f:"站长手写 · 化用未明子"},
+  {t:"慢一点，稳一点，每天把一件事闭合。恶无限的教训是：明天再努力等于永远不努力。",f:"站长手写 · 化用黑格尔"}
+];
+let warmIdx=Math.floor(Math.random()*WARMS.length);
+function showWarm(){const w=WARMS[warmIdx%WARMS.length];$('#warmText').textContent=w.t;$('#warmFrom').textContent='—— '+w.f;}
+$('#warmNext').onclick=()=>{warmIdx++;showWarm();};
+
+// 树洞表单
+$('#thForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=$('#thName').value.trim()||'匿名';
+  const need=$('#thNeed').value.trim(),gri=$('#thGrievance').value.trim();
+  if(!need||!gri){toast('请填写“真实需求”和“想倾诉的事”');return;}
+  const sub={id:'S'+Date.now(),ts:new Date().toISOString(),name,age:$('#thAge').value,need,oppress:$('#thOppress').value.trim(),grievance:gri,contact:$('#thContact').value.trim(),allowPublic:$('#thAllowPublic').checked,status:'pending',reply:''};
+  const list=LS.get('xz.submissions',[]);list.unshift(sub);LS.set('xz.submissions',list);
+  const ok=$('#thOk');
+  ok.innerHTML=`♡ <b>已经收到你的倾诉了。</b><br>你的投稿已存入本地后台（编号 ${sub.id}）。站长承诺：严肃对待、同情、真实宽慰。每晚 21:00 直播后统一阅读，如留了联系方式会收到回信。你并不孤单。`;
+  ok.classList.add('show');
+  $('#thForm').reset();
+  updateMailto();
+  try{notifyNew(sub);}catch(err){}
+  toast('倾诉已投入树洞 ♡');
+});
+function updateMailto(){
+  const st=LS.get('xz.settings',{});
+  const email=st.email||'your-email@example.com';
+  const subj=encodeURIComponent('【树洞倾诉】来自网站访客');
+  const body=encodeURIComponent('（请在这里写下你的倾诉：真实需求、结构性压迫、受的委屈。站长承诺隐私与严肃对待。）\n\n———\n');
+  $('#mailtoBtn').href=`mailto:${email}?subject=${subj}&body=${body}`;
+  $('#mailtoBtn').title='当前收件邮箱：'+email+'（可在站长后台修改）';
+}
+// 站内通知
+function notifyNew(sub){
+  if(!('Notification'in window))return;
+  if(Notification.permission==='granted'){
+    try{new Notification('💌 新的树洞倾诉',{body:`来自「${sub.name}」（${sub.age}）：${sub.need.slice(0,40)}…`});}catch(e){}
+  }
+}
+
+/* ---------- 后台 DOM 挂载（必须先于后台绑定） ---------- */
+function mountAdmin(){
+  const div=document.createElement('div');
+  div.className='admin-modal';div.id='adminModal';
+  div.innerHTML=`
+  <div class="admin-box">
+    <button class="admin-close" id="adminClose">✕</button>
+    <h3>🔐 站长后台 · 树洞管理</h3>
+    <div id="adminGate">
+      <p style="font-size:13.5px;color:var(--ink2);margin-bottom:12px">首次使用请设置后台密码（仅哈希存储于本设备）：</p>
+      <div class="f-row" style="margin-bottom:10px">
+        <div class="f-group"><label>设置密码</label><input id="adminPwd1" type="password" placeholder="至少4位"></div>
+        <div class="f-group"><label>确认密码</label><input id="adminPwd2" type="password" placeholder="再输一次"></div>
+      </div>
+      <button class="btn btn-primary" id="adminGateSet" style="width:100%;justify-content:center">设置并进入</button>
+      <div style="margin-top:16px;border-top:1px dashed var(--line);padding-top:14px">
+        <p style="font-size:13px;color:var(--muted);margin-bottom:8px">已设置过密码？直接登录：</p>
+        <div class="f-row">
+          <div class="f-group"><label>后台密码</label><input id="adminPwd" type="password" placeholder="输入密码"></div>
+          <div class="f-group"><label>&nbsp;</label><button class="btn btn-ghost" id="adminEnter" style="justify-content:center">登录</button></div>
+        </div>
+      </div>
+    </div>
+    <div id="adminBody" style="display:none">
+      <div class="admin-tabs">
+        <button class="admin-tab active">📥 倾诉收件箱 <span id="adminStats" style="font-size:12px;color:var(--gold)"></span></button>
+      </div>
+      <div id="adminList"></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+        <button class="mini-btn" id="adminExport">⬇ 导出备份(JSON)</button>
+        <label class="mini-btn" style="cursor:pointer">⬆ 导入备份<input id="adminImport" type="file" accept=".json" style="display:none"></label>
+        <button class="mini-btn" id="adminNoti">🔔 开启手机通知</button>
+        <button class="mini-btn" id="adminTest">📺 测试直播提醒</button>
+      </div>
+      <div style="margin-top:16px;border-top:1px dashed var(--line);padding-top:14px">
+        <b style="font-size:14px">📮 站长邮箱（用于“发送邮件倾诉”）</b>
+        <div class="f-row" style="margin-top:8px">
+          <div class="f-group"><label>你的邮箱</label><input id="stEmail" placeholder="your@email.com"></div>
+          <div class="f-group"><label>&nbsp;</label><button class="mini-btn" id="stSaveEmail">保存</button></div>
+        </div>
+      </div>
+      <div style="margin-top:16px;border-top:1px dashed var(--line);padding-top:14px">
+        <b style="font-size:14px">☁ 跨设备同步（可选·GitHub Issues）</b>
+        <p style="font-size:12.5px;color:var(--muted);margin:6px 0 10px">把新投稿同步为你 GitHub 私有仓库的 Issue——手机 GitHub App 会即时收到推送通知，数据存放在你自己的账号里。Token 仅保存在本设备浏览器。</p>
+        <div class="f-row">
+          <div class="f-group"><label>GitHub Token（repo 权限）</label><input id="ghToken" type="password" placeholder="ghp_..."></div>
+          <div class="f-group"><label>仓库 owner/repo</label><input id="ghRepo" placeholder="yourname/treehole"></div>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <button class="mini-btn" id="ghSave">保存设置</button>
+          <button class="mini-btn" id="ghSync">立即同步新投稿</button>
+        </div>
+        <div class="admin-note">⚠ 安全提示：Token 只写入本设备 localStorage，绝不外传；建议为树洞单独建一个私有仓库并使用最小权限 Token。同步后手机打开 GitHub App → 开启通知，即可收到每条倾诉。</div>
+      </div>
+      <div class="admin-note">💡 提醒设置：本页面保持打开时，每晚 21:00 会自动弹出直播提醒（浏览器通知）。数据备份：定期点击“导出备份”。</div>
+    </div>
+  </div>`;
+  document.body.appendChild(div);
+  // 直播定时提醒
+  if('Notification'in window){
+    setInterval(()=>{
+      const now=new Date();
+      if(now.getHours()===21&&now.getMinutes()===0&&Notification.permission==='granted'){
+        new Notification('📺 行者夜话开播了',{body:'每晚21:00：行动路径复盘 + 学习内容 + 限时解决问题。抖音直播见！'});
+      }
+    },60000);
+  }
+}
+mountAdmin();
+
+/* ---------- 后台 ---------- */
+$('#adminBtn').onclick=async()=>{
+  const modal=$('#adminModal');modal.classList.add('show');
+  const hash=LS.get('xz.adminHash','');
+  if(!hash){$('#adminGate').style.display='block';$('#adminBody').style.display='none';}
+  else await adminLogin(true);
+};
+$('#adminGateSet').onclick=async()=>{
+  const p1=$('#adminPwd1').value,p2=$('#adminPwd2').value;
+  if(p1.length<4){toast('密码至少4位');return;}
+  if(p1!==p2){toast('两次输入不一致');return;}
+  const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(p1));
+  LS.set('xz.adminHash',Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join(''));
+  toast('后台密码已设置');await adminLogin(true);
+};
+async function adminLogin(silent){
+  const hash=LS.get('xz.adminHash','');
+  const gate=$('#adminGate'),body=$('#adminBody');
+  if(!hash){gate.style.display='block';body.style.display='none';return false;}
+  if(silent){gate.style.display='none';body.style.display='block';renderAdmin();return true;}
+  return true;
+}
+$('#adminEnter').onclick=async()=>{
+  const p=$('#adminPwd').value;
+  const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(p));
+  const h=Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  if(h===LS.get('xz.adminHash','')){$('#adminGate').style.display='none';$('#adminBody').style.display='block';renderAdmin();toast('欢迎回来，站长');}
+  else toast('密码错误');
+};
+function renderAdmin(){
+  const list=LS.get('xz.submissions',[]);
+  const box=$('#adminList');
+  if(!list.length){box.innerHTML='<div class="admin-empty">暂无倾诉。树洞开放后，投稿会出现在这里。</div>';}
+  else box.innerHTML=list.map(s=>`
+    <div class="sub-item" data-id="${s.id}">
+      <div class="sub-head"><b>${esc(s.name)}</b><span class="sub-meta">${s.age} · ${new Date(s.ts).toLocaleString('zh-CN')} · ${s.id}</span></div>
+      <div class="sub-body"><b>真实需求：</b>${esc(s.need)}${s.oppress?`<br><b>结构性压迫：</b>${esc(s.oppress)}`:''}<br><b>倾诉内容：</b>${esc(s.grievance)}${s.contact?`<br><b>联系方式：</b>${esc(s.contact)}`:''}${s.allowPublic?'<br><b>已授权匿名公开引用</b>':''}</div>
+      <div class="sub-actions">
+        <button class="mini-btn" data-act="status">${s.status==='pending'?'标记：待安慰':s.status==='comforted'?'标记：已安慰':'标记：已回信'}</button>
+        <button class="mini-btn" data-act="reply">写回信</button>
+        <button class="mini-btn" data-act="del">删除</button>
+      </div>
+      ${s.reply?`<div class="sub-reply">📮 已回信：${esc(s.reply)}</div>`:''}
+      <div class="sub-reply-form" style="display:none;margin-top:8px">
+        <textarea rows="3" style="width:100%;border-radius:10px;border:1px solid var(--line);padding:10px;font-family:var(--sans);font-size:13px" placeholder="给TA的回信（会保存在本地）">${esc(s.reply||'')}</textarea>
+        <button class="mini-btn" data-act="savereply" style="margin-top:6px">保存回信</button>
+      </div>
+    </div>`).join('');
+  $$('.sub-item',box).forEach(item=>{
+    const id=item.dataset.id;
+    $$('.mini-btn',item).forEach(b=>b.onclick=async()=>{
+      const list=LS.get('xz.submissions',[]);const i=list.findIndex(x=>x.id===id);if(i<0)return;
+      const act=b.dataset.act;
+      if(act==='status'){list[i].status=list[i].status==='pending'?'comforted':list[i].status==='comforted'?'replied':'pending';LS.set('xz.submissions',list);renderAdmin();}
+      if(act==='reply'){const f=$('.sub-reply-form',item);f.style.display=f.style.display==='none'?'block':'none';}
+      if(act==='savereply'){list[i].reply=$('textarea',item.parentElement).value;LS.set('xz.submissions',list);renderAdmin();toast('回信已保存');}
+      if(act==='del'){if(confirm('确定删除这条倾诉？此操作不可恢复。')){list.splice(i,1);LS.set('xz.submissions',list);renderAdmin();toast('已删除');}}
+    });
+  });
+  // 统计
+  const p=list.filter(s=>s.status==='pending').length;
+  $('#adminStats').textContent=`共 ${list.length} 条 · 待处理 ${p} 条`;
+  // GitHub 设置回填
+  const st=LS.get('xz.settings',{});
+  $('#ghToken').value=st.ghToken||'';$('#ghRepo').value=st.ghRepo||'';
+}
+$('#adminExport').onclick=()=>{
+  const data=LS.get('xz.submissions',[]);
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='树洞倾诉备份_'+new Date().toISOString().slice(0,10)+'.json';a.click();toast('已导出备份');
+};
+$('#adminImport').onchange=e=>{
+  const f=e.target.files[0];if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{try{const d=JSON.parse(r.result);if(Array.isArray(d)){LS.set('xz.submissions',d);renderAdmin();toast('导入成功：'+d.length+' 条');}else toast('格式错误');}catch(err){toast('导入失败：'+err.message);}};
+  r.readAsText(f);
+};
+$('#adminNoti').onclick=async()=>{
+  if(!('Notification'in window)){toast('此浏览器不支持通知');return;}
+  const p=await Notification.requestPermission();
+  if(p==='granted'){new Notification('🔔 通知已开启',{body:'新的树洞倾诉将即时提醒你。每晚21:00直播提醒也可在下方设置。'});toast('通知已开启');}
+  else toast('通知权限被拒绝，请在浏览器设置中允许');
+};
+$('#adminTest').onclick=()=>{
+  if('Notification'in window&&Notification.permission==='granted'){new Notification('📺 行者夜话',{body:'该开播了：今晚21:00，抖音直播见。'});}
+  else toast('请先点击“开启通知”');
+};
+$('#ghSave').onclick=()=>{
+  const st=LS.get('xz.settings',{});
+  st.ghToken=$('#ghToken').value.trim();st.ghRepo=$('#ghRepo').value.trim();
+  st.email=$('#stEmail').value.trim();
+  LS.set('xz.settings',st);toast('已保存到本地（仅本设备）');updateMailto();
+};
+$('#stSaveEmail').onclick=()=>{
+  const st=LS.get('xz.settings',{});
+  st.email=$('#stEmail').value.trim();
+  LS.set('xz.settings',st);toast('邮箱已保存');updateMailto();
+};
+$('#ghSync').onclick=async()=>{
+  const st=LS.get('xz.settings',{});
+  if(!st.ghToken||!st.ghRepo){toast('请先填写 GitHub Token 与 仓库（owner/repo）');return;}
+  const list=LS.get('xz.submissions',[]).filter(s=>!s._synced);
+  if(!list.length){toast('没有新投稿需要同步');return;}
+  let ok=0;
+  for(const s of list){
+    try{
+      const r=await fetch(`https://api.github.com/repos/${st.ghRepo}/issues`,{
+        method:'POST',
+        headers:{'Authorization':'token '+st.ghToken,'Accept':'application/vnd.github+json','Content-Type':'application/json'},
+        body:JSON.stringify({title:`[树洞] ${s.name} · ${s.age} · ${s.need.slice(0,30)}`,body:`**真实需求**：${s.need}\n\n**结构性压迫**：${s.oppress||'（未填）'}\n\n**倾诉内容**：\n${s.grievance}\n\n**联系方式**：${s.contact||'（未留）'}\n\n> 来自行动者六要素网站树洞 · ${s.ts}`,labels:['树洞']})
+      });
+      if(r.ok){const all=LS.get('xz.submissions',[]);const i=all.findIndex(x=>x.id===s.id);if(i>=0){all[i]._synced=true;LS.set('xz.submissions',all);}ok++;}
+    }catch(e){}
+  }
+  toast(`已同步 ${ok}/${list.length} 条到 GitHub Issues（手机GitHub App将收到通知）`);
+  renderAdmin();
+};
+$('#adminClose').onclick=()=>$('#adminModal').classList.remove('show');
+$('#adminModal').addEventListener('click',e=>{if(e.target.id==='adminModal')e.target.classList.remove('show');});
+
+/* ============================================================
+   6. 每日打卡
+   ============================================================ */
+const CHECK_TASKS=[
+  {id:'wake',label:'⏰ 7:30 起床 · 安定训练',el:'time'},
+  {id:'sport',label:'🏃 运动时段（跑运动 / 有脑竞技）',el:'health'},
+  {id:'study',label:'📚 学习时段（逻辑学 / 未明子 / 课程）',el:'reason'},
+  {id:'social',label:'🤝 人际时段（交流 · 提供价值）',el:'relationships'},
+  {id:'hobby',label:'🎯 兴趣时段',el:'time'},
+  {id:'meal',label:'🥗 饮食纪律（蔬菜餐 · 饮料≤3次）',el:'health'},
+  {id:'desire',label:'🔥 欲望审计（爱欲为整体目的服务）',el:'eros'},
+  {id:'reflect',label:'🧠 体系反思（复盘 · 处理压着的事）',el:'reason'},
+  {id:'live',label:'📺 21:00 直播（行者夜话）',el:'time'}
+];
+function todayKey(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function renderCheck(){
+  const key=todayKey();
+  $('#checkDate').textContent='📅 今天是 '+new Date().toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric',weekday:'long'})+' · 完成全部日课可保持行动力火焰 · <span id="streakText" style="color:var(--gold);font-weight:600"></span>';
+  const data=LS.get('xz.checkins',{});const today=data[key]||{};
+  const els=[...new Set(CHECK_TASKS.map(t=>t.el))];
+  const EL_NAME={time:'时间（生命）',health:'健康',money:'钱',relationships:'人际关系',eros:'爱欲 ⚡',reason:'理性 ⚡'};
+  $('#checkGrid').innerHTML=els.map(el=>`
+    <div class="card check-card">
+      <h4><span style="color:${EL_COLORS[el]}">${EL_NAME[el]}</span></h4>
+      ${CHECK_TASKS.filter(x=>x.el===el).map(x=>`<label class="check-item ${today[x.id]?'done':''}" data-id="${x.id}"><input type="checkbox" ${today[x.id]?'checked':''}><span class="check-box">✓</span>${esc(x.label)}</label>`).join('')}
+    </div>`).join('');
+  $$('.check-item').forEach(l=>{
+    l.onclick=e=>{
+      e.preventDefault();
+      const id=l.dataset.id;const d=LS.get('xz.checkins',{});const k=todayKey();
+      d[k]=d[k]||{};d[k][id]=!d[k][id];LS.set('xz.checkins',d);
+      l.classList.toggle('done',d[k][id]);$('input',l).checked=d[k][id];
+      updateStreak();
+      const done=CHECK_TASKS.filter(t=>d[k][t.id]).length;
+      if(done===CHECK_TASKS.length)toast('🔥 今日日课全部完成！行动力火焰 +1');
+    };
+  });
+  updateStreak();
+}
+function updateStreak(){
+  const d=LS.get('xz.checkins',{});let streak=0;const day=new Date();
+  for(;;){
+    const k=day.getFullYear()+'-'+String(day.getMonth()+1).padStart(2,'0')+'-'+String(day.getDate()).padStart(2,'0');
+    const t=d[k];if(t&&CHECK_TASKS.every(x=>t[x.id]))streak++;else break;
+    day.setDate(day.getDate()-1);if(streak>365)break;
+  }
+  const el=$('#streakText');if(el)el.textContent=streak>0?`🔥 连续 ${streak} 天全勤`:'🔥 今日全勤即可点燃火焰';
+}
+
+/* ---------- 启动 ---------- */
+renderElements();
+mmRender();
+renderOutline();
+renderVideos();
+renderLive();
+renderCheck();
+showWarm();
+updateMailto();
+</script>
+</body>
+</html>
+

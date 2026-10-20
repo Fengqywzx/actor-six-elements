@@ -1,0 +1,109 @@
+<!-- ============ 倾诉树洞 ============ -->
+<section id="treehole" style="background:var(--paper2)">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">TREE HOLE · 倾诉树洞</div>
+      <h2>把你的委屈说给我听</h2>
+      <p class="sec-desc">写给全年龄段的朋友：你对生活的真实需求、资本主义对你结构性的压迫、你受的委屈——都可以在这里向我倾诉。我承诺：<b>严肃对待、同情、真实宽慰</b>。所有内容仅存储于你自己的设备与站长的本地后台，绝不上传、绝不外传。</p>
+    </div>
+    <div class="th-grid">
+      <form class="card th-form" id="thForm">
+        <h3>✉️ 投稿倾诉</h3>
+        <div class="th-promise">
+          <b>🛡 隐私承诺（站长亲笔）：</b>① 你写下的每一个字只保存在<b>这台设备的本地存储</b>里，不经过任何服务器；② 站长后台有密码保护，每一条倾诉我都会亲自阅读；③ 绝不截图、绝不外传、绝不在直播中公开（除非你明确勾选同意）；④ 你可以随时要求删除——数据在你手里，也在我手里，两头都作数。
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label>怎么称呼你（可匿名）</label><input id="thName" type="text" placeholder="例如：一个毕业生 / 老李 / 匿名"></div>
+          <div class="f-group"><label>年龄段</label><select id="thAge">
+            <option>12岁以下</option><option>12–18岁（中学）</option><option selected>18–25岁（大学）</option>
+            <option>25–35岁（职场）</option><option>35–50岁</option><option>50岁以上</option>
+          </select></div>
+        </div>
+        <div class="f-group"><label>你现在的真实需求 <span class="req">*</span></label><input id="thNeed" type="text" placeholder="例如：想找到一份不被压榨的工作 / 想有人听我说说话" required></div>
+        <div class="f-group"><label>资本主义对你的结构性压迫（选填）</label><textarea id="thOppress" rows="2" placeholder="例如：996占用了全部时间、房租吃掉一半工资、家里等着寄钱…"></textarea></div>
+        <div class="f-group"><label>你想倾诉的委屈 / 心事 <span class="req">*</span></label><textarea id="thGrievance" rows="4" placeholder="把这里当作树洞，写什么都行。没有人会嘲笑你。" required></textarea></div>
+        <div class="f-group"><label>联系方式（选填，仅用于站长回信）</label><input id="thContact" type="text" placeholder="微信 / 邮箱 / 手机号，或留空"></div>
+        <label style="display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--ink2);cursor:pointer">
+          <input type="checkbox" id="thAllowPublic" style="margin-top:5px;width:16px;height:16px;flex:none">
+          <span>我同意站长在直播/暖心墙中匿名引用我的倾诉（不勾选则完全保密）</span>
+        </label>
+        <button class="btn btn-primary" type="submit" style="justify-content:center">投入树洞 ♡</button>
+        <div class="th-ok" id="thOk"></div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.7">💡 提交后内容仅存入本设备。如需直接送达站长，可点击下方“发送邮件倾诉”（自动打开邮件客户端）；站长每晚 21:00 直播后统一阅读回复。</div>
+      </form>
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <div class="card warm-wall">
+          <h3 style="font-size:17px">🕯 暖心驿站</h3>
+          <p style="font-size:12.5px;color:var(--muted)">来自全网收集与站长手写的宽慰。撑不住的时候，来这里站一会儿。</p>
+          <div class="warm-card"><p id="warmText"></p><div class="warm-from" id="warmFrom"></div></div>
+          <div class="warm-btns">
+            <button class="warm-btn" id="warmNext">换一句 ♡</button>
+            <a class="warm-btn" id="mailtoBtn" href="#">📧 发送邮件倾诉</a>
+            <button class="warm-btn" id="adminBtn">🔐 站长后台</button>
+          </div>
+        </div>
+        <div class="card" style="padding:20px">
+          <h3 style="font-size:16px;margin-bottom:8px">📮 倾诉之后会发生什么</h3>
+          <ol style="font-size:13.5px;color:var(--ink2);line-height:1.9;padding-left:20px">
+            <li>你的倾诉进入站长本地后台（密码保护）</li>
+            <li>站长每晚阅读，标记“待安慰 / 已回信”</li>
+            <li>如留了联系方式，会收到一封手写式回复</li>
+            <li>直播“限时解决”环节可能匿名讨论（需你同意）</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 每日打卡 ============ -->
+<section id="checkin">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">DAILY · 每日打卡</div>
+      <h2>六要素日课打卡</h2>
+      <p class="sec-desc">把蓝图落到今天。打卡数据仅存本设备；连续打卡会累计“行动力火焰”。</p>
+    </div>
+    <div class="check-date" id="checkDate"></div>
+    <div class="check-grid" id="checkGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="container">
+    <div>
+      <h4>行动者六要素 · 生命操作系统</h4>
+      <p>以马克思-黑格尔逻辑学为底层的个人行动体系。四个附着主题：时间（生命）· 健康 · 钱 · 人际关系；两个根本能力：爱欲 · 理性。每晚抖音直播“行者夜话”，讲解行动路径、人生方向、学习内容与限时解题技巧。</p>
+    </div>
+    <div>
+      <h4>体系入口</h4>
+      <ul>
+        <li><a href="#framework">六要素总览</a></li>
+        <li><a href="#mindmap">黑格尔逻辑学导图</a></li>
+        <li><a href="#videos">未明子视频研究</a></li>
+        <li><a href="#livestream">直播计划</a></li>
+        <li><a href="#treehole">倾诉树洞</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>资料来源</h4>
+      <ul>
+        <li>黑格尔《逻辑学》（大逻辑）</li>
+        <li>未明子B站空间 23191782</li>
+        <li>机核「未明子整理」专栏</li>
+        <li>faster-whisper 本地ASR转录</li>
+        <li>GitHub 开源项目生态</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-promise">
+      🛡 <b>隐私承诺：</b>本站为独立单文件网站，不依赖任何服务器；树洞投稿、打卡记录、后台数据全部使用浏览器本地存储（localStorage），仅保存在你当前使用的设备上。导出备份由你亲手掌握。未明子视频笔记版权归原作者及整理者所有，仅供个人学习研究。<br>
+      Made with ♡ · 行者夜话 · 每晚 21:00 抖音直播
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="回到顶部">↑</button>
+<div class="toast" id="toast"></div>

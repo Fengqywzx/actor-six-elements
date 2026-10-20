@@ -1,0 +1,36 @@
+<!-- ============ 黑格尔思维导图 ============ -->
+<section id="mindmap" style="background:var(--paper2)">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">HEGEL · 逻辑学思维导图</div>
+      <h2>黑格尔《逻辑学》全章节思维导图</h2>
+      <p class="sec-desc">依据《逻辑学》（大逻辑）原始文本逐章誊写：存在论 · 本质论 · 概念论，三编七十五节。每个节点含核心命题、辩证运动、关键句，以及<b>与六要素的落地关联</b>。支持拖拽平移、滚轮缩放、点击节点看详情；配套 Obsidian 双链知识库（见交付包 obsidian-vault 文件夹）。</p>
+    </div>
+    <div class="mm-toolbar">
+      <button class="mm-btn active" id="btnMapView">🌳 思维导图</button>
+      <button class="mm-btn" id="btnOutlineView">📑 大纲视图</button>
+      <input class="mm-search" id="mmSearch" type="search" placeholder="搜索章节 / 德文 / 关键词，如：矛盾、尺度、目的性…">
+      <button class="mm-btn" id="btnExpandAll">全部展开</button>
+      <button class="mm-btn" id="btnCollapseAll">收起分支</button>
+      <button class="mm-btn" id="btnZoomIn">＋</button>
+      <button class="mm-btn" id="btnZoomOut">－</button>
+      <button class="mm-btn" id="btnZoomReset">复位</button>
+    </div>
+    <div class="mm-stage" id="mmStage">
+      <svg id="mmSvg"></svg>
+      <div class="mm-detail" id="mmDetail">
+        <button class="mm-close" id="mmClose">✕</button>
+        <h4 id="mmDTitle"></h4>
+        <div class="de" id="mmDDe"></div>
+        <div class="lbl">核心命题</div>
+        <p id="mmDSum"></p>
+        <div class="lbl">关键句</div>
+        <div class="key" id="mmDKey"></div>
+        <div class="lbl" id="mmDLblAct" style="display:none">与行动者系统的关联</div>
+        <div class="act" id="mmDAct"></div>
+      </div>
+      <div class="mm-hint">拖拽平移 · 滚轮缩放 · 点击节点详情 · 点击 +/− 圆点折叠分支</div>
+    </div>
+    <div class="mm-outline" id="mmOutline"></div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+<!-- ============ 未明子视频研究 ============ -->
+<section id="videos">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">RESEARCH · 视频调研笔记</div>
+      <h2>未明子 · 行动建议视频全景研究</h2>
+      <p class="sec-desc">UP主未明子（刘司墨，UID 23191782，B站61.9万粉，1500+作品）关于行动建议的全部重点视频：核心观点 → 行动建议 → 现实落地报告。调研方法：B站开放API元数据 + CC字幕链路 + faster-whisper 本地 ASR 转录 + 机核万字笔记 + 官方文字实录交叉验证。</p>
+    </div>
+    <div class="vid-filters" id="vidFilters"></div>
+    <div class="vid-grid" id="vidGrid"></div>
+    <div class="card" style="margin-top:20px;padding:20px;background:var(--surface2);font-size:13px;color:var(--ink2);line-height:1.8">
+      <b style="color:var(--cinnabar)">📌 调研说明：</b>未明子视频多数无 CC 字幕（B站字幕需登录态），本项目已建成稳定的识别流水线：<b>①</b> B站开放API获取标题/时长/播放/字幕列表 → <b>②</b> 已登录浏览器Cookie抓CC字幕（本人电脑可开启）→ <b>③</b> yt-dlp 下载音频 → <b>④</b> faster-whisper 本地 ASR 转录（中文，无需联网）→ <b>⑤</b> 生成带时间戳文字稿与结构化笔记。核心视频《何为成熟，何为行动者》47分53秒已完成完整 ASR 转录，文字稿见交付包。所有笔记版权归未明子及整理者所有，本站仅作个人学习研究。
+    </div>
+  </div>
+</section>

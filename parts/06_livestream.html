@@ -1,0 +1,77 @@
+<!-- ============ 直播计划 ============ -->
+<section id="livestream" style="background:var(--paper2)">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">LIVE · 行者夜话</div>
+      <h2>每晚抖音直播 · 讲解我的全部行动路径</h2>
+      <p class="sec-desc">每天晚上给大家直播讲解：所有行动路径、人生方向、学习内容、限时解决问题小技巧。方法论：开直播、敞开心扉，用最朴素的方式解他人的不幸；具体落地，从“如何帮他的女朋友”这类真实处境入手。</p>
+    </div>
+    <div class="live-grid">
+      <div class="card" style="padding:22px;overflow-x:auto">
+        <h3 style="font-size:17px;margin-bottom:12px">📅 每周直播日历</h3>
+        <table class="live-table">
+          <thead><tr><th>星期</th><th>主题</th><th>内容</th></tr></thead>
+          <tbody id="liveTbody"></tbody>
+        </table>
+        <div class="admin-note" style="margin-top:14px">直播时间默认 每晚 21:00–22:30（以抖音直播间为准）。连麦答疑安排在周日“限时解决”场。</div>
+      </div>
+      <div class="card gen-form">
+        <h3 style="font-size:17px">🎬 直播脚本生成器</h3>
+        <p style="font-size:12.5px;color:var(--muted)">输入今晚主题，自动生成结构化直播脚本（模板化，无需联网）。</p>
+        <div class="f-group"><label>今晚主题</label><input id="genTopic" type="text" placeholder="例如：如何驾驭想躺平的欲望"></div>
+        <div class="f-row">
+          <div class="f-group"><label>关联要素</label><select id="genElement">
+            <option value="time">时间（生命）</option><option value="health">健康</option><option value="money">钱</option>
+            <option value="relationships">人际关系</option><option value="eros">爱欲</option><option value="reason">理性</option>
+          </select></div>
+          <div class="f-group"><label>风格</label><select id="genStyle">
+            <option>朴素直白（解他人的不幸）</option><option>结构分析（资本主义批判）</option><option>连麦答疑（限时解决）</option>
+          </select></div>
+        </div>
+        <div class="f-group"><label>本周学习内容（可选）</label><input id="genStudy" type="text" placeholder="例如：逻辑学·本质论·矛盾"></div>
+        <button class="btn btn-primary" id="genBtn" style="justify-content:center">生成直播脚本</button>
+        <div class="gen-out" id="genOut"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 限时解决 ============ -->
+<section id="solver">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">15-MIN SOLVER · 限时解决问题</div>
+      <h2>限时解决问题小技巧 · 辩证法五步协议</h2>
+      <p class="sec-desc">直播连麦与树洞回应的标准工具。基于黑格尔辩证法的结构化提问协议——把任何倾诉降解为可执行的行动。</p>
+    </div>
+    <div class="card solver">
+      <div class="solver-steps">
+        <div class="solver-step"><div class="solver-num">1</div><div>
+          <h4>界定：把情绪还原为命题</h4>
+          <p>“我很难受”不是问题。用一句话写下：<b>“我在____情境下，因为____，感到____。”</b>说不出来就计时写三行，不许修改。</p>
+          <span class="tool">⏱ 3分钟 · 工具：三行定位法</span>
+        </div></div>
+        <div class="solver-step"><div class="solver-num">2</div><div>
+          <h4>找矛盾：对立面在哪里</h4>
+          <p>每个困境至少有一对矛盾：欲望 vs 纪律、他人的期待 vs 我的目的、结构压迫 vs 个人出路。写下双方各自“对的地方”——矛盾不是要消灭一方，是驾驭。</p>
+          <span class="tool">⏱ 3分钟 · 逻辑学根据：矛盾是生命的根源</span>
+        </div></div>
+        <div class="solver-step"><div class="solver-num">3</div><div>
+          <h4>定尺度：关节点与代价</h4>
+          <p>问三个度：我最多能付出什么代价？最少需要多少时间？到什么程度就必须停（交替线）？把“我要努力”改写为带数字的条件句。</p>
+          <span class="tool">⏱ 3分钟 · 逻辑学根据：尺度交替线</span>
+        </div></div>
+        <div class="solver-step"><div class="solver-num">4</div><div>
+          <h4>造手段：最小可行动作</h4>
+          <p>目的必须变成工具：今晚就能做的第一个机械动作（数数、记录、一次转账、一次私信、一段路）。动作要小到不可能失败，大到能启动循环。</p>
+          <span class="tool">⏱ 3分钟 · 逻辑学根据：目的性三环节</span>
+        </div></div>
+        <div class="solver-step"><div class="solver-num">5</div><div>
+          <h4>闭环：宣布负责，收取点数</h4>
+          <p>把方案说出来（直播/发给朋友/写进打卡），设定复盘时间。行动→收获→壮大→再行动，形成良性循环；隐忍不宣布，等于没做。</p>
+          <span class="tool">⏱ 3分钟 · 未明子：秘密活动要收政治点数</span>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
