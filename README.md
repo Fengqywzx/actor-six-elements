@@ -2,6 +2,15 @@
 
 > 以马克思-黑格尔逻辑学为底层的个人行动体系 · 独立网站 + Obsidian 知识库 + 视频识别流水线
 
+## 🌐 在线地址
+
+| 用途 | 链接 |
+|---|---|
+| **网站在线版（GitHub Pages）** | https://fengqywzx.github.io/actor-six-elements/ |
+| **源码仓库** | https://github.com/Fengqywzx/actor-six-elements |
+
+在线版与本地 `index.html` 内容完全一致（同一份单文件，无任何构建产物转换）。
+
 ## 这是什么
 
 一套完整的个人行动系统，来源是两张手写笔记照片：
@@ -87,6 +96,17 @@ $PY tools/pipeline.py BV1tU4y1e7qH tools/asr_out   # 元数据→音频→本地
 - 网站是**单文件**，没有任何服务器、没有任何追踪、不依赖 CDN
 - 树洞投稿、打卡、后台数据全部存于浏览器 localStorage（仅本设备）
 - 备份导出由用户亲手掌握
+
+## 发布 / 更新到线上
+
+仓库已配置 GitHub Pages（`master` 分支根目录）。更新线上内容：
+
+```bash
+cd "C:/Users/18612/Desktop/行动者六要素·生命操作系统"
+python build.py          # 改完 data/*.json 后重新生成 index.html 与知识库
+git add -A && git commit -m "更新内容"
+git push                 # 约 1 分钟后线上生效
+```
 
 ## 已知限制 / 后续路线
 
