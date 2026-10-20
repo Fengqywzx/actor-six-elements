@@ -1,0 +1,45 @@
+name: 重建网站与知识库
+
+# 只要在 GitHub 网页端改了 data/*.json 或 parts/*.html，
+# 本工作流会自动重跑 build.py，重新生成 index.html 与 obsidian-vault/，并提交回去。
+# 之后 GitHub Pages 会自动把新页面发布上线。
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "data/**"
+      - "parts/**"
+      - "build.py"
+      - ".github/workflows/build.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 运行构建
+        run: python build.py
+
+      - name: 提交生成结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore(ci): 自动重建 index.html 与 obsidian-vault"
+            git push
+          else
+            echo "无变化，跳过提交"
+          fi
