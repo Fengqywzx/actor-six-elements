@@ -99,7 +99,9 @@ $PY tools/pipeline.py BV1tU4y1e7qH tools/asr_out   # 元数据→音频→本地
 
 ## 发布 / 更新到线上
 
-仓库已配置 GitHub Pages（`master` 分支根目录）。更新线上内容：
+仓库已配置 **GitHub Pages**（`master` 分支根目录，构建类型 legacy），并配了 **GitHub Actions 自动重建**：只要 `data/**` 或 `parts/**` 有改动，CI 会自动跑 `build.py` 重新生成 `index.html` + `obsidian-vault/` 并提交回去，Pages 随后自动发布。
+
+**方式 A：本地改 + 推送（推荐）**
 
 ```bash
 cd "C:/Users/18612/Desktop/行动者六要素·生命操作系统"
@@ -107,6 +109,12 @@ python build.py          # 改完 data/*.json 后重新生成 index.html 与知�
 git add -A && git commit -m "更新内容"
 git push                 # 约 1 分钟后线上生效
 ```
+
+**方式 B：直接在 GitHub 网页端改 JSON**
+
+打开 `data/framework.json` → 右上角铅笔编辑 → Commit changes。CI 会自动重建，约 2 分钟上线。手机上也能这么改。
+
+> git 凭据：本机 `gh` 已登录（账号 Fengqywzx），并已把 `gh auth git-credential` 配成 github.com 的 credential helper，直接 `git push` 即可。若换机器，先跑 `gh auth login`。
 
 ## 已知限制 / 后续路线
 
